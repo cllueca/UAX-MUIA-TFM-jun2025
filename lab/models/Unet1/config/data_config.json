@@ -1,0 +1,7 @@
+{
+    "axis_cut": "axial",
+    "first_cut": 65,
+    "last_cut": 100,
+    "layer_qty": 8,
+    "normalize": false
+}

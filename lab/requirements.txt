@@ -1,0 +1,12 @@
+ipykernel==6.29.5
+matplotlib==3.10.3
+numpy==2.2.6
+pandas==2.2.3
+pandas==2.2.3
+scikit-image==0.25.2
+tqdm==4.67.1
+torch==2.6.0 --extra-index-url https://download.pytorch.org/whl/cu124
+torchaudio==2.6.0 --extra-index-url https://download.pytorch.org/whl/cu124
+torchinfo==1.8.0
+torchview==0.2.7
+torchvision==0.21.0 --extra-index-url https://download.pytorch.org/whl/cu124

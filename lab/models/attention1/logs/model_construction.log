@@ -1,0 +1,5 @@
+[2025-06-09 10:16:09] Configuration saved to: '/home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/config/model_config.json'...
+[2025-06-09 10:16:09] Using 4 blocks for Attention U-Net based on input dimensions (128, 128)
+
+[2025-06-09 10:16:09] Attention U-Net Model Summary:
+[2025-06-09 10:16:09] Total trainable parameters: 87,864,813

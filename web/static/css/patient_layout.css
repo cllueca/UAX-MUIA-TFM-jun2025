@@ -1,0 +1,326 @@
+/* New container for details aside sidebar */
+.patient-details-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--bg-color);
+    border-left: 1px solid var(--border-color);
+    overflow: hidden;
+    height: 100vh;
+}
+/* Top sections container: two columns */
+.top-sections {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+    flex: 0 0 auto;
+}
+/* Left patient info inputs */
+.patient-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: var(--input-bg);
+    border-radius: 12px;
+    padding: 20px;
+    color: var(--text-color);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.patient-info label {
+    font-weight: 600;
+    margin-bottom: 4px;
+    display: block;
+}
+.patient-info input {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+.patient-info input:focus {
+    outline: 2px solid var(--link-color);
+    border-color: var(--link-color);
+}
+
+/* Right pathology list */
+.pathology-list {
+    flex: 1;
+    background: var(--input-bg);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    overflow-y: auto;
+    max-height: 280px;
+    box-sizing: border-box;
+}
+.pathology-list h2 {
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.pathology-list ul {
+    list-style: none;
+    padding-left: 0;
+    max-height: 230px;
+    overflow-y: auto;
+    margin: 0;
+}
+.pathology-list ul li {
+    padding: 10px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: background-color 0.3s ease;
+    user-select: none;
+}
+.pathology-list ul li:hover {
+    background-color: var(--link-color);
+    color: var(--button-text);
+}
+.pathology-list ul li.active {
+    background-color: var(--link-color);
+    color: var(--button-text);
+    font-weight: 700;
+}
+
+/* Header container for pathology-list */
+.pathology-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.pathology-list-header h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--text-color);
+}
+.add-pathology-btn {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    border-radius: 6px;
+    padding: 4px 12px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+    user-select: none;
+    transition: background-color 0.3s ease;
+}
+.add-pathology-btn:hover,
+.add-pathology-btn:focus {
+    background-color: var(--link-color);
+    outline: none;
+    color: var(--button-text);
+}
+
+/* Bottom pathology detail section */
+.pathology-detail {
+    flex: 1 1 auto;
+    background: var(--input-bg);
+    border-radius: 12px;
+    padding: 24px 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.pathology-detail h3 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+.pathology-description {
+    flex: 0 0 auto;
+    margin-bottom: 24px;
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.4;
+    white-space: pre-wrap;
+}
+
+
+/* Modal backdrop */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background-color: rgba(0,0,0,0.5);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    .modal-backdrop.show {
+      display: flex;
+    }
+
+/* Modal content */
+.modal {
+    background: var(--bg-color);
+    border-radius: 12px;
+    width: 400px;
+    max-width: 90vw;
+    padding: 24px 32px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+}
+.modal h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.modal label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+}
+.modal textarea,
+.modal input[type="text"] {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background: var(--input-bg);
+    color: var(--text-color);
+    font-size: 1rem;
+    resize: vertical;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+.modal textarea {
+    min-height: 80px;
+}
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+.modal-button {
+    padding: 10px 24px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+.modal-button.cancel {
+    background: var(--button-bg);
+    color: var(--button-text);
+}
+.modal-button.cancel:hover,
+.modal-button.cancel:focus {
+    background: var(--link-color);
+    color: var(--button-text);
+    outline: none;
+}
+.modal-button.add {
+    background: var(--link-color);
+    color: var(--button-text);
+}
+.modal-button.add:hover,
+.modal-button.add:focus {
+    background: #2f82cc;
+    outline: none;
+}
+
+    
+/* Upload section styling */
+.upload-section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+.upload-label {
+    background-color: var(--button-bg);
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    color: var(--button-text);
+    user-select: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+.upload-label:hover {
+    background-color: var(--link-color);
+    color: var(--button-text);
+}
+.upload-input {
+    display: none;
+}
+
+/* Picture frame section */
+.picture-frame {
+    position: relative;
+    flex: 1;
+    margin: 0 8px;
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.picture-frame img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+}
+/* .picture-frame-wrapper {
+    position: relative;
+    flex: 1;
+    margin: 0 8px;
+}
+.picture-frame-title {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 2;
+    margin: 0;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.5); /* optional for contrast */
+    /*color: #fff; /* adjust based on your theme */
+    /*padding: 4px 8px;
+    border-radius: 6px;
+} */
+.pet-image-display {
+    height: 100%;
+    width: 100%;
+}
+
+/* Download button positioned top right in picture frame */
+.download-button {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: var(--button-bg);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    color: var(--button-text);
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+    user-select: none;
+}
+.download-button:hover {
+    background-color: var(--link-color);
+    color: var(--button-text);
+}

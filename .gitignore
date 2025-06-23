@@ -1,0 +1,27 @@
+# Pycache
+__pycache__/
+
+
+### Ignores de la parte del laboratorio ###
+
+# Checkpoints de jupyter
+lab/notebooks/.ipynb_checkpoints
+# No se van a subir los modelos creados ni sus checkpoints a GitHub
+lab/models/attention1/models/
+lab/models/attention1/checkpoints/
+lab/models/Unet1/models/
+lab/models/Unet1/checkpoints/
+lab/models/vit_pruebas_2/models/
+lab/models/vit_pruebas_2/checkpoints/
+
+
+### Ignores de la parte web ###
+
+# Base de datos
+web/db/
+# Logs de la app
+web/logs/
+# Entorno virtual de python 
+web/venv/
+# Carpeta con los modelos de visión
+web/vision_models/

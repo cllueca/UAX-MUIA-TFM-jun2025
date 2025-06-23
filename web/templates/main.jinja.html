@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Home</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', path='css/main.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', path='css/patient_layout.css') }}" />
+  </head>
+
+  <body>
+    <div class="dashboard">
+      <aside class="sidebar">
+        <ul class="menu">
+          <li id="accountMenuOption"><span>👤</span> Mi cuenta</li>
+          <li id="patientsMenuOption"><span>📋</span> Mis pacientes</li>
+
+          <div id="pacientesList" class="pacientes-lista" style="display: none;">
+            <div class="search-bar">
+              <input
+                type="text"
+                id="patientSearchInput"
+                placeholder="Buscar pacientes..."
+                aria-label="Buscar pacientes"
+              />
+            </div>
+            <ul class="pacientes" id="pacientes" tabindex="0" role="listbox" aria-label="Lista de pacientes"></ul>
+          </div>
+        
+          <li id="logoutMenuOption" onclick="logout()"><span>🔒</span> Cerrar sesi&oacute;n</li>  
+        </ul>
+
+        <div>
+          <button id="themeToggle" class="theme-toggle">Cambiar Tema</button>
+        </div>
+      </aside>
+
+
+      <div class="patient-details-container" id="patientInfoLayout" aria-label="Patient details container" style="display: none;">
+
+        <div class="top-sections">
+          <!-- Patient info inputs on top-left -->
+          <section class="patient-info" aria-label="Patient information section">
+            <label for="patientName">Nombre:</label>
+            <input type="text" id="patientName" readonly value="" placeholder="Seleccione un paciente"/>
+
+            <label for="patientAge">Edad:</label>
+            <input type="text" id="patientAge" readonly placeholder="N/A" />
+
+            <label for="patientDni">DNI:</label>
+            <input type="text" id="patientDni" readonly placeholder="N/A" />
+          </section>
+
+          <!-- Pathology list on top-right -->
+          <section class="pathology-list" aria-label="Lista de patologías del paciente">
+            <div class="pathology-list-header">
+              <h2>Patologías</h2>
+              <button id="addPathologyBtn" class="add-pathology-btn" aria-label="Agregar patología" title="Agregar patología">+</button>
+            </div>
+            <ul id="pathologiesList" tabindex="0" role="listbox" aria-label="Lista de patologías">
+              <!-- Pathology items dynamically injected here -->
+            </ul>
+          </section>
+        </div>
+
+        <!-- Bottom pathology details section -->
+        <section id="pathologyDetailSection" class="pathology-detail" aria-live="polite" aria-label="Detalle de patología seleccionada">
+          <h3 id="pathologyTitle">Seleccione una patología</h3>
+          <div class="pathology-description" id="pathologyDescription">
+            Aquí se mostrará la descripción de la patología seleccionada.
+          </div>
+
+          <div id="uploadPictureSection" class="upload-section" style="display: none;">
+            <label for="uploadPicture" class="upload-label" tabindex="0">Subir imagen</label>
+            <input type="file" id="uploadPicture" class="upload-input" accept="image/*" />
+          </div>
+
+          <!-- Picture frame with image -->
+          <!-- <div class="picture-frame" aria-label="Imagen de la patología">
+            <img id="pathologyImage" alt="Imagen de la patología" src="" style="display:none">
+            <button class="download-button" id="downloadImageBtn" style="display:none" aria-label="Descargar imagen">
+              Descargar
+            </button>
+          </div> -->
+
+          <!-- Picture frames with images -->
+          <div id="showPictureSection" class="picture-frames-container" style="display: none; justify-content: space-between; margin-top: 24px;">
+    
+            <div class="picture-frame-wrapper">
+                <h4 class="picture-frame-title">PET sin corregir</h4>
+                <div class="picture-frame" aria-label="Imagen PET sin corregir">
+                    <img id="nonCorrectedPet" alt="Imagen PET sin corregir" src="" style="display:none">
+                    <button class="download-button" id="downloadNonCorrectedPet" style="display:none" aria-label="Descargar imagen PET sin corregir">
+                        Descargar
+                    </button>
+                </div>
+            </div>
+
+            <div class="picture-frame-wrapper">
+                <h4 class="picture-frame-title">PET corregido</h4>
+                <div class="picture-frame" aria-label="Imagen PET corregido">
+                    <img id="correctedPet" alt="Imagen PET corregido" src="" style="display:none">
+                    <button class="download-button" id="downloadCorrectedPet" style="display:none" aria-label="Descargar imagen PET corregido">
+                        Descargar
+                    </button>
+                </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Modal for Adding Pathology -->
+    <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
+      <div class="modal" role="document">
+        <h2 id="modalTitle">Agregar Patología</h2>
+        <form id="addPathologyForm">
+          <label for="modalDescription">Descripción</label>
+          <input type="text" id="modalDescription" name="description" required maxlength="100" autocomplete="off" />
+          <label for="modalNotes">Notas adicionales</label>
+          <textarea id="modalNotes" name="notes" rows="4" maxlength="300" placeholder="Opcional"></textarea>
+          <div class="modal-actions">
+            <button type="button" class="modal-button cancel" id="modalCancelBtn">Cancelar</button>
+            <button type="submit" class="modal-button add">Agregar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', path='js/home.js') }}"></script>
+    <script src="{{ url_for('static', path='js/main.js') }}"></script>
+    <script src="{{ url_for('static', path='js/patient_layout.js') }}"></script>
+  </body>
+
+</html>

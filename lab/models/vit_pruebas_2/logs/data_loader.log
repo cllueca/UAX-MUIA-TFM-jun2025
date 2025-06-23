@@ -1,0 +1,161 @@
+[2025-06-09 10:47:40] Configuration saved to: '/home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/vit_pruebas_2/config/data_config.json'...
+[2025-06-09 10:47:40] Configuration saved to: '/home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/vit_pruebas_2/config/model_config.json'...
+[2025-06-09 10:47:40] Loading training data...
+[2025-06-09 10:47:40]  ==  Loading train images set  ==
+[2025-06-09 10:47:40] 	- Loading 28 images from '/home/promise/NAS/MATERIA_OSCURA/PROYECTOS_INVESTIGACION/2025-Direct_AC/001-Dataset/002-PET_NAC_AC/fold1' ...
+[2025-06-09 10:47:43] 	- Could only load 28 images. Detected 0 outlier(s)
+[2025-06-09 10:47:43] 	- Pixels value range: [0.0, 0.22]
+[2025-06-09 10:47:43] Train inputs shape: (448, 1, 8, 128, 128)
+[2025-06-09 10:47:43] Train targets shape: (448, 1, 8, 128, 128)
+[2025-06-09 10:47:43] Training loader generated. Batch size: 8
+[2025-06-09 10:47:43] == Train set loader ==
+[2025-06-09 10:47:44] Common batch shape (num_batches / batch_size, channels, depth / num_layers, height, width):
+[2025-06-09 10:47:44]  - Inputs: torch.Size([8, 1, 8, 128, 128])
+[2025-06-09 10:47:44]  - Targets: torch.Size([8, 1, 8, 128, 128])
+[2025-06-09 10:47:44] All batches have the same size
+[2025-06-09 10:47:44] Loading test data for validation...
+[2025-06-09 10:47:44]  ==  Loading test images set  ==
+[2025-06-09 10:47:44] 	- Loading 8 images from '/home/promise/NAS/MATERIA_OSCURA/PROYECTOS_INVESTIGACION/2025-Direct_AC/001-Dataset/002-PET_NAC_AC/fold1' ...
+[2025-06-09 10:47:45] 	- Could only load 6 images. Detected 2 outlier(s)
+[2025-06-09 10:47:45] 	- Pixels value range: [0.0, 0.23]
+[2025-06-09 10:47:45] Splitting test set in half, the second half will be used for validation...
+[2025-06-09 10:47:45] Validation inputs shape: (48, 1, 8, 128, 128)
+[2025-06-09 10:47:45] Validation targets shape: (48, 1, 8, 128, 128)
+[2025-06-09 10:47:45] Validation loader generated. Batch size: 8
+[2025-06-09 10:47:45] == Validation set loader ==
+[2025-06-09 10:47:45] Common batch shape (num_batches / batch_size, channels, depth / num_layers, height, width):
+[2025-06-09 10:47:45]  - Inputs: torch.Size([8, 1, 8, 128, 128])
+[2025-06-09 10:47:45]  - Targets: torch.Size([8, 1, 8, 128, 128])
+[2025-06-09 10:47:45] All batches have the same size
+[2025-06-09 11:01:20] Configuration saved to: '/home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/vit_pruebas_2/config/data_config.json'...
+[2025-06-09 11:01:20] Configuration saved to: '/home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/vit_pruebas_2/config/model_config.json'...
+[2025-06-09 11:01:20] Loading training data...
+[2025-06-09 11:01:20]  ==  Loading train images set  ==
+[2025-06-09 11:01:20] 	- Loading 28 images from '/home/promise/NAS/MATERIA_OSCURA/PROYECTOS_INVESTIGACION/2025-Direct_AC/001-Dataset/002-PET_NAC_AC/fold1' ...
+[2025-06-09 11:01:23] 	- Could only load 28 images. Detected 0 outlier(s)
+[2025-06-09 11:01:24] 	- Pixels value range: [0.0, 0.22]
+[2025-06-09 11:01:24] Train inputs shape: (448, 1, 8, 128, 128)
+[2025-06-09 11:01:24] Train targets shape: (448, 1, 8, 128, 128)
+[2025-06-09 11:01:24] Training loader generated. Batch size: 8
+[2025-06-09 11:01:24] == Train set loader ==
+[2025-06-09 11:01:25] Common batch shape (num_batches / batch_size, channels, depth / num_layers, height, width):
+[2025-06-09 11:01:25]  - Inputs: torch.Size([8, 1, 8, 128, 128])
+[2025-06-09 11:01:25]  - Targets: torch.Size([8, 1, 8, 128, 128])
+[2025-06-09 11:01:25] All batches have the same size
+[2025-06-09 11:01:25] Loading test data for validation...
+[2025-06-09 11:01:25]  ==  Loading test images set  ==
+[2025-06-09 11:01:25] 	- Loading 8 images from '/home/promise/NAS/MATERIA_OSCURA/PROYECTOS_INVESTIGACION/2025-Direct_AC/001-Dataset/002-PET_NAC_AC/fold1' ...
+[2025-06-09 11:01:25] 	- Could only load 6 images. Detected 2 outlier(s)
+[2025-06-09 11:01:25] 	- Pixels value range: [0.0, 0.23]
+[2025-06-09 11:01:25] Splitting test set in half, the second half will be used for validation...
+[2025-06-09 11:01:25] Validation inputs shape: (48, 1, 8, 128, 128)
+[2025-06-09 11:01:25] Validation targets shape: (48, 1, 8, 128, 128)
+[2025-06-09 11:01:25] Validation loader generated. Batch size: 8
+[2025-06-09 11:01:25] == Validation set loader ==
+[2025-06-09 11:01:26] Common batch shape (num_batches / batch_size, channels, depth / num_layers, height, width):
+[2025-06-09 11:01:26]  - Inputs: torch.Size([8, 1, 8, 128, 128])
+[2025-06-09 11:01:26]  - Targets: torch.Size([8, 1, 8, 128, 128])
+[2025-06-09 11:01:26] All batches have the same size
+[2025-06-09 11:02:05] Configuration saved to: '/home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/vit_pruebas_2/config/data_config.json'...
+[2025-06-09 11:02:05] Configuration saved to: '/home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/vit_pruebas_2/config/model_config.json'...
+[2025-06-09 11:02:05] Loading training data...
+[2025-06-09 11:02:05]  ==  Loading train images set  ==
+[2025-06-09 11:02:06] 	- Loading 28 images from '/home/promise/NAS/MATERIA_OSCURA/PROYECTOS_INVESTIGACION/2025-Direct_AC/001-Dataset/002-PET_NAC_AC/fold1' ...
+[2025-06-09 11:02:08] 	- Could only load 28 images. Detected 0 outlier(s)
+[2025-06-09 11:02:09] 	- Pixels value range: [0.0, 0.22]
+[2025-06-09 11:02:09] Train inputs shape: (448, 1, 8, 128, 128)
+[2025-06-09 11:02:09] Train targets shape: (448, 1, 8, 128, 128)
+[2025-06-09 11:02:09] Training loader generated. Batch size: 8
+[2025-06-09 11:02:09] == Train set loader ==
+[2025-06-09 11:02:10] Common batch shape (num_batches / batch_size, channels, depth / num_layers, height, width):
+[2025-06-09 11:02:10]  - Inputs: torch.Size([8, 1, 8, 128, 128])
+[2025-06-09 11:02:10]  - Targets: torch.Size([8, 1, 8, 128, 128])
+[2025-06-09 11:02:10] All batches have the same size
+[2025-06-09 11:02:10] Loading test data for validation...
+[2025-06-09 11:02:10]  ==  Loading test images set  ==
+[2025-06-09 11:02:10] 	- Loading 8 images from '/home/promise/NAS/MATERIA_OSCURA/PROYECTOS_INVESTIGACION/2025-Direct_AC/001-Dataset/002-PET_NAC_AC/fold1' ...
+[2025-06-09 11:02:10] 	- Could only load 6 images. Detected 2 outlier(s)
+[2025-06-09 11:02:10] 	- Pixels value range: [0.0, 0.23]
+[2025-06-09 11:02:10] Splitting test set in half, the second half will be used for validation...
+[2025-06-09 11:02:10] Validation inputs shape: (48, 1, 8, 128, 128)
+[2025-06-09 11:02:10] Validation targets shape: (48, 1, 8, 128, 128)
+[2025-06-09 11:02:10] Validation loader generated. Batch size: 8
+[2025-06-09 11:02:10] == Validation set loader ==
+[2025-06-09 11:02:11] Common batch shape (num_batches / batch_size, channels, depth / num_layers, height, width):
+[2025-06-09 11:02:11]  - Inputs: torch.Size([8, 1, 8, 128, 128])
+[2025-06-09 11:02:11]  - Targets: torch.Size([8, 1, 8, 128, 128])
+[2025-06-09 11:02:11] All batches have the same size
+[2025-06-09 11:02:30] Configuration saved to: '/home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/vit_pruebas_2/config/data_config.json'...
+[2025-06-09 11:02:30] Configuration saved to: '/home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/vit_pruebas_2/config/model_config.json'...
+[2025-06-09 11:02:30] Loading training data...
+[2025-06-09 11:02:30]  ==  Loading train images set  ==
+[2025-06-09 11:02:30] 	- Loading 28 images from '/home/promise/NAS/MATERIA_OSCURA/PROYECTOS_INVESTIGACION/2025-Direct_AC/001-Dataset/002-PET_NAC_AC/fold1' ...
+[2025-06-09 11:02:33] 	- Could only load 28 images. Detected 0 outlier(s)
+[2025-06-09 11:02:33] 	- Pixels value range: [0.0, 0.22]
+[2025-06-09 11:02:33] Train inputs shape: (448, 1, 8, 128, 128)
+[2025-06-09 11:02:33] Train targets shape: (448, 1, 8, 128, 128)
+[2025-06-09 11:02:33] Training loader generated. Batch size: 8
+[2025-06-09 11:02:33] == Train set loader ==
+[2025-06-09 11:02:34] Common batch shape (num_batches / batch_size, channels, depth / num_layers, height, width):
+[2025-06-09 11:02:34]  - Inputs: torch.Size([8, 1, 8, 128, 128])
+[2025-06-09 11:02:34]  - Targets: torch.Size([8, 1, 8, 128, 128])
+[2025-06-09 11:02:34] All batches have the same size
+[2025-06-09 11:02:34] Loading test data for validation...
+[2025-06-09 11:02:34]  ==  Loading test images set  ==
+[2025-06-09 11:02:34] 	- Loading 8 images from '/home/promise/NAS/MATERIA_OSCURA/PROYECTOS_INVESTIGACION/2025-Direct_AC/001-Dataset/002-PET_NAC_AC/fold1' ...
+[2025-06-09 11:02:35] 	- Could only load 6 images. Detected 2 outlier(s)
+[2025-06-09 11:02:35] 	- Pixels value range: [0.0, 0.23]
+[2025-06-09 11:02:35] Splitting test set in half, the second half will be used for validation...
+[2025-06-09 11:02:35] Validation inputs shape: (48, 1, 8, 128, 128)
+[2025-06-09 11:02:35] Validation targets shape: (48, 1, 8, 128, 128)
+[2025-06-09 11:02:35] Validation loader generated. Batch size: 8
+[2025-06-09 11:02:35] == Validation set loader ==
+[2025-06-09 11:02:36] Common batch shape (num_batches / batch_size, channels, depth / num_layers, height, width):
+[2025-06-09 11:02:36]  - Inputs: torch.Size([8, 1, 8, 128, 128])
+[2025-06-09 11:02:36]  - Targets: torch.Size([8, 1, 8, 128, 128])
+[2025-06-09 11:02:36] All batches have the same size
+[2025-06-09 11:04:49] Configuration saved to: '/home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/vit_pruebas_2/config/data_config.json'...
+[2025-06-09 11:04:49] Configuration saved to: '/home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/vit_pruebas_2/config/model_config.json'...
+[2025-06-09 11:04:49] Loading training data...
+[2025-06-09 11:04:49]  ==  Loading train images set  ==
+[2025-06-09 11:04:49] 	- Loading 28 images from '/home/promise/NAS/MATERIA_OSCURA/PROYECTOS_INVESTIGACION/2025-Direct_AC/001-Dataset/002-PET_NAC_AC/fold1' ...
+[2025-06-09 11:04:52] 	- Could only load 28 images. Detected 0 outlier(s)
+[2025-06-09 11:04:52] 	- Pixels value range: [0.0, 0.22]
+[2025-06-09 11:04:53] Train inputs shape: (448, 1, 8, 128, 128)
+[2025-06-09 11:04:53] Train targets shape: (448, 1, 8, 128, 128)
+[2025-06-09 11:04:53] Training loader generated. Batch size: 8
+[2025-06-09 11:04:53] == Train set loader ==
+[2025-06-09 11:04:53] Common batch shape (num_batches / batch_size, channels, depth / num_layers, height, width):
+[2025-06-09 11:04:53]  - Inputs: torch.Size([8, 1, 8, 128, 128])
+[2025-06-09 11:04:53]  - Targets: torch.Size([8, 1, 8, 128, 128])
+[2025-06-09 11:04:53] All batches have the same size
+[2025-06-09 11:04:53] Loading test data for validation...
+[2025-06-09 11:04:53]  ==  Loading test images set  ==
+[2025-06-09 11:04:53] 	- Loading 8 images from '/home/promise/NAS/MATERIA_OSCURA/PROYECTOS_INVESTIGACION/2025-Direct_AC/001-Dataset/002-PET_NAC_AC/fold1' ...
+[2025-06-09 11:04:54] 	- Could only load 6 images. Detected 2 outlier(s)
+[2025-06-09 11:04:54] 	- Pixels value range: [0.0, 0.23]
+[2025-06-09 11:04:54] Splitting test set in half, the second half will be used for validation...
+[2025-06-09 11:04:54] Validation inputs shape: (48, 1, 8, 128, 128)
+[2025-06-09 11:04:54] Validation targets shape: (48, 1, 8, 128, 128)
+[2025-06-09 11:04:54] Validation loader generated. Batch size: 8
+[2025-06-09 11:04:54] == Validation set loader ==
+[2025-06-09 11:04:55] Common batch shape (num_batches / batch_size, channels, depth / num_layers, height, width):
+[2025-06-09 11:04:55]  - Inputs: torch.Size([8, 1, 8, 128, 128])
+[2025-06-09 11:04:55]  - Targets: torch.Size([8, 1, 8, 128, 128])
+[2025-06-09 11:04:55] All batches have the same size
+[2025-06-09 12:22:48] Configuration saved to: '/home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/vit_pruebas_2/config/data_config.json'...
+[2025-06-09 12:22:48] Configuration saved to: '/home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/vit_pruebas_2/config/model_config.json'...
+[2025-06-09 12:22:48] Loading test data...
+[2025-06-09 12:22:48]  ==  Loading test images set  ==
+[2025-06-09 12:22:49] 	- Loading 8 images from '/home/promise/NAS/MATERIA_OSCURA/PROYECTOS_INVESTIGACION/2025-Direct_AC/001-Dataset/002-PET_NAC_AC/fold1' ...
+[2025-06-09 12:22:49] 	- Could only load 6 images. Detected 2 outlier(s)
+[2025-06-09 12:22:49] 	- Pixels value range: [0.0, 0.23]
+[2025-06-09 12:22:49] Using first half of test set for testing...
+[2025-06-09 12:22:49] Test inputs shape: (48, 1, 8, 128, 128)
+[2025-06-09 12:22:49] Test targets shape: (48, 1, 8, 128, 128)
+[2025-06-09 12:22:49] Test loader generated. Batch size: 8
+[2025-06-09 12:22:49] == Test set loader ==
+[2025-06-09 12:22:50] Common batch shape (num_batches / batch_size, channels, depth / num_layers, height, width):
+[2025-06-09 12:22:50]  - Inputs: torch.Size([8, 1, 8, 128, 128])
+[2025-06-09 12:22:50]  - Targets: torch.Size([8, 1, 8, 128, 128])
+[2025-06-09 12:22:50] All batches have the same size

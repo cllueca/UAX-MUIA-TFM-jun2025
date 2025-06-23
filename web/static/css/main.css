@@ -1,0 +1,272 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --input-bg: #f3f3f3;
+  --button-bg: #222222;
+  --button-text: #ffffff;
+  --link-color: #4444cc;
+  --border-color: #cccccc;
+}
+
+.dark-theme {
+  --bg-color: #121212;
+  --text-color: #f0f0f0;
+  --input-bg: #2c2c2c;
+  --button-bg: #ffffff;
+  --button-text: #000000;
+  --link-color: #66aaff;
+  --border-color: #444444;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-color);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.theme-toggle {
+  margin-top: 30px;
+  margin-left: 30px;
+  background: transparent;
+  border: 1px solid var(--border-color);
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  color: var(--text-color);
+}
+
+.menu li span {
+  margin-right: 10px;
+}
+
+.menu li.active {
+  background-color: #a7e2da;
+  color: black;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Lista pacientes */
+/* .pacientes-lista {
+  flex: 1;
+} */
+
+/* .search-bar {
+ display: flex;
+  align-items: center;
+  background-color: var(--input-bg);
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+} */
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  outline: none;
+  flex: 1;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.icon {
+  color: var(--text-color);
+}
+
+/* Paciente activo */
+.paciente-activo {
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
+
+.paciente-activo .descripcion {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+/* Lista de nombres */
+.pacientes {
+  list-style: none;
+  color: var(--text-color);
+}
+
+/* .pacientes li {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  color: var(--text-color);
+} */
+
+.pacientes li:hover {
+  background-color: var(--input-bg);
+}
+
+
+.pacientes li.active {
+  background-color: #a7e2da;
+  color: black;
+}
+
+/* Detalle paciente */
+.detalle-paciente {
+  display: none; /* Oculto por defecto */
+  width: 280px;
+  margin-top: 100px;
+  background: var(--bg-color);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+}
+
+.detalle-paciente .info-box {
+  background-color: var(--input-bg);
+  padding: 30px;
+  margin: 15px 0;
+  border-radius: 8px;
+  min-height: 100px;
+  color: var(--text-color);
+}
+
+.ver-mas {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.ver-mas:hover {
+  background-color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Container style for the pacientes list */
+.pacientes-lista {
+  border: 1.5px solid var(--border-color);
+  border-radius: 12px;
+  padding: 10px;
+  margin-top: 4px; /* Reduced margin for closer placement */
+  max-height: calc(5 * 48px + 20px); /* approx 5 items with padding */
+  overflow-y: auto;
+  background-color: var(--bg-color);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  width: 100%; /* full width of parent */
+  box-sizing: border-box;
+}
+
+/* Scrollbar styling for modern browsers */
+.pacientes-lista::-webkit-scrollbar {
+  width: 8px;
+}
+.pacientes-lista::-webkit-scrollbar-thumb {
+  background-color: var(--border-color);
+  border-radius: 6px;
+}
+.pacientes-lista::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Adjust list items line height / height */
+.pacientes li {
+  height: 48px;
+  line-height: 48px;
+}
+
+/* Search bar margin adjustment */
+.search-bar {
+  margin-bottom: 12px;
+}
+
+/* Sidebar menu styling */
+.menu {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0; /* Remove bottom margin for no extra space */
+}
+.menu > li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  color: var(--text-color);
+  user-select: none;
+}
+.menu > li span {
+  margin-right: 10px;
+}
+.menu > li.active {
+  background-color: #a7e2da;
+  color: black;
+}

@@ -1,0 +1,1408 @@
+# Training Log
+# Format: [timestamp] epoch/total_epochs - time - metrics
+
+[2025-06-09 10:16:10] LogFileLogger(filepath=/home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/logs/model_train.log, flush_interval=1)
+[2025-06-09 10:16:10] ModelCheckpoint(filepath=/home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth, monitor=val_loss, verbose=True, save_best_only='True', mode=min, save_method=complete)
+[2025-06-09 10:16:10] ReduceLROnPlateau(optimizer=Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    decoupled_weight_decay: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.0001
+    maximize: False
+    weight_decay: 0
+), mode=min, factor=0.1, patience='5', verbose=False, min_lr=1e-12)
+[2025-06-09 10:16:10] EarlyStopping(patience=20, verbose=False, delta=0.0, filepath='/home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt', restore_best_weights=False)
+[2025-06-09 10:16:10] CSVLogger(filepath=/home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/logs/model_train.csv)
+[2025-06-09 10:16:10] Starting training with 200 epochs
+[2025-06-09 10:16:10] Model: attention1
+[2025-06-09 10:16:10] Device: cuda
+[2025-06-09 10:16:10] Training samples: 448
+[2025-06-09 10:16:10] Validation samples: 48
+[2025-06-09 10:16:10] ----------------------------------------------------------------------------------------------------
+[2025-06-09 10:16:10] Batch 1/56 of Epoch 1/200 - loss: 0.4492 - mae: 0.4492 - lr: 0.000100
+[2025-06-09 10:16:12] Batch 11/56 of Epoch 1/200 - loss: 0.3647 - mae: 0.3647 - lr: 0.000100
+[2025-06-09 10:16:14] Batch 21/56 of Epoch 1/200 - loss: 0.3264 - mae: 0.3264 - lr: 0.000100
+[2025-06-09 10:16:16] Batch 31/56 of Epoch 1/200 - loss: 0.3007 - mae: 0.3007 - lr: 0.000100
+[2025-06-09 10:16:18] Batch 41/56 of Epoch 1/200 - loss: 0.2837 - mae: 0.2837 - lr: 0.000100
+[2025-06-09 10:16:20] Batch 51/56 of Epoch 1/200 - loss: 0.2707 - mae: 0.2707 - lr: 0.000100
+[2025-06-09 10:16:21] Batch 56/56 of Epoch 1/200 - loss: 0.2655 - mae: 0.2655 - lr: 0.000100
+[2025-06-09 10:16:22] Epoch 1/200 - 12.70s - loss: 0.2655 - mae: 0.2655 - val_loss: 0.2054 - val_mae: 0.2054 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:16:22] Epoch 1: val_loss improved from inf to 0.20539, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:16:23] Epoch None: Validation loss improved from inf to 0.20539, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:16:24] Batch 1/56 of Epoch 2/200 - loss: 0.2326 - mae: 0.2326 - lr: 0.000100
+[2025-06-09 10:16:26] Batch 11/56 of Epoch 2/200 - loss: 0.2110 - mae: 0.2110 - lr: 0.000100
+[2025-06-09 10:16:28] Batch 21/56 of Epoch 2/200 - loss: 0.2071 - mae: 0.2071 - lr: 0.000100
+[2025-06-09 10:16:30] Batch 31/56 of Epoch 2/200 - loss: 0.2068 - mae: 0.2068 - lr: 0.000100
+[2025-06-09 10:16:32] Batch 41/56 of Epoch 2/200 - loss: 0.2047 - mae: 0.2047 - lr: 0.000100
+[2025-06-09 10:16:34] Batch 51/56 of Epoch 2/200 - loss: 0.2024 - mae: 0.2024 - lr: 0.000100
+[2025-06-09 10:16:36] Batch 56/56 of Epoch 2/200 - loss: 0.2008 - mae: 0.2008 - lr: 0.000100
+[2025-06-09 10:16:36] Epoch 2/200 - 12.70s - loss: 0.2008 - mae: 0.2008 - val_loss: 0.1855 - val_mae: 0.1855 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:16:36] Epoch 2: val_loss improved from 0.20539 to 0.18549, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:16:39] Epoch None: Validation loss improved from 0.20539 to 0.18549, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:16:42] Batch 1/56 of Epoch 3/200 - loss: 0.1726 - mae: 0.1726 - lr: 0.000100
+[2025-06-09 10:16:44] Batch 11/56 of Epoch 3/200 - loss: 0.1821 - mae: 0.1821 - lr: 0.000100
+[2025-06-09 10:16:46] Batch 21/56 of Epoch 3/200 - loss: 0.1796 - mae: 0.1796 - lr: 0.000100
+[2025-06-09 10:16:48] Batch 31/56 of Epoch 3/200 - loss: 0.1787 - mae: 0.1787 - lr: 0.000100
+[2025-06-09 10:16:50] Batch 41/56 of Epoch 3/200 - loss: 0.1762 - mae: 0.1762 - lr: 0.000100
+[2025-06-09 10:16:52] Batch 51/56 of Epoch 3/200 - loss: 0.1745 - mae: 0.1745 - lr: 0.000100
+[2025-06-09 10:16:53] Batch 56/56 of Epoch 3/200 - loss: 0.1733 - mae: 0.1733 - lr: 0.000100
+[2025-06-09 10:16:54] Epoch 3/200 - 12.69s - loss: 0.1733 - mae: 0.1733 - val_loss: 0.1583 - val_mae: 0.1583 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:16:54] Epoch 3: val_loss improved from 0.18549 to 0.15834, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:16:56] Epoch None: Validation loss improved from 0.18549 to 0.15834, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:16:59] Batch 1/56 of Epoch 4/200 - loss: 0.1463 - mae: 0.1463 - lr: 0.000100
+[2025-06-09 10:17:01] Batch 11/56 of Epoch 4/200 - loss: 0.1625 - mae: 0.1625 - lr: 0.000100
+[2025-06-09 10:17:03] Batch 21/56 of Epoch 4/200 - loss: 0.1594 - mae: 0.1594 - lr: 0.000100
+[2025-06-09 10:17:05] Batch 31/56 of Epoch 4/200 - loss: 0.1629 - mae: 0.1629 - lr: 0.000100
+[2025-06-09 10:17:07] Batch 41/56 of Epoch 4/200 - loss: 0.1630 - mae: 0.1630 - lr: 0.000100
+[2025-06-09 10:17:09] Batch 51/56 of Epoch 4/200 - loss: 0.1604 - mae: 0.1604 - lr: 0.000100
+[2025-06-09 10:17:10] Batch 56/56 of Epoch 4/200 - loss: 0.1597 - mae: 0.1597 - lr: 0.000100
+[2025-06-09 10:17:11] Epoch 4/200 - 12.73s - loss: 0.1597 - mae: 0.1597 - val_loss: 0.1501 - val_mae: 0.1501 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:17:11] Epoch 4: val_loss improved from 0.15834 to 0.15006, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:17:13] Epoch None: Validation loss improved from 0.15834 to 0.15006, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:17:16] Batch 1/56 of Epoch 5/200 - loss: 0.1512 - mae: 0.1512 - lr: 0.000100
+[2025-06-09 10:17:18] Batch 11/56 of Epoch 5/200 - loss: 0.1488 - mae: 0.1488 - lr: 0.000100
+[2025-06-09 10:17:20] Batch 21/56 of Epoch 5/200 - loss: 0.1457 - mae: 0.1457 - lr: 0.000100
+[2025-06-09 10:17:22] Batch 31/56 of Epoch 5/200 - loss: 0.1436 - mae: 0.1436 - lr: 0.000100
+[2025-06-09 10:17:24] Batch 41/56 of Epoch 5/200 - loss: 0.1432 - mae: 0.1432 - lr: 0.000100
+[2025-06-09 10:17:26] Batch 51/56 of Epoch 5/200 - loss: 0.1412 - mae: 0.1412 - lr: 0.000100
+[2025-06-09 10:17:28] Batch 56/56 of Epoch 5/200 - loss: 0.1398 - mae: 0.1398 - lr: 0.000100
+[2025-06-09 10:17:28] Epoch 5/200 - 12.70s - loss: 0.1398 - mae: 0.1398 - val_loss: 0.1297 - val_mae: 0.1297 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:17:28] Epoch 5: val_loss improved from 0.15006 to 0.12966, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:17:31] Epoch None: Validation loss improved from 0.15006 to 0.12966, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:17:33] Batch 1/56 of Epoch 6/200 - loss: 0.1422 - mae: 0.1422 - lr: 0.000100
+[2025-06-09 10:17:35] Batch 11/56 of Epoch 6/200 - loss: 0.1309 - mae: 0.1309 - lr: 0.000100
+[2025-06-09 10:17:37] Batch 21/56 of Epoch 6/200 - loss: 0.1278 - mae: 0.1278 - lr: 0.000100
+[2025-06-09 10:17:39] Batch 31/56 of Epoch 6/200 - loss: 0.1268 - mae: 0.1268 - lr: 0.000100
+[2025-06-09 10:17:41] Batch 41/56 of Epoch 6/200 - loss: 0.1251 - mae: 0.1251 - lr: 0.000100
+[2025-06-09 10:17:43] Batch 51/56 of Epoch 6/200 - loss: 0.1237 - mae: 0.1237 - lr: 0.000100
+[2025-06-09 10:17:45] Batch 56/56 of Epoch 6/200 - loss: 0.1238 - mae: 0.1238 - lr: 0.000100
+[2025-06-09 10:17:45] Epoch 6/200 - 12.71s - loss: 0.1238 - mae: 0.1238 - val_loss: 0.1231 - val_mae: 0.1231 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:17:45] Epoch 6: val_loss improved from 0.12966 to 0.12313, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:17:47] Epoch None: Validation loss improved from 0.12966 to 0.12313, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:17:50] Batch 1/56 of Epoch 7/200 - loss: 0.1461 - mae: 0.1461 - lr: 0.000100
+[2025-06-09 10:17:52] Batch 11/56 of Epoch 7/200 - loss: 0.1147 - mae: 0.1147 - lr: 0.000100
+[2025-06-09 10:17:54] Batch 21/56 of Epoch 7/200 - loss: 0.1135 - mae: 0.1135 - lr: 0.000100
+[2025-06-09 10:17:56] Batch 31/56 of Epoch 7/200 - loss: 0.1151 - mae: 0.1151 - lr: 0.000100
+[2025-06-09 10:17:58] Batch 41/56 of Epoch 7/200 - loss: 0.1140 - mae: 0.1140 - lr: 0.000100
+[2025-06-09 10:18:00] Batch 51/56 of Epoch 7/200 - loss: 0.1132 - mae: 0.1132 - lr: 0.000100
+[2025-06-09 10:18:01] Batch 56/56 of Epoch 7/200 - loss: 0.1124 - mae: 0.1124 - lr: 0.000100
+[2025-06-09 10:18:02] Epoch 7/200 - 12.69s - loss: 0.1124 - mae: 0.1124 - val_loss: 0.1047 - val_mae: 0.1047 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:18:02] Epoch 7: val_loss improved from 0.12313 to 0.10466, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:18:04] Epoch None: Validation loss improved from 0.12313 to 0.10466, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:18:07] Batch 1/56 of Epoch 8/200 - loss: 0.0998 - mae: 0.0998 - lr: 0.000100
+[2025-06-09 10:18:09] Batch 11/56 of Epoch 8/200 - loss: 0.1027 - mae: 0.1027 - lr: 0.000100
+[2025-06-09 10:18:11] Batch 21/56 of Epoch 8/200 - loss: 0.1029 - mae: 0.1029 - lr: 0.000100
+[2025-06-09 10:18:13] Batch 31/56 of Epoch 8/200 - loss: 0.1019 - mae: 0.1019 - lr: 0.000100
+[2025-06-09 10:18:15] Batch 41/56 of Epoch 8/200 - loss: 0.1012 - mae: 0.1012 - lr: 0.000100
+[2025-06-09 10:18:17] Batch 51/56 of Epoch 8/200 - loss: 0.1004 - mae: 0.1004 - lr: 0.000100
+[2025-06-09 10:18:18] Batch 56/56 of Epoch 8/200 - loss: 0.1003 - mae: 0.1003 - lr: 0.000100
+[2025-06-09 10:18:19] Epoch 8/200 - 12.69s - loss: 0.1003 - mae: 0.1003 - val_loss: 0.0907 - val_mae: 0.0907 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:18:19] Epoch 8: val_loss improved from 0.10466 to 0.09068, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:18:21] Epoch None: Validation loss improved from 0.10466 to 0.09068, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:18:24] Batch 1/56 of Epoch 9/200 - loss: 0.1127 - mae: 0.1127 - lr: 0.000100
+[2025-06-09 10:18:26] Batch 11/56 of Epoch 9/200 - loss: 0.0930 - mae: 0.0930 - lr: 0.000100
+[2025-06-09 10:18:28] Batch 21/56 of Epoch 9/200 - loss: 0.0919 - mae: 0.0919 - lr: 0.000100
+[2025-06-09 10:18:30] Batch 31/56 of Epoch 9/200 - loss: 0.0910 - mae: 0.0910 - lr: 0.000100
+[2025-06-09 10:18:32] Batch 41/56 of Epoch 9/200 - loss: 0.0904 - mae: 0.0904 - lr: 0.000100
+[2025-06-09 10:18:34] Batch 51/56 of Epoch 9/200 - loss: 0.0900 - mae: 0.0900 - lr: 0.000100
+[2025-06-09 10:18:35] Batch 56/56 of Epoch 9/200 - loss: 0.0897 - mae: 0.0897 - lr: 0.000100
+[2025-06-09 10:18:36] Epoch 9/200 - 12.71s - loss: 0.0897 - mae: 0.0897 - val_loss: 0.0951 - val_mae: 0.0951 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:18:36] EarlyStopping counter: 1 out of 20
+[2025-06-09 10:18:36] Batch 1/56 of Epoch 10/200 - loss: 0.0823 - mae: 0.0823 - lr: 0.000100
+[2025-06-09 10:18:38] Batch 11/56 of Epoch 10/200 - loss: 0.0830 - mae: 0.0830 - lr: 0.000100
+[2025-06-09 10:18:40] Batch 21/56 of Epoch 10/200 - loss: 0.0825 - mae: 0.0825 - lr: 0.000100
+[2025-06-09 10:18:42] Batch 31/56 of Epoch 10/200 - loss: 0.0825 - mae: 0.0825 - lr: 0.000100
+[2025-06-09 10:18:45] Batch 41/56 of Epoch 10/200 - loss: 0.0814 - mae: 0.0814 - lr: 0.000100
+[2025-06-09 10:18:47] Batch 51/56 of Epoch 10/200 - loss: 0.0808 - mae: 0.0808 - lr: 0.000100
+[2025-06-09 10:18:48] Batch 56/56 of Epoch 10/200 - loss: 0.0807 - mae: 0.0807 - lr: 0.000100
+[2025-06-09 10:18:48] Epoch 10/200 - 12.70s - loss: 0.0807 - mae: 0.0807 - val_loss: 0.0870 - val_mae: 0.0870 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:18:48] Epoch 10: val_loss improved from 0.09068 to 0.08704, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:18:51] Epoch None: Validation loss improved from 0.09068 to 0.08704, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:18:54] Batch 1/56 of Epoch 11/200 - loss: 0.0822 - mae: 0.0822 - lr: 0.000100
+[2025-06-09 10:18:56] Batch 11/56 of Epoch 11/200 - loss: 0.0788 - mae: 0.0788 - lr: 0.000100
+[2025-06-09 10:18:58] Batch 21/56 of Epoch 11/200 - loss: 0.0772 - mae: 0.0772 - lr: 0.000100
+[2025-06-09 10:19:00] Batch 31/56 of Epoch 11/200 - loss: 0.0771 - mae: 0.0771 - lr: 0.000100
+[2025-06-09 10:19:02] Batch 41/56 of Epoch 11/200 - loss: 0.0786 - mae: 0.0786 - lr: 0.000100
+[2025-06-09 10:19:04] Batch 51/56 of Epoch 11/200 - loss: 0.0785 - mae: 0.0785 - lr: 0.000100
+[2025-06-09 10:19:05] Batch 56/56 of Epoch 11/200 - loss: 0.0779 - mae: 0.0779 - lr: 0.000100
+[2025-06-09 10:19:06] Epoch 11/200 - 12.67s - loss: 0.0779 - mae: 0.0779 - val_loss: 0.0775 - val_mae: 0.0775 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:19:06] Epoch 11: val_loss improved from 0.08704 to 0.07749, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:19:08] Epoch None: Validation loss improved from 0.08704 to 0.07749, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:19:11] Batch 1/56 of Epoch 12/200 - loss: 0.0795 - mae: 0.0795 - lr: 0.000100
+[2025-06-09 10:19:13] Batch 11/56 of Epoch 12/200 - loss: 0.0735 - mae: 0.0735 - lr: 0.000100
+[2025-06-09 10:19:15] Batch 21/56 of Epoch 12/200 - loss: 0.0722 - mae: 0.0722 - lr: 0.000100
+[2025-06-09 10:19:17] Batch 31/56 of Epoch 12/200 - loss: 0.0714 - mae: 0.0714 - lr: 0.000100
+[2025-06-09 10:19:19] Batch 41/56 of Epoch 12/200 - loss: 0.0706 - mae: 0.0706 - lr: 0.000100
+[2025-06-09 10:19:21] Batch 51/56 of Epoch 12/200 - loss: 0.0696 - mae: 0.0696 - lr: 0.000100
+[2025-06-09 10:19:22] Batch 56/56 of Epoch 12/200 - loss: 0.0690 - mae: 0.0690 - lr: 0.000100
+[2025-06-09 10:19:23] Epoch 12/200 - 12.68s - loss: 0.0690 - mae: 0.0690 - val_loss: 0.0635 - val_mae: 0.0635 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:19:23] Epoch 12: val_loss improved from 0.07749 to 0.06347, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:19:25] Epoch None: Validation loss improved from 0.07749 to 0.06347, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:19:28] Batch 1/56 of Epoch 13/200 - loss: 0.0723 - mae: 0.0723 - lr: 0.000100
+[2025-06-09 10:19:30] Batch 11/56 of Epoch 13/200 - loss: 0.0657 - mae: 0.0657 - lr: 0.000100
+[2025-06-09 10:19:32] Batch 21/56 of Epoch 13/200 - loss: 0.0640 - mae: 0.0640 - lr: 0.000100
+[2025-06-09 10:19:34] Batch 31/56 of Epoch 13/200 - loss: 0.0637 - mae: 0.0637 - lr: 0.000100
+[2025-06-09 10:19:36] Batch 41/56 of Epoch 13/200 - loss: 0.0627 - mae: 0.0627 - lr: 0.000100
+[2025-06-09 10:19:38] Batch 51/56 of Epoch 13/200 - loss: 0.0627 - mae: 0.0627 - lr: 0.000100
+[2025-06-09 10:19:39] Batch 56/56 of Epoch 13/200 - loss: 0.0623 - mae: 0.0623 - lr: 0.000100
+[2025-06-09 10:19:40] Epoch 13/200 - 12.74s - loss: 0.0623 - mae: 0.0623 - val_loss: 0.0616 - val_mae: 0.0616 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:19:40] Epoch 13: val_loss improved from 0.06347 to 0.06156, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:19:42] Epoch None: Validation loss improved from 0.06347 to 0.06156, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:19:45] Batch 1/56 of Epoch 14/200 - loss: 0.0554 - mae: 0.0554 - lr: 0.000100
+[2025-06-09 10:19:47] Batch 11/56 of Epoch 14/200 - loss: 0.0572 - mae: 0.0572 - lr: 0.000100
+[2025-06-09 10:19:49] Batch 21/56 of Epoch 14/200 - loss: 0.0572 - mae: 0.0572 - lr: 0.000100
+[2025-06-09 10:19:51] Batch 31/56 of Epoch 14/200 - loss: 0.0565 - mae: 0.0565 - lr: 0.000100
+[2025-06-09 10:19:53] Batch 41/56 of Epoch 14/200 - loss: 0.0568 - mae: 0.0568 - lr: 0.000100
+[2025-06-09 10:19:55] Batch 51/56 of Epoch 14/200 - loss: 0.0567 - mae: 0.0567 - lr: 0.000100
+[2025-06-09 10:19:56] Batch 56/56 of Epoch 14/200 - loss: 0.0563 - mae: 0.0563 - lr: 0.000100
+[2025-06-09 10:19:57] Epoch 14/200 - 12.71s - loss: 0.0563 - mae: 0.0563 - val_loss: 0.0524 - val_mae: 0.0524 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:19:57] Epoch 14: val_loss improved from 0.06156 to 0.05245, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:19:59] Epoch None: Validation loss improved from 0.06156 to 0.05245, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:20:02] Batch 1/56 of Epoch 15/200 - loss: 0.0554 - mae: 0.0554 - lr: 0.000100
+[2025-06-09 10:20:04] Batch 11/56 of Epoch 15/200 - loss: 0.0538 - mae: 0.0538 - lr: 0.000100
+[2025-06-09 10:20:06] Batch 21/56 of Epoch 15/200 - loss: 0.0542 - mae: 0.0542 - lr: 0.000100
+[2025-06-09 10:20:08] Batch 31/56 of Epoch 15/200 - loss: 0.0538 - mae: 0.0538 - lr: 0.000100
+[2025-06-09 10:20:10] Batch 41/56 of Epoch 15/200 - loss: 0.0526 - mae: 0.0526 - lr: 0.000100
+[2025-06-09 10:20:12] Batch 51/56 of Epoch 15/200 - loss: 0.0530 - mae: 0.0530 - lr: 0.000100
+[2025-06-09 10:20:13] Batch 56/56 of Epoch 15/200 - loss: 0.0527 - mae: 0.0527 - lr: 0.000100
+[2025-06-09 10:20:14] Epoch 15/200 - 12.74s - loss: 0.0527 - mae: 0.0527 - val_loss: 0.0548 - val_mae: 0.0548 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:20:14] EarlyStopping counter: 1 out of 20
+[2025-06-09 10:20:15] Batch 1/56 of Epoch 16/200 - loss: 0.0510 - mae: 0.0510 - lr: 0.000100
+[2025-06-09 10:20:17] Batch 11/56 of Epoch 16/200 - loss: 0.0503 - mae: 0.0503 - lr: 0.000100
+[2025-06-09 10:20:19] Batch 21/56 of Epoch 16/200 - loss: 0.0505 - mae: 0.0505 - lr: 0.000100
+[2025-06-09 10:20:21] Batch 31/56 of Epoch 16/200 - loss: 0.0508 - mae: 0.0508 - lr: 0.000100
+[2025-06-09 10:20:23] Batch 41/56 of Epoch 16/200 - loss: 0.0505 - mae: 0.0505 - lr: 0.000100
+[2025-06-09 10:20:25] Batch 51/56 of Epoch 16/200 - loss: 0.0501 - mae: 0.0501 - lr: 0.000100
+[2025-06-09 10:20:26] Batch 56/56 of Epoch 16/200 - loss: 0.0498 - mae: 0.0498 - lr: 0.000100
+[2025-06-09 10:20:27] Epoch 16/200 - 12.68s - loss: 0.0498 - mae: 0.0498 - val_loss: 0.0505 - val_mae: 0.0505 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:20:27] Epoch 16: val_loss improved from 0.05245 to 0.05050, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:20:29] Epoch None: Validation loss improved from 0.05245 to 0.05050, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:20:33] Batch 1/56 of Epoch 17/200 - loss: 0.0611 - mae: 0.0611 - lr: 0.000100
+[2025-06-09 10:20:35] Batch 11/56 of Epoch 17/200 - loss: 0.0475 - mae: 0.0475 - lr: 0.000100
+[2025-06-09 10:20:37] Batch 21/56 of Epoch 17/200 - loss: 0.0468 - mae: 0.0468 - lr: 0.000100
+[2025-06-09 10:20:39] Batch 31/56 of Epoch 17/200 - loss: 0.0460 - mae: 0.0460 - lr: 0.000100
+[2025-06-09 10:20:41] Batch 41/56 of Epoch 17/200 - loss: 0.0452 - mae: 0.0452 - lr: 0.000100
+[2025-06-09 10:20:43] Batch 51/56 of Epoch 17/200 - loss: 0.0448 - mae: 0.0448 - lr: 0.000100
+[2025-06-09 10:20:44] Batch 56/56 of Epoch 17/200 - loss: 0.0445 - mae: 0.0445 - lr: 0.000100
+[2025-06-09 10:20:45] Epoch 17/200 - 12.71s - loss: 0.0445 - mae: 0.0445 - val_loss: 0.0430 - val_mae: 0.0430 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:20:45] Epoch 17: val_loss improved from 0.05050 to 0.04304, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:20:47] Epoch None: Validation loss improved from 0.05050 to 0.04304, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:20:50] Batch 1/56 of Epoch 18/200 - loss: 0.0474 - mae: 0.0474 - lr: 0.000100
+[2025-06-09 10:20:52] Batch 11/56 of Epoch 18/200 - loss: 0.0442 - mae: 0.0442 - lr: 0.000100
+[2025-06-09 10:20:54] Batch 21/56 of Epoch 18/200 - loss: 0.0445 - mae: 0.0445 - lr: 0.000100
+[2025-06-09 10:20:56] Batch 31/56 of Epoch 18/200 - loss: 0.0435 - mae: 0.0435 - lr: 0.000100
+[2025-06-09 10:20:58] Batch 41/56 of Epoch 18/200 - loss: 0.0429 - mae: 0.0429 - lr: 0.000100
+[2025-06-09 10:21:00] Batch 51/56 of Epoch 18/200 - loss: 0.0429 - mae: 0.0429 - lr: 0.000100
+[2025-06-09 10:21:01] Batch 56/56 of Epoch 18/200 - loss: 0.0425 - mae: 0.0425 - lr: 0.000100
+[2025-06-09 10:21:02] Epoch 18/200 - 12.71s - loss: 0.0425 - mae: 0.0425 - val_loss: 0.0442 - val_mae: 0.0442 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:21:02] EarlyStopping counter: 1 out of 20
+[2025-06-09 10:21:02] Batch 1/56 of Epoch 19/200 - loss: 0.0439 - mae: 0.0439 - lr: 0.000100
+[2025-06-09 10:21:04] Batch 11/56 of Epoch 19/200 - loss: 0.0404 - mae: 0.0404 - lr: 0.000100
+[2025-06-09 10:21:06] Batch 21/56 of Epoch 19/200 - loss: 0.0396 - mae: 0.0396 - lr: 0.000100
+[2025-06-09 10:21:09] Batch 31/56 of Epoch 19/200 - loss: 0.0385 - mae: 0.0385 - lr: 0.000100
+[2025-06-09 10:21:11] Batch 41/56 of Epoch 19/200 - loss: 0.0392 - mae: 0.0392 - lr: 0.000100
+[2025-06-09 10:21:13] Batch 51/56 of Epoch 19/200 - loss: 0.0388 - mae: 0.0388 - lr: 0.000100
+[2025-06-09 10:21:14] Batch 56/56 of Epoch 19/200 - loss: 0.0387 - mae: 0.0387 - lr: 0.000100
+[2025-06-09 10:21:15] Epoch 19/200 - 12.67s - loss: 0.0387 - mae: 0.0387 - val_loss: 0.0414 - val_mae: 0.0414 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:21:15] Epoch 19: val_loss improved from 0.04304 to 0.04142, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:21:17] Epoch None: Validation loss improved from 0.04304 to 0.04142, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:21:19] Batch 1/56 of Epoch 20/200 - loss: 0.0348 - mae: 0.0348 - lr: 0.000100
+[2025-06-09 10:21:21] Batch 11/56 of Epoch 20/200 - loss: 0.0386 - mae: 0.0386 - lr: 0.000100
+[2025-06-09 10:21:24] Batch 21/56 of Epoch 20/200 - loss: 0.0375 - mae: 0.0375 - lr: 0.000100
+[2025-06-09 10:21:26] Batch 31/56 of Epoch 20/200 - loss: 0.0389 - mae: 0.0389 - lr: 0.000100
+[2025-06-09 10:21:28] Batch 41/56 of Epoch 20/200 - loss: 0.0382 - mae: 0.0382 - lr: 0.000100
+[2025-06-09 10:21:30] Batch 51/56 of Epoch 20/200 - loss: 0.0374 - mae: 0.0374 - lr: 0.000100
+[2025-06-09 10:21:31] Batch 56/56 of Epoch 20/200 - loss: 0.0373 - mae: 0.0373 - lr: 0.000100
+[2025-06-09 10:21:32] Epoch 20/200 - 12.72s - loss: 0.0373 - mae: 0.0373 - val_loss: 0.0402 - val_mae: 0.0402 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:21:32] Epoch 20: val_loss improved from 0.04142 to 0.04020, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:21:34] Epoch None: Validation loss improved from 0.04142 to 0.04020, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:21:37] Batch 1/56 of Epoch 21/200 - loss: 0.0330 - mae: 0.0330 - lr: 0.000100
+[2025-06-09 10:21:39] Batch 11/56 of Epoch 21/200 - loss: 0.0328 - mae: 0.0328 - lr: 0.000100
+[2025-06-09 10:21:41] Batch 21/56 of Epoch 21/200 - loss: 0.0332 - mae: 0.0332 - lr: 0.000100
+[2025-06-09 10:21:43] Batch 31/56 of Epoch 21/200 - loss: 0.0335 - mae: 0.0335 - lr: 0.000100
+[2025-06-09 10:21:45] Batch 41/56 of Epoch 21/200 - loss: 0.0339 - mae: 0.0339 - lr: 0.000100
+[2025-06-09 10:21:47] Batch 51/56 of Epoch 21/200 - loss: 0.0337 - mae: 0.0337 - lr: 0.000100
+[2025-06-09 10:21:48] Batch 56/56 of Epoch 21/200 - loss: 0.0334 - mae: 0.0334 - lr: 0.000100
+[2025-06-09 10:21:49] Epoch 21/200 - 12.73s - loss: 0.0334 - mae: 0.0334 - val_loss: 0.0350 - val_mae: 0.0350 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:21:49] Epoch 21: val_loss improved from 0.04020 to 0.03497, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:21:51] Epoch None: Validation loss improved from 0.04020 to 0.03497, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:21:54] Batch 1/56 of Epoch 22/200 - loss: 0.0311 - mae: 0.0311 - lr: 0.000100
+[2025-06-09 10:21:56] Batch 11/56 of Epoch 22/200 - loss: 0.0315 - mae: 0.0315 - lr: 0.000100
+[2025-06-09 10:21:58] Batch 21/56 of Epoch 22/200 - loss: 0.0316 - mae: 0.0316 - lr: 0.000100
+[2025-06-09 10:22:00] Batch 31/56 of Epoch 22/200 - loss: 0.0310 - mae: 0.0310 - lr: 0.000100
+[2025-06-09 10:22:02] Batch 41/56 of Epoch 22/200 - loss: 0.0316 - mae: 0.0316 - lr: 0.000100
+[2025-06-09 10:22:04] Batch 51/56 of Epoch 22/200 - loss: 0.0321 - mae: 0.0321 - lr: 0.000100
+[2025-06-09 10:22:05] Batch 56/56 of Epoch 22/200 - loss: 0.0319 - mae: 0.0319 - lr: 0.000100
+[2025-06-09 10:22:06] Epoch 22/200 - 12.72s - loss: 0.0319 - mae: 0.0319 - val_loss: 0.0352 - val_mae: 0.0352 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:22:06] EarlyStopping counter: 1 out of 20
+[2025-06-09 10:22:07] Batch 1/56 of Epoch 23/200 - loss: 0.0276 - mae: 0.0276 - lr: 0.000100
+[2025-06-09 10:22:09] Batch 11/56 of Epoch 23/200 - loss: 0.0291 - mae: 0.0291 - lr: 0.000100
+[2025-06-09 10:22:11] Batch 21/56 of Epoch 23/200 - loss: 0.0297 - mae: 0.0297 - lr: 0.000100
+[2025-06-09 10:22:13] Batch 31/56 of Epoch 23/200 - loss: 0.0295 - mae: 0.0295 - lr: 0.000100
+[2025-06-09 10:22:15] Batch 41/56 of Epoch 23/200 - loss: 0.0291 - mae: 0.0291 - lr: 0.000100
+[2025-06-09 10:22:17] Batch 51/56 of Epoch 23/200 - loss: 0.0301 - mae: 0.0301 - lr: 0.000100
+[2025-06-09 10:22:18] Batch 56/56 of Epoch 23/200 - loss: 0.0300 - mae: 0.0300 - lr: 0.000100
+[2025-06-09 10:22:19] Epoch 23/200 - 12.71s - loss: 0.0300 - mae: 0.0300 - val_loss: 0.0303 - val_mae: 0.0303 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:22:19] Epoch 23: val_loss improved from 0.03497 to 0.03033, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:22:21] Epoch None: Validation loss improved from 0.03497 to 0.03033, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:22:24] Batch 1/56 of Epoch 24/200 - loss: 0.0298 - mae: 0.0298 - lr: 0.000100
+[2025-06-09 10:22:26] Batch 11/56 of Epoch 24/200 - loss: 0.0283 - mae: 0.0283 - lr: 0.000100
+[2025-06-09 10:22:28] Batch 21/56 of Epoch 24/200 - loss: 0.0282 - mae: 0.0282 - lr: 0.000100
+[2025-06-09 10:22:30] Batch 31/56 of Epoch 24/200 - loss: 0.0277 - mae: 0.0277 - lr: 0.000100
+[2025-06-09 10:22:32] Batch 41/56 of Epoch 24/200 - loss: 0.0273 - mae: 0.0273 - lr: 0.000100
+[2025-06-09 10:22:34] Batch 51/56 of Epoch 24/200 - loss: 0.0272 - mae: 0.0272 - lr: 0.000100
+[2025-06-09 10:22:35] Batch 56/56 of Epoch 24/200 - loss: 0.0270 - mae: 0.0270 - lr: 0.000100
+[2025-06-09 10:22:36] Epoch 24/200 - 12.74s - loss: 0.0270 - mae: 0.0270 - val_loss: 0.0305 - val_mae: 0.0305 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:22:36] EarlyStopping counter: 1 out of 20
+[2025-06-09 10:22:37] Batch 1/56 of Epoch 25/200 - loss: 0.0240 - mae: 0.0240 - lr: 0.000100
+[2025-06-09 10:22:39] Batch 11/56 of Epoch 25/200 - loss: 0.0267 - mae: 0.0267 - lr: 0.000100
+[2025-06-09 10:22:41] Batch 21/56 of Epoch 25/200 - loss: 0.0271 - mae: 0.0271 - lr: 0.000100
+[2025-06-09 10:22:43] Batch 31/56 of Epoch 25/200 - loss: 0.0269 - mae: 0.0269 - lr: 0.000100
+[2025-06-09 10:22:45] Batch 41/56 of Epoch 25/200 - loss: 0.0266 - mae: 0.0266 - lr: 0.000100
+[2025-06-09 10:22:47] Batch 51/56 of Epoch 25/200 - loss: 0.0265 - mae: 0.0265 - lr: 0.000100
+[2025-06-09 10:22:48] Batch 56/56 of Epoch 25/200 - loss: 0.0264 - mae: 0.0264 - lr: 0.000100
+[2025-06-09 10:22:49] Epoch 25/200 - 12.72s - loss: 0.0264 - mae: 0.0264 - val_loss: 0.0288 - val_mae: 0.0288 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:22:49] Epoch 25: val_loss improved from 0.03033 to 0.02882, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:22:51] Epoch None: Validation loss improved from 0.03033 to 0.02882, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:22:54] Batch 1/56 of Epoch 26/200 - loss: 0.0241 - mae: 0.0241 - lr: 0.000100
+[2025-06-09 10:22:56] Batch 11/56 of Epoch 26/200 - loss: 0.0254 - mae: 0.0254 - lr: 0.000100
+[2025-06-09 10:22:58] Batch 21/56 of Epoch 26/200 - loss: 0.0252 - mae: 0.0252 - lr: 0.000100
+[2025-06-09 10:23:00] Batch 31/56 of Epoch 26/200 - loss: 0.0263 - mae: 0.0263 - lr: 0.000100
+[2025-06-09 10:23:02] Batch 41/56 of Epoch 26/200 - loss: 0.0256 - mae: 0.0256 - lr: 0.000100
+[2025-06-09 10:23:04] Batch 51/56 of Epoch 26/200 - loss: 0.0258 - mae: 0.0258 - lr: 0.000100
+[2025-06-09 10:23:05] Batch 56/56 of Epoch 26/200 - loss: 0.0259 - mae: 0.0259 - lr: 0.000100
+[2025-06-09 10:23:06] Epoch 26/200 - 12.75s - loss: 0.0259 - mae: 0.0259 - val_loss: 0.0290 - val_mae: 0.0290 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:23:06] EarlyStopping counter: 1 out of 20
+[2025-06-09 10:23:07] Batch 1/56 of Epoch 27/200 - loss: 0.0251 - mae: 0.0251 - lr: 0.000100
+[2025-06-09 10:23:09] Batch 11/56 of Epoch 27/200 - loss: 0.0250 - mae: 0.0250 - lr: 0.000100
+[2025-06-09 10:23:11] Batch 21/56 of Epoch 27/200 - loss: 0.0245 - mae: 0.0245 - lr: 0.000100
+[2025-06-09 10:23:13] Batch 31/56 of Epoch 27/200 - loss: 0.0242 - mae: 0.0242 - lr: 0.000100
+[2025-06-09 10:23:15] Batch 41/56 of Epoch 27/200 - loss: 0.0239 - mae: 0.0239 - lr: 0.000100
+[2025-06-09 10:23:17] Batch 51/56 of Epoch 27/200 - loss: 0.0241 - mae: 0.0241 - lr: 0.000100
+[2025-06-09 10:23:18] Batch 56/56 of Epoch 27/200 - loss: 0.0242 - mae: 0.0242 - lr: 0.000100
+[2025-06-09 10:23:19] Epoch 27/200 - 12.67s - loss: 0.0242 - mae: 0.0242 - val_loss: 0.0272 - val_mae: 0.0272 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:23:19] Epoch 27: val_loss improved from 0.02882 to 0.02724, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:23:21] Epoch None: Validation loss improved from 0.02882 to 0.02724, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:23:24] Batch 1/56 of Epoch 28/200 - loss: 0.0225 - mae: 0.0225 - lr: 0.000100
+[2025-06-09 10:23:26] Batch 11/56 of Epoch 28/200 - loss: 0.0235 - mae: 0.0235 - lr: 0.000100
+[2025-06-09 10:23:28] Batch 21/56 of Epoch 28/200 - loss: 0.0225 - mae: 0.0225 - lr: 0.000100
+[2025-06-09 10:23:30] Batch 31/56 of Epoch 28/200 - loss: 0.0228 - mae: 0.0228 - lr: 0.000100
+[2025-06-09 10:23:32] Batch 41/56 of Epoch 28/200 - loss: 0.0226 - mae: 0.0226 - lr: 0.000100
+[2025-06-09 10:23:34] Batch 51/56 of Epoch 28/200 - loss: 0.0230 - mae: 0.0230 - lr: 0.000100
+[2025-06-09 10:23:35] Batch 56/56 of Epoch 28/200 - loss: 0.0229 - mae: 0.0229 - lr: 0.000100
+[2025-06-09 10:23:36] Epoch 28/200 - 12.75s - loss: 0.0229 - mae: 0.0229 - val_loss: 0.0262 - val_mae: 0.0262 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:23:36] Epoch 28: val_loss improved from 0.02724 to 0.02625, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:23:38] Epoch None: Validation loss improved from 0.02724 to 0.02625, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:23:41] Batch 1/56 of Epoch 29/200 - loss: 0.0194 - mae: 0.0194 - lr: 0.000100
+[2025-06-09 10:23:43] Batch 11/56 of Epoch 29/200 - loss: 0.0207 - mae: 0.0207 - lr: 0.000100
+[2025-06-09 10:23:45] Batch 21/56 of Epoch 29/200 - loss: 0.0210 - mae: 0.0210 - lr: 0.000100
+[2025-06-09 10:23:47] Batch 31/56 of Epoch 29/200 - loss: 0.0210 - mae: 0.0210 - lr: 0.000100
+[2025-06-09 10:23:49] Batch 41/56 of Epoch 29/200 - loss: 0.0212 - mae: 0.0212 - lr: 0.000100
+[2025-06-09 10:23:51] Batch 51/56 of Epoch 29/200 - loss: 0.0215 - mae: 0.0215 - lr: 0.000100
+[2025-06-09 10:23:52] Batch 56/56 of Epoch 29/200 - loss: 0.0213 - mae: 0.0213 - lr: 0.000100
+[2025-06-09 10:23:53] Epoch 29/200 - 12.73s - loss: 0.0213 - mae: 0.0213 - val_loss: 0.0251 - val_mae: 0.0251 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:23:53] Epoch 29: val_loss improved from 0.02625 to 0.02514, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:23:55] Epoch None: Validation loss improved from 0.02625 to 0.02514, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:23:58] Batch 1/56 of Epoch 30/200 - loss: 0.0218 - mae: 0.0218 - lr: 0.000100
+[2025-06-09 10:24:00] Batch 11/56 of Epoch 30/200 - loss: 0.0206 - mae: 0.0206 - lr: 0.000100
+[2025-06-09 10:24:02] Batch 21/56 of Epoch 30/200 - loss: 0.0210 - mae: 0.0210 - lr: 0.000100
+[2025-06-09 10:24:04] Batch 31/56 of Epoch 30/200 - loss: 0.0211 - mae: 0.0211 - lr: 0.000100
+[2025-06-09 10:24:06] Batch 41/56 of Epoch 30/200 - loss: 0.0207 - mae: 0.0207 - lr: 0.000100
+[2025-06-09 10:24:08] Batch 51/56 of Epoch 30/200 - loss: 0.0208 - mae: 0.0208 - lr: 0.000100
+[2025-06-09 10:24:09] Batch 56/56 of Epoch 30/200 - loss: 0.0209 - mae: 0.0209 - lr: 0.000100
+[2025-06-09 10:24:10] Epoch 30/200 - 12.71s - loss: 0.0209 - mae: 0.0209 - val_loss: 0.0219 - val_mae: 0.0219 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:24:10] Epoch 30: val_loss improved from 0.02514 to 0.02186, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:24:12] Epoch None: Validation loss improved from 0.02514 to 0.02186, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:24:15] Batch 1/56 of Epoch 31/200 - loss: 0.0202 - mae: 0.0202 - lr: 0.000100
+[2025-06-09 10:24:17] Batch 11/56 of Epoch 31/200 - loss: 0.0225 - mae: 0.0225 - lr: 0.000100
+[2025-06-09 10:24:19] Batch 21/56 of Epoch 31/200 - loss: 0.0224 - mae: 0.0224 - lr: 0.000100
+[2025-06-09 10:24:21] Batch 31/56 of Epoch 31/200 - loss: 0.0211 - mae: 0.0211 - lr: 0.000100
+[2025-06-09 10:24:23] Batch 41/56 of Epoch 31/200 - loss: 0.0204 - mae: 0.0204 - lr: 0.000100
+[2025-06-09 10:24:25] Batch 51/56 of Epoch 31/200 - loss: 0.0199 - mae: 0.0199 - lr: 0.000100
+[2025-06-09 10:24:26] Batch 56/56 of Epoch 31/200 - loss: 0.0200 - mae: 0.0200 - lr: 0.000100
+[2025-06-09 10:24:27] Epoch 31/200 - 12.69s - loss: 0.0200 - mae: 0.0200 - val_loss: 0.0217 - val_mae: 0.0217 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:24:27] Epoch 31: val_loss improved from 0.02186 to 0.02166, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:24:29] Epoch None: Validation loss improved from 0.02186 to 0.02166, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:24:32] Batch 1/56 of Epoch 32/200 - loss: 0.0212 - mae: 0.0212 - lr: 0.000100
+[2025-06-09 10:24:34] Batch 11/56 of Epoch 32/200 - loss: 0.0186 - mae: 0.0186 - lr: 0.000100
+[2025-06-09 10:24:36] Batch 21/56 of Epoch 32/200 - loss: 0.0195 - mae: 0.0195 - lr: 0.000100
+[2025-06-09 10:24:38] Batch 31/56 of Epoch 32/200 - loss: 0.0198 - mae: 0.0198 - lr: 0.000100
+[2025-06-09 10:24:40] Batch 41/56 of Epoch 32/200 - loss: 0.0193 - mae: 0.0193 - lr: 0.000100
+[2025-06-09 10:24:42] Batch 51/56 of Epoch 32/200 - loss: 0.0189 - mae: 0.0189 - lr: 0.000100
+[2025-06-09 10:24:43] Batch 56/56 of Epoch 32/200 - loss: 0.0187 - mae: 0.0187 - lr: 0.000100
+[2025-06-09 10:24:44] Epoch 32/200 - 12.76s - loss: 0.0187 - mae: 0.0187 - val_loss: 0.0227 - val_mae: 0.0227 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:24:44] EarlyStopping counter: 1 out of 20
+[2025-06-09 10:24:45] Batch 1/56 of Epoch 33/200 - loss: 0.0155 - mae: 0.0155 - lr: 0.000100
+[2025-06-09 10:24:47] Batch 11/56 of Epoch 33/200 - loss: 0.0177 - mae: 0.0177 - lr: 0.000100
+[2025-06-09 10:24:49] Batch 21/56 of Epoch 33/200 - loss: 0.0176 - mae: 0.0176 - lr: 0.000100
+[2025-06-09 10:24:51] Batch 31/56 of Epoch 33/200 - loss: 0.0174 - mae: 0.0174 - lr: 0.000100
+[2025-06-09 10:24:53] Batch 41/56 of Epoch 33/200 - loss: 0.0173 - mae: 0.0173 - lr: 0.000100
+[2025-06-09 10:24:55] Batch 51/56 of Epoch 33/200 - loss: 0.0173 - mae: 0.0173 - lr: 0.000100
+[2025-06-09 10:24:56] Batch 56/56 of Epoch 33/200 - loss: 0.0172 - mae: 0.0172 - lr: 0.000100
+[2025-06-09 10:24:57] Epoch 33/200 - 12.69s - loss: 0.0172 - mae: 0.0172 - val_loss: 0.0206 - val_mae: 0.0206 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:24:57] Epoch 33: val_loss improved from 0.02166 to 0.02059, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:24:59] Epoch None: Validation loss improved from 0.02166 to 0.02059, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:25:02] Batch 1/56 of Epoch 34/200 - loss: 0.0153 - mae: 0.0153 - lr: 0.000100
+[2025-06-09 10:25:04] Batch 11/56 of Epoch 34/200 - loss: 0.0173 - mae: 0.0173 - lr: 0.000100
+[2025-06-09 10:25:06] Batch 21/56 of Epoch 34/200 - loss: 0.0182 - mae: 0.0182 - lr: 0.000100
+[2025-06-09 10:25:08] Batch 31/56 of Epoch 34/200 - loss: 0.0177 - mae: 0.0177 - lr: 0.000100
+[2025-06-09 10:25:10] Batch 41/56 of Epoch 34/200 - loss: 0.0175 - mae: 0.0175 - lr: 0.000100
+[2025-06-09 10:25:12] Batch 51/56 of Epoch 34/200 - loss: 0.0173 - mae: 0.0173 - lr: 0.000100
+[2025-06-09 10:25:13] Batch 56/56 of Epoch 34/200 - loss: 0.0172 - mae: 0.0172 - lr: 0.000100
+[2025-06-09 10:25:14] Epoch 34/200 - 12.74s - loss: 0.0172 - mae: 0.0172 - val_loss: 0.0191 - val_mae: 0.0191 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:25:14] Epoch 34: val_loss improved from 0.02059 to 0.01905, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:25:16] Epoch None: Validation loss improved from 0.02059 to 0.01905, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:25:19] Batch 1/56 of Epoch 35/200 - loss: 0.0209 - mae: 0.0209 - lr: 0.000100
+[2025-06-09 10:25:21] Batch 11/56 of Epoch 35/200 - loss: 0.0167 - mae: 0.0167 - lr: 0.000100
+[2025-06-09 10:25:23] Batch 21/56 of Epoch 35/200 - loss: 0.0158 - mae: 0.0158 - lr: 0.000100
+[2025-06-09 10:25:25] Batch 31/56 of Epoch 35/200 - loss: 0.0157 - mae: 0.0157 - lr: 0.000100
+[2025-06-09 10:25:27] Batch 41/56 of Epoch 35/200 - loss: 0.0159 - mae: 0.0159 - lr: 0.000100
+[2025-06-09 10:25:29] Batch 51/56 of Epoch 35/200 - loss: 0.0159 - mae: 0.0159 - lr: 0.000100
+[2025-06-09 10:25:30] Batch 56/56 of Epoch 35/200 - loss: 0.0160 - mae: 0.0160 - lr: 0.000100
+[2025-06-09 10:25:31] Epoch 35/200 - 12.72s - loss: 0.0160 - mae: 0.0160 - val_loss: 0.0197 - val_mae: 0.0197 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:25:31] EarlyStopping counter: 1 out of 20
+[2025-06-09 10:25:32] Batch 1/56 of Epoch 36/200 - loss: 0.0155 - mae: 0.0155 - lr: 0.000100
+[2025-06-09 10:25:34] Batch 11/56 of Epoch 36/200 - loss: 0.0146 - mae: 0.0146 - lr: 0.000100
+[2025-06-09 10:25:36] Batch 21/56 of Epoch 36/200 - loss: 0.0161 - mae: 0.0161 - lr: 0.000100
+[2025-06-09 10:25:38] Batch 31/56 of Epoch 36/200 - loss: 0.0164 - mae: 0.0164 - lr: 0.000100
+[2025-06-09 10:25:40] Batch 41/56 of Epoch 36/200 - loss: 0.0161 - mae: 0.0161 - lr: 0.000100
+[2025-06-09 10:25:42] Batch 51/56 of Epoch 36/200 - loss: 0.0161 - mae: 0.0161 - lr: 0.000100
+[2025-06-09 10:25:43] Batch 56/56 of Epoch 36/200 - loss: 0.0160 - mae: 0.0160 - lr: 0.000100
+[2025-06-09 10:25:44] Epoch 36/200 - 12.71s - loss: 0.0160 - mae: 0.0160 - val_loss: 0.0189 - val_mae: 0.0189 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:25:44] Epoch 36: val_loss improved from 0.01905 to 0.01891, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:25:46] Epoch None: Validation loss improved from 0.01905 to 0.01891, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:25:49] Batch 1/56 of Epoch 37/200 - loss: 0.0150 - mae: 0.0150 - lr: 0.000100
+[2025-06-09 10:25:51] Batch 11/56 of Epoch 37/200 - loss: 0.0159 - mae: 0.0159 - lr: 0.000100
+[2025-06-09 10:25:53] Batch 21/56 of Epoch 37/200 - loss: 0.0151 - mae: 0.0151 - lr: 0.000100
+[2025-06-09 10:25:55] Batch 31/56 of Epoch 37/200 - loss: 0.0149 - mae: 0.0149 - lr: 0.000100
+[2025-06-09 10:25:57] Batch 41/56 of Epoch 37/200 - loss: 0.0153 - mae: 0.0153 - lr: 0.000100
+[2025-06-09 10:25:59] Batch 51/56 of Epoch 37/200 - loss: 0.0151 - mae: 0.0151 - lr: 0.000100
+[2025-06-09 10:26:00] Batch 56/56 of Epoch 37/200 - loss: 0.0151 - mae: 0.0151 - lr: 0.000100
+[2025-06-09 10:26:01] Epoch 37/200 - 12.72s - loss: 0.0151 - mae: 0.0151 - val_loss: 0.0204 - val_mae: 0.0204 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:26:01] EarlyStopping counter: 1 out of 20
+[2025-06-09 10:26:01] Batch 1/56 of Epoch 38/200 - loss: 0.0164 - mae: 0.0164 - lr: 0.000100
+[2025-06-09 10:26:04] Batch 11/56 of Epoch 38/200 - loss: 0.0138 - mae: 0.0138 - lr: 0.000100
+[2025-06-09 10:26:06] Batch 21/56 of Epoch 38/200 - loss: 0.0139 - mae: 0.0139 - lr: 0.000100
+[2025-06-09 10:26:08] Batch 31/56 of Epoch 38/200 - loss: 0.0147 - mae: 0.0147 - lr: 0.000100
+[2025-06-09 10:26:10] Batch 41/56 of Epoch 38/200 - loss: 0.0143 - mae: 0.0143 - lr: 0.000100
+[2025-06-09 10:26:12] Batch 51/56 of Epoch 38/200 - loss: 0.0143 - mae: 0.0143 - lr: 0.000100
+[2025-06-09 10:26:13] Batch 56/56 of Epoch 38/200 - loss: 0.0144 - mae: 0.0144 - lr: 0.000100
+[2025-06-09 10:26:14] Epoch 38/200 - 12.68s - loss: 0.0144 - mae: 0.0144 - val_loss: 0.0222 - val_mae: 0.0222 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:26:14] EarlyStopping counter: 2 out of 20
+[2025-06-09 10:26:14] Batch 1/56 of Epoch 39/200 - loss: 0.0144 - mae: 0.0144 - lr: 0.000100
+[2025-06-09 10:26:16] Batch 11/56 of Epoch 39/200 - loss: 0.0152 - mae: 0.0152 - lr: 0.000100
+[2025-06-09 10:26:18] Batch 21/56 of Epoch 39/200 - loss: 0.0147 - mae: 0.0147 - lr: 0.000100
+[2025-06-09 10:26:20] Batch 31/56 of Epoch 39/200 - loss: 0.0145 - mae: 0.0145 - lr: 0.000100
+[2025-06-09 10:26:22] Batch 41/56 of Epoch 39/200 - loss: 0.0144 - mae: 0.0144 - lr: 0.000100
+[2025-06-09 10:26:24] Batch 51/56 of Epoch 39/200 - loss: 0.0141 - mae: 0.0141 - lr: 0.000100
+[2025-06-09 10:26:25] Batch 56/56 of Epoch 39/200 - loss: 0.0140 - mae: 0.0140 - lr: 0.000100
+[2025-06-09 10:26:26] Epoch 39/200 - 12.70s - loss: 0.0140 - mae: 0.0140 - val_loss: 0.0193 - val_mae: 0.0193 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:26:26] EarlyStopping counter: 3 out of 20
+[2025-06-09 10:26:27] Batch 1/56 of Epoch 40/200 - loss: 0.0154 - mae: 0.0154 - lr: 0.000100
+[2025-06-09 10:26:29] Batch 11/56 of Epoch 40/200 - loss: 0.0133 - mae: 0.0133 - lr: 0.000100
+[2025-06-09 10:26:31] Batch 21/56 of Epoch 40/200 - loss: 0.0133 - mae: 0.0133 - lr: 0.000100
+[2025-06-09 10:26:33] Batch 31/56 of Epoch 40/200 - loss: 0.0132 - mae: 0.0132 - lr: 0.000100
+[2025-06-09 10:26:35] Batch 41/56 of Epoch 40/200 - loss: 0.0131 - mae: 0.0131 - lr: 0.000100
+[2025-06-09 10:26:37] Batch 51/56 of Epoch 40/200 - loss: 0.0131 - mae: 0.0131 - lr: 0.000100
+[2025-06-09 10:26:38] Batch 56/56 of Epoch 40/200 - loss: 0.0130 - mae: 0.0130 - lr: 0.000100
+[2025-06-09 10:26:39] Epoch 40/200 - 12.67s - loss: 0.0130 - mae: 0.0130 - val_loss: 0.0192 - val_mae: 0.0192 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:26:39] EarlyStopping counter: 4 out of 20
+[2025-06-09 10:26:40] Batch 1/56 of Epoch 41/200 - loss: 0.0163 - mae: 0.0163 - lr: 0.000100
+[2025-06-09 10:26:42] Batch 11/56 of Epoch 41/200 - loss: 0.0125 - mae: 0.0125 - lr: 0.000100
+[2025-06-09 10:26:44] Batch 21/56 of Epoch 41/200 - loss: 0.0120 - mae: 0.0120 - lr: 0.000100
+[2025-06-09 10:26:46] Batch 31/56 of Epoch 41/200 - loss: 0.0119 - mae: 0.0119 - lr: 0.000100
+[2025-06-09 10:26:48] Batch 41/56 of Epoch 41/200 - loss: 0.0118 - mae: 0.0118 - lr: 0.000100
+[2025-06-09 10:26:50] Batch 51/56 of Epoch 41/200 - loss: 0.0119 - mae: 0.0119 - lr: 0.000100
+[2025-06-09 10:26:51] Batch 56/56 of Epoch 41/200 - loss: 0.0120 - mae: 0.0120 - lr: 0.000100
+[2025-06-09 10:26:52] Epoch 41/200 - 12.68s - loss: 0.0120 - mae: 0.0120 - val_loss: 0.0167 - val_mae: 0.0167 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:26:52] Epoch 41: val_loss improved from 0.01891 to 0.01671, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:26:54] Epoch None: Validation loss improved from 0.01891 to 0.01671, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:26:57] Batch 1/56 of Epoch 42/200 - loss: 0.0232 - mae: 0.0232 - lr: 0.000100
+[2025-06-09 10:26:59] Batch 11/56 of Epoch 42/200 - loss: 0.0132 - mae: 0.0132 - lr: 0.000100
+[2025-06-09 10:27:01] Batch 21/56 of Epoch 42/200 - loss: 0.0124 - mae: 0.0124 - lr: 0.000100
+[2025-06-09 10:27:03] Batch 31/56 of Epoch 42/200 - loss: 0.0122 - mae: 0.0122 - lr: 0.000100
+[2025-06-09 10:27:05] Batch 41/56 of Epoch 42/200 - loss: 0.0122 - mae: 0.0122 - lr: 0.000100
+[2025-06-09 10:27:07] Batch 51/56 of Epoch 42/200 - loss: 0.0121 - mae: 0.0121 - lr: 0.000100
+[2025-06-09 10:27:08] Batch 56/56 of Epoch 42/200 - loss: 0.0121 - mae: 0.0121 - lr: 0.000100
+[2025-06-09 10:27:09] Epoch 42/200 - 12.74s - loss: 0.0121 - mae: 0.0121 - val_loss: 0.0169 - val_mae: 0.0169 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:27:09] EarlyStopping counter: 1 out of 20
+[2025-06-09 10:27:09] Batch 1/56 of Epoch 43/200 - loss: 0.0121 - mae: 0.0121 - lr: 0.000100
+[2025-06-09 10:27:11] Batch 11/56 of Epoch 43/200 - loss: 0.0113 - mae: 0.0113 - lr: 0.000100
+[2025-06-09 10:27:13] Batch 21/56 of Epoch 43/200 - loss: 0.0113 - mae: 0.0113 - lr: 0.000100
+[2025-06-09 10:27:16] Batch 31/56 of Epoch 43/200 - loss: 0.0112 - mae: 0.0112 - lr: 0.000100
+[2025-06-09 10:27:18] Batch 41/56 of Epoch 43/200 - loss: 0.0113 - mae: 0.0113 - lr: 0.000100
+[2025-06-09 10:27:20] Batch 51/56 of Epoch 43/200 - loss: 0.0116 - mae: 0.0116 - lr: 0.000100
+[2025-06-09 10:27:21] Batch 56/56 of Epoch 43/200 - loss: 0.0117 - mae: 0.0117 - lr: 0.000100
+[2025-06-09 10:27:22] Epoch 43/200 - 12.67s - loss: 0.0117 - mae: 0.0117 - val_loss: 0.0162 - val_mae: 0.0162 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:27:22] Epoch 43: val_loss improved from 0.01671 to 0.01624, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:27:24] Epoch None: Validation loss improved from 0.01671 to 0.01624, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:27:26] Batch 1/56 of Epoch 44/200 - loss: 0.0135 - mae: 0.0135 - lr: 0.000100
+[2025-06-09 10:27:28] Batch 11/56 of Epoch 44/200 - loss: 0.0123 - mae: 0.0123 - lr: 0.000100
+[2025-06-09 10:27:31] Batch 21/56 of Epoch 44/200 - loss: 0.0123 - mae: 0.0123 - lr: 0.000100
+[2025-06-09 10:27:33] Batch 31/56 of Epoch 44/200 - loss: 0.0126 - mae: 0.0126 - lr: 0.000100
+[2025-06-09 10:27:35] Batch 41/56 of Epoch 44/200 - loss: 0.0123 - mae: 0.0123 - lr: 0.000100
+[2025-06-09 10:27:37] Batch 51/56 of Epoch 44/200 - loss: 0.0123 - mae: 0.0123 - lr: 0.000100
+[2025-06-09 10:27:38] Batch 56/56 of Epoch 44/200 - loss: 0.0122 - mae: 0.0122 - lr: 0.000100
+[2025-06-09 10:27:39] Epoch 44/200 - 12.70s - loss: 0.0122 - mae: 0.0122 - val_loss: 0.0159 - val_mae: 0.0159 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:27:39] Epoch 44: val_loss improved from 0.01624 to 0.01589, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:27:41] Epoch None: Validation loss improved from 0.01624 to 0.01589, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:27:44] Batch 1/56 of Epoch 45/200 - loss: 0.0116 - mae: 0.0116 - lr: 0.000100
+[2025-06-09 10:27:46] Batch 11/56 of Epoch 45/200 - loss: 0.0115 - mae: 0.0115 - lr: 0.000100
+[2025-06-09 10:27:48] Batch 21/56 of Epoch 45/200 - loss: 0.0109 - mae: 0.0109 - lr: 0.000100
+[2025-06-09 10:27:50] Batch 31/56 of Epoch 45/200 - loss: 0.0110 - mae: 0.0110 - lr: 0.000100
+[2025-06-09 10:27:52] Batch 41/56 of Epoch 45/200 - loss: 0.0113 - mae: 0.0113 - lr: 0.000100
+[2025-06-09 10:27:54] Batch 51/56 of Epoch 45/200 - loss: 0.0113 - mae: 0.0113 - lr: 0.000100
+[2025-06-09 10:27:55] Batch 56/56 of Epoch 45/200 - loss: 0.0112 - mae: 0.0112 - lr: 0.000100
+[2025-06-09 10:27:56] Epoch 45/200 - 12.72s - loss: 0.0112 - mae: 0.0112 - val_loss: 0.0155 - val_mae: 0.0155 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:27:56] Epoch 45: val_loss improved from 0.01589 to 0.01549, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:27:58] Epoch None: Validation loss improved from 0.01589 to 0.01549, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:28:01] Batch 1/56 of Epoch 46/200 - loss: 0.0095 - mae: 0.0095 - lr: 0.000100
+[2025-06-09 10:28:03] Batch 11/56 of Epoch 46/200 - loss: 0.0098 - mae: 0.0098 - lr: 0.000100
+[2025-06-09 10:28:05] Batch 21/56 of Epoch 46/200 - loss: 0.0099 - mae: 0.0099 - lr: 0.000100
+[2025-06-09 10:28:07] Batch 31/56 of Epoch 46/200 - loss: 0.0104 - mae: 0.0104 - lr: 0.000100
+[2025-06-09 10:28:09] Batch 41/56 of Epoch 46/200 - loss: 0.0105 - mae: 0.0105 - lr: 0.000100
+[2025-06-09 10:28:11] Batch 51/56 of Epoch 46/200 - loss: 0.0108 - mae: 0.0108 - lr: 0.000100
+[2025-06-09 10:28:12] Batch 56/56 of Epoch 46/200 - loss: 0.0108 - mae: 0.0108 - lr: 0.000100
+[2025-06-09 10:28:13] Epoch 46/200 - 12.73s - loss: 0.0108 - mae: 0.0108 - val_loss: 0.0178 - val_mae: 0.0178 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:28:13] EarlyStopping counter: 1 out of 20
+[2025-06-09 10:28:13] Batch 1/56 of Epoch 47/200 - loss: 0.0113 - mae: 0.0113 - lr: 0.000100
+[2025-06-09 10:28:16] Batch 11/56 of Epoch 47/200 - loss: 0.0107 - mae: 0.0107 - lr: 0.000100
+[2025-06-09 10:28:18] Batch 21/56 of Epoch 47/200 - loss: 0.0114 - mae: 0.0114 - lr: 0.000100
+[2025-06-09 10:28:20] Batch 31/56 of Epoch 47/200 - loss: 0.0109 - mae: 0.0109 - lr: 0.000100
+[2025-06-09 10:28:22] Batch 41/56 of Epoch 47/200 - loss: 0.0106 - mae: 0.0106 - lr: 0.000100
+[2025-06-09 10:28:24] Batch 51/56 of Epoch 47/200 - loss: 0.0105 - mae: 0.0105 - lr: 0.000100
+[2025-06-09 10:28:25] Batch 56/56 of Epoch 47/200 - loss: 0.0105 - mae: 0.0105 - lr: 0.000100
+[2025-06-09 10:28:26] Epoch 47/200 - 12.74s - loss: 0.0105 - mae: 0.0105 - val_loss: 0.0141 - val_mae: 0.0141 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:28:26] Epoch 47: val_loss improved from 0.01549 to 0.01410, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:28:28] Epoch None: Validation loss improved from 0.01549 to 0.01410, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:28:30] Batch 1/56 of Epoch 48/200 - loss: 0.0110 - mae: 0.0110 - lr: 0.000100
+[2025-06-09 10:28:33] Batch 11/56 of Epoch 48/200 - loss: 0.0107 - mae: 0.0107 - lr: 0.000100
+[2025-06-09 10:28:35] Batch 21/56 of Epoch 48/200 - loss: 0.0114 - mae: 0.0114 - lr: 0.000100
+[2025-06-09 10:28:37] Batch 31/56 of Epoch 48/200 - loss: 0.0110 - mae: 0.0110 - lr: 0.000100
+[2025-06-09 10:28:39] Batch 41/56 of Epoch 48/200 - loss: 0.0107 - mae: 0.0107 - lr: 0.000100
+[2025-06-09 10:28:41] Batch 51/56 of Epoch 48/200 - loss: 0.0105 - mae: 0.0105 - lr: 0.000100
+[2025-06-09 10:28:42] Batch 56/56 of Epoch 48/200 - loss: 0.0105 - mae: 0.0105 - lr: 0.000100
+[2025-06-09 10:28:43] Epoch 48/200 - 12.72s - loss: 0.0105 - mae: 0.0105 - val_loss: 0.0145 - val_mae: 0.0145 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:28:43] EarlyStopping counter: 1 out of 20
+[2025-06-09 10:28:43] Batch 1/56 of Epoch 49/200 - loss: 0.0106 - mae: 0.0106 - lr: 0.000100
+[2025-06-09 10:28:45] Batch 11/56 of Epoch 49/200 - loss: 0.0090 - mae: 0.0090 - lr: 0.000100
+[2025-06-09 10:28:47] Batch 21/56 of Epoch 49/200 - loss: 0.0091 - mae: 0.0091 - lr: 0.000100
+[2025-06-09 10:28:49] Batch 31/56 of Epoch 49/200 - loss: 0.0094 - mae: 0.0094 - lr: 0.000100
+[2025-06-09 10:28:51] Batch 41/56 of Epoch 49/200 - loss: 0.0097 - mae: 0.0097 - lr: 0.000100
+[2025-06-09 10:28:53] Batch 51/56 of Epoch 49/200 - loss: 0.0096 - mae: 0.0096 - lr: 0.000100
+[2025-06-09 10:28:54] Batch 56/56 of Epoch 49/200 - loss: 0.0095 - mae: 0.0095 - lr: 0.000100
+[2025-06-09 10:28:55] Epoch 49/200 - 12.69s - loss: 0.0095 - mae: 0.0095 - val_loss: 0.0149 - val_mae: 0.0149 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:28:55] EarlyStopping counter: 2 out of 20
+[2025-06-09 10:28:56] Batch 1/56 of Epoch 50/200 - loss: 0.0081 - mae: 0.0081 - lr: 0.000100
+[2025-06-09 10:28:58] Batch 11/56 of Epoch 50/200 - loss: 0.0091 - mae: 0.0091 - lr: 0.000100
+[2025-06-09 10:29:00] Batch 21/56 of Epoch 50/200 - loss: 0.0099 - mae: 0.0099 - lr: 0.000100
+[2025-06-09 10:29:02] Batch 31/56 of Epoch 50/200 - loss: 0.0099 - mae: 0.0099 - lr: 0.000100
+[2025-06-09 10:29:04] Batch 41/56 of Epoch 50/200 - loss: 0.0102 - mae: 0.0102 - lr: 0.000100
+[2025-06-09 10:29:06] Batch 51/56 of Epoch 50/200 - loss: 0.0102 - mae: 0.0102 - lr: 0.000100
+[2025-06-09 10:29:07] Batch 56/56 of Epoch 50/200 - loss: 0.0101 - mae: 0.0101 - lr: 0.000100
+[2025-06-09 10:29:08] Epoch 50/200 - 12.67s - loss: 0.0101 - mae: 0.0101 - val_loss: 0.0148 - val_mae: 0.0148 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:29:08] EarlyStopping counter: 3 out of 20
+[2025-06-09 10:29:09] Batch 1/56 of Epoch 51/200 - loss: 0.0093 - mae: 0.0093 - lr: 0.000100
+[2025-06-09 10:29:11] Batch 11/56 of Epoch 51/200 - loss: 0.0092 - mae: 0.0092 - lr: 0.000100
+[2025-06-09 10:29:13] Batch 21/56 of Epoch 51/200 - loss: 0.0095 - mae: 0.0095 - lr: 0.000100
+[2025-06-09 10:29:15] Batch 31/56 of Epoch 51/200 - loss: 0.0092 - mae: 0.0092 - lr: 0.000100
+[2025-06-09 10:29:17] Batch 41/56 of Epoch 51/200 - loss: 0.0091 - mae: 0.0091 - lr: 0.000100
+[2025-06-09 10:29:19] Batch 51/56 of Epoch 51/200 - loss: 0.0090 - mae: 0.0090 - lr: 0.000100
+[2025-06-09 10:29:20] Batch 56/56 of Epoch 51/200 - loss: 0.0089 - mae: 0.0089 - lr: 0.000100
+[2025-06-09 10:29:21] Epoch 51/200 - 12.73s - loss: 0.0089 - mae: 0.0089 - val_loss: 0.0138 - val_mae: 0.0138 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:29:21] Epoch 51: val_loss improved from 0.01410 to 0.01383, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:29:23] Epoch None: Validation loss improved from 0.01410 to 0.01383, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:29:26] Batch 1/56 of Epoch 52/200 - loss: 0.0077 - mae: 0.0077 - lr: 0.000100
+[2025-06-09 10:29:28] Batch 11/56 of Epoch 52/200 - loss: 0.0089 - mae: 0.0089 - lr: 0.000100
+[2025-06-09 10:29:30] Batch 21/56 of Epoch 52/200 - loss: 0.0086 - mae: 0.0086 - lr: 0.000100
+[2025-06-09 10:29:32] Batch 31/56 of Epoch 52/200 - loss: 0.0084 - mae: 0.0084 - lr: 0.000100
+[2025-06-09 10:29:34] Batch 41/56 of Epoch 52/200 - loss: 0.0086 - mae: 0.0086 - lr: 0.000100
+[2025-06-09 10:29:36] Batch 51/56 of Epoch 52/200 - loss: 0.0086 - mae: 0.0086 - lr: 0.000100
+[2025-06-09 10:29:37] Batch 56/56 of Epoch 52/200 - loss: 0.0087 - mae: 0.0087 - lr: 0.000100
+[2025-06-09 10:29:38] Epoch 52/200 - 12.70s - loss: 0.0087 - mae: 0.0087 - val_loss: 0.0132 - val_mae: 0.0132 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:29:38] Epoch 52: val_loss improved from 0.01383 to 0.01321, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:29:40] Epoch None: Validation loss improved from 0.01383 to 0.01321, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:29:43] Batch 1/56 of Epoch 53/200 - loss: 0.0072 - mae: 0.0072 - lr: 0.000100
+[2025-06-09 10:29:45] Batch 11/56 of Epoch 53/200 - loss: 0.0092 - mae: 0.0092 - lr: 0.000100
+[2025-06-09 10:29:47] Batch 21/56 of Epoch 53/200 - loss: 0.0091 - mae: 0.0091 - lr: 0.000100
+[2025-06-09 10:29:49] Batch 31/56 of Epoch 53/200 - loss: 0.0090 - mae: 0.0090 - lr: 0.000100
+[2025-06-09 10:29:51] Batch 41/56 of Epoch 53/200 - loss: 0.0090 - mae: 0.0090 - lr: 0.000100
+[2025-06-09 10:29:53] Batch 51/56 of Epoch 53/200 - loss: 0.0088 - mae: 0.0088 - lr: 0.000100
+[2025-06-09 10:29:54] Batch 56/56 of Epoch 53/200 - loss: 0.0088 - mae: 0.0088 - lr: 0.000100
+[2025-06-09 10:29:55] Epoch 53/200 - 12.74s - loss: 0.0088 - mae: 0.0088 - val_loss: 0.0133 - val_mae: 0.0133 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:29:55] EarlyStopping counter: 1 out of 20
+[2025-06-09 10:29:56] Batch 1/56 of Epoch 54/200 - loss: 0.0089 - mae: 0.0089 - lr: 0.000100
+[2025-06-09 10:29:58] Batch 11/56 of Epoch 54/200 - loss: 0.0077 - mae: 0.0077 - lr: 0.000100
+[2025-06-09 10:30:00] Batch 21/56 of Epoch 54/200 - loss: 0.0080 - mae: 0.0080 - lr: 0.000100
+[2025-06-09 10:30:02] Batch 31/56 of Epoch 54/200 - loss: 0.0081 - mae: 0.0081 - lr: 0.000100
+[2025-06-09 10:30:04] Batch 41/56 of Epoch 54/200 - loss: 0.0085 - mae: 0.0085 - lr: 0.000100
+[2025-06-09 10:30:06] Batch 51/56 of Epoch 54/200 - loss: 0.0084 - mae: 0.0084 - lr: 0.000100
+[2025-06-09 10:30:07] Batch 56/56 of Epoch 54/200 - loss: 0.0084 - mae: 0.0084 - lr: 0.000100
+[2025-06-09 10:30:08] Epoch 54/200 - 12.73s - loss: 0.0084 - mae: 0.0084 - val_loss: 0.0136 - val_mae: 0.0136 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:30:08] EarlyStopping counter: 2 out of 20
+[2025-06-09 10:30:09] Batch 1/56 of Epoch 55/200 - loss: 0.0067 - mae: 0.0067 - lr: 0.000100
+[2025-06-09 10:30:11] Batch 11/56 of Epoch 55/200 - loss: 0.0079 - mae: 0.0079 - lr: 0.000100
+[2025-06-09 10:30:13] Batch 21/56 of Epoch 55/200 - loss: 0.0088 - mae: 0.0088 - lr: 0.000100
+[2025-06-09 10:30:15] Batch 31/56 of Epoch 55/200 - loss: 0.0093 - mae: 0.0093 - lr: 0.000100
+[2025-06-09 10:30:17] Batch 41/56 of Epoch 55/200 - loss: 0.0093 - mae: 0.0093 - lr: 0.000100
+[2025-06-09 10:30:19] Batch 51/56 of Epoch 55/200 - loss: 0.0094 - mae: 0.0094 - lr: 0.000100
+[2025-06-09 10:30:20] Batch 56/56 of Epoch 55/200 - loss: 0.0092 - mae: 0.0092 - lr: 0.000100
+[2025-06-09 10:30:21] Epoch 55/200 - 12.69s - loss: 0.0092 - mae: 0.0092 - val_loss: 0.0140 - val_mae: 0.0140 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:30:21] EarlyStopping counter: 3 out of 20
+[2025-06-09 10:30:21] Batch 1/56 of Epoch 56/200 - loss: 0.0087 - mae: 0.0087 - lr: 0.000100
+[2025-06-09 10:30:23] Batch 11/56 of Epoch 56/200 - loss: 0.0104 - mae: 0.0104 - lr: 0.000100
+[2025-06-09 10:30:25] Batch 21/56 of Epoch 56/200 - loss: 0.0101 - mae: 0.0101 - lr: 0.000100
+[2025-06-09 10:30:27] Batch 31/56 of Epoch 56/200 - loss: 0.0097 - mae: 0.0097 - lr: 0.000100
+[2025-06-09 10:30:30] Batch 41/56 of Epoch 56/200 - loss: 0.0092 - mae: 0.0092 - lr: 0.000100
+[2025-06-09 10:30:32] Batch 51/56 of Epoch 56/200 - loss: 0.0091 - mae: 0.0091 - lr: 0.000100
+[2025-06-09 10:30:33] Batch 56/56 of Epoch 56/200 - loss: 0.0089 - mae: 0.0089 - lr: 0.000100
+[2025-06-09 10:30:33] Epoch 56/200 - 12.70s - loss: 0.0089 - mae: 0.0089 - val_loss: 0.0146 - val_mae: 0.0146 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:30:33] EarlyStopping counter: 4 out of 20
+[2025-06-09 10:30:34] Batch 1/56 of Epoch 57/200 - loss: 0.0075 - mae: 0.0075 - lr: 0.000100
+[2025-06-09 10:30:36] Batch 11/56 of Epoch 57/200 - loss: 0.0079 - mae: 0.0079 - lr: 0.000100
+[2025-06-09 10:30:38] Batch 21/56 of Epoch 57/200 - loss: 0.0080 - mae: 0.0080 - lr: 0.000100
+[2025-06-09 10:30:40] Batch 31/56 of Epoch 57/200 - loss: 0.0080 - mae: 0.0080 - lr: 0.000100
+[2025-06-09 10:30:42] Batch 41/56 of Epoch 57/200 - loss: 0.0079 - mae: 0.0079 - lr: 0.000100
+[2025-06-09 10:30:44] Batch 51/56 of Epoch 57/200 - loss: 0.0079 - mae: 0.0079 - lr: 0.000100
+[2025-06-09 10:30:45] Batch 56/56 of Epoch 57/200 - loss: 0.0079 - mae: 0.0079 - lr: 0.000100
+[2025-06-09 10:30:46] Epoch 57/200 - 12.69s - loss: 0.0079 - mae: 0.0079 - val_loss: 0.0131 - val_mae: 0.0131 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:30:46] Epoch 57: val_loss improved from 0.01321 to 0.01312, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:30:48] Epoch None: Validation loss improved from 0.01321 to 0.01312, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:30:51] Batch 1/56 of Epoch 58/200 - loss: 0.0083 - mae: 0.0083 - lr: 0.000100
+[2025-06-09 10:30:53] Batch 11/56 of Epoch 58/200 - loss: 0.0093 - mae: 0.0093 - lr: 0.000100
+[2025-06-09 10:30:55] Batch 21/56 of Epoch 58/200 - loss: 0.0087 - mae: 0.0087 - lr: 0.000100
+[2025-06-09 10:30:57] Batch 31/56 of Epoch 58/200 - loss: 0.0086 - mae: 0.0086 - lr: 0.000100
+[2025-06-09 10:31:00] Batch 41/56 of Epoch 58/200 - loss: 0.0086 - mae: 0.0086 - lr: 0.000100
+[2025-06-09 10:31:02] Batch 51/56 of Epoch 58/200 - loss: 0.0084 - mae: 0.0084 - lr: 0.000100
+[2025-06-09 10:31:03] Batch 56/56 of Epoch 58/200 - loss: 0.0084 - mae: 0.0084 - lr: 0.000100
+[2025-06-09 10:31:03] Epoch 58/200 - 12.70s - loss: 0.0084 - mae: 0.0084 - val_loss: 0.0138 - val_mae: 0.0138 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:31:03] EarlyStopping counter: 1 out of 20
+[2025-06-09 10:31:04] Batch 1/56 of Epoch 59/200 - loss: 0.0078 - mae: 0.0078 - lr: 0.000100
+[2025-06-09 10:31:06] Batch 11/56 of Epoch 59/200 - loss: 0.0078 - mae: 0.0078 - lr: 0.000100
+[2025-06-09 10:31:08] Batch 21/56 of Epoch 59/200 - loss: 0.0081 - mae: 0.0081 - lr: 0.000100
+[2025-06-09 10:31:10] Batch 31/56 of Epoch 59/200 - loss: 0.0083 - mae: 0.0083 - lr: 0.000100
+[2025-06-09 10:31:12] Batch 41/56 of Epoch 59/200 - loss: 0.0083 - mae: 0.0083 - lr: 0.000100
+[2025-06-09 10:31:14] Batch 51/56 of Epoch 59/200 - loss: 0.0082 - mae: 0.0082 - lr: 0.000100
+[2025-06-09 10:31:15] Batch 56/56 of Epoch 59/200 - loss: 0.0080 - mae: 0.0080 - lr: 0.000100
+[2025-06-09 10:31:16] Epoch 59/200 - 12.67s - loss: 0.0080 - mae: 0.0080 - val_loss: 0.0124 - val_mae: 0.0124 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:31:16] Epoch 59: val_loss improved from 0.01312 to 0.01244, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:31:18] Epoch None: Validation loss improved from 0.01312 to 0.01244, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:31:21] Batch 1/56 of Epoch 60/200 - loss: 0.0103 - mae: 0.0103 - lr: 0.000100
+[2025-06-09 10:31:23] Batch 11/56 of Epoch 60/200 - loss: 0.0070 - mae: 0.0070 - lr: 0.000100
+[2025-06-09 10:31:25] Batch 21/56 of Epoch 60/200 - loss: 0.0069 - mae: 0.0069 - lr: 0.000100
+[2025-06-09 10:31:27] Batch 31/56 of Epoch 60/200 - loss: 0.0070 - mae: 0.0070 - lr: 0.000100
+[2025-06-09 10:31:29] Batch 41/56 of Epoch 60/200 - loss: 0.0070 - mae: 0.0070 - lr: 0.000100
+[2025-06-09 10:31:31] Batch 51/56 of Epoch 60/200 - loss: 0.0071 - mae: 0.0071 - lr: 0.000100
+[2025-06-09 10:31:32] Batch 56/56 of Epoch 60/200 - loss: 0.0072 - mae: 0.0072 - lr: 0.000100
+[2025-06-09 10:31:33] Epoch 60/200 - 12.68s - loss: 0.0072 - mae: 0.0072 - val_loss: 0.0120 - val_mae: 0.0120 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:31:33] Epoch 60: val_loss improved from 0.01244 to 0.01196, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:31:35] Epoch None: Validation loss improved from 0.01244 to 0.01196, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:31:38] Batch 1/56 of Epoch 61/200 - loss: 0.0064 - mae: 0.0064 - lr: 0.000100
+[2025-06-09 10:31:40] Batch 11/56 of Epoch 61/200 - loss: 0.0068 - mae: 0.0068 - lr: 0.000100
+[2025-06-09 10:31:42] Batch 21/56 of Epoch 61/200 - loss: 0.0071 - mae: 0.0071 - lr: 0.000100
+[2025-06-09 10:31:44] Batch 31/56 of Epoch 61/200 - loss: 0.0075 - mae: 0.0075 - lr: 0.000100
+[2025-06-09 10:31:46] Batch 41/56 of Epoch 61/200 - loss: 0.0077 - mae: 0.0077 - lr: 0.000100
+[2025-06-09 10:31:48] Batch 51/56 of Epoch 61/200 - loss: 0.0075 - mae: 0.0075 - lr: 0.000100
+[2025-06-09 10:31:49] Batch 56/56 of Epoch 61/200 - loss: 0.0076 - mae: 0.0076 - lr: 0.000100
+[2025-06-09 10:31:50] Epoch 61/200 - 12.71s - loss: 0.0076 - mae: 0.0076 - val_loss: 0.0135 - val_mae: 0.0135 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:31:50] EarlyStopping counter: 1 out of 20
+[2025-06-09 10:31:51] Batch 1/56 of Epoch 62/200 - loss: 0.0075 - mae: 0.0075 - lr: 0.000100
+[2025-06-09 10:31:53] Batch 11/56 of Epoch 62/200 - loss: 0.0078 - mae: 0.0078 - lr: 0.000100
+[2025-06-09 10:31:55] Batch 21/56 of Epoch 62/200 - loss: 0.0078 - mae: 0.0078 - lr: 0.000100
+[2025-06-09 10:31:57] Batch 31/56 of Epoch 62/200 - loss: 0.0077 - mae: 0.0077 - lr: 0.000100
+[2025-06-09 10:31:59] Batch 41/56 of Epoch 62/200 - loss: 0.0076 - mae: 0.0076 - lr: 0.000100
+[2025-06-09 10:32:01] Batch 51/56 of Epoch 62/200 - loss: 0.0074 - mae: 0.0074 - lr: 0.000100
+[2025-06-09 10:32:02] Batch 56/56 of Epoch 62/200 - loss: 0.0075 - mae: 0.0075 - lr: 0.000100
+[2025-06-09 10:32:03] Epoch 62/200 - 12.65s - loss: 0.0075 - mae: 0.0075 - val_loss: 0.0119 - val_mae: 0.0119 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:32:03] Epoch 62: val_loss improved from 0.01196 to 0.01191, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:32:05] Epoch None: Validation loss improved from 0.01196 to 0.01191, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:32:08] Batch 1/56 of Epoch 63/200 - loss: 0.0069 - mae: 0.0069 - lr: 0.000100
+[2025-06-09 10:32:10] Batch 11/56 of Epoch 63/200 - loss: 0.0070 - mae: 0.0070 - lr: 0.000100
+[2025-06-09 10:32:12] Batch 21/56 of Epoch 63/200 - loss: 0.0069 - mae: 0.0069 - lr: 0.000100
+[2025-06-09 10:32:14] Batch 31/56 of Epoch 63/200 - loss: 0.0068 - mae: 0.0068 - lr: 0.000100
+[2025-06-09 10:32:16] Batch 41/56 of Epoch 63/200 - loss: 0.0070 - mae: 0.0070 - lr: 0.000100
+[2025-06-09 10:32:18] Batch 51/56 of Epoch 63/200 - loss: 0.0074 - mae: 0.0074 - lr: 0.000100
+[2025-06-09 10:32:19] Batch 56/56 of Epoch 63/200 - loss: 0.0075 - mae: 0.0075 - lr: 0.000100
+[2025-06-09 10:32:20] Epoch 63/200 - 12.72s - loss: 0.0075 - mae: 0.0075 - val_loss: 0.0131 - val_mae: 0.0131 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:32:20] EarlyStopping counter: 1 out of 20
+[2025-06-09 10:32:21] Batch 1/56 of Epoch 64/200 - loss: 0.0096 - mae: 0.0096 - lr: 0.000100
+[2025-06-09 10:32:23] Batch 11/56 of Epoch 64/200 - loss: 0.0070 - mae: 0.0070 - lr: 0.000100
+[2025-06-09 10:32:25] Batch 21/56 of Epoch 64/200 - loss: 0.0074 - mae: 0.0074 - lr: 0.000100
+[2025-06-09 10:32:27] Batch 31/56 of Epoch 64/200 - loss: 0.0072 - mae: 0.0072 - lr: 0.000100
+[2025-06-09 10:32:29] Batch 41/56 of Epoch 64/200 - loss: 0.0074 - mae: 0.0074 - lr: 0.000100
+[2025-06-09 10:32:31] Batch 51/56 of Epoch 64/200 - loss: 0.0074 - mae: 0.0074 - lr: 0.000100
+[2025-06-09 10:32:32] Batch 56/56 of Epoch 64/200 - loss: 0.0074 - mae: 0.0074 - lr: 0.000100
+[2025-06-09 10:32:33] Epoch 64/200 - 12.65s - loss: 0.0074 - mae: 0.0074 - val_loss: 0.0120 - val_mae: 0.0120 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:32:33] EarlyStopping counter: 2 out of 20
+[2025-06-09 10:32:33] Batch 1/56 of Epoch 65/200 - loss: 0.0067 - mae: 0.0067 - lr: 0.000100
+[2025-06-09 10:32:35] Batch 11/56 of Epoch 65/200 - loss: 0.0068 - mae: 0.0068 - lr: 0.000100
+[2025-06-09 10:32:37] Batch 21/56 of Epoch 65/200 - loss: 0.0070 - mae: 0.0070 - lr: 0.000100
+[2025-06-09 10:32:39] Batch 31/56 of Epoch 65/200 - loss: 0.0071 - mae: 0.0071 - lr: 0.000100
+[2025-06-09 10:32:41] Batch 41/56 of Epoch 65/200 - loss: 0.0073 - mae: 0.0073 - lr: 0.000100
+[2025-06-09 10:32:43] Batch 51/56 of Epoch 65/200 - loss: 0.0072 - mae: 0.0072 - lr: 0.000100
+[2025-06-09 10:32:44] Batch 56/56 of Epoch 65/200 - loss: 0.0071 - mae: 0.0071 - lr: 0.000100
+[2025-06-09 10:32:45] Epoch 65/200 - 12.63s - loss: 0.0071 - mae: 0.0071 - val_loss: 0.0122 - val_mae: 0.0122 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:32:45] EarlyStopping counter: 3 out of 20
+[2025-06-09 10:32:46] Batch 1/56 of Epoch 66/200 - loss: 0.0067 - mae: 0.0067 - lr: 0.000100
+[2025-06-09 10:32:48] Batch 11/56 of Epoch 66/200 - loss: 0.0084 - mae: 0.0084 - lr: 0.000100
+[2025-06-09 10:32:50] Batch 21/56 of Epoch 66/200 - loss: 0.0074 - mae: 0.0074 - lr: 0.000100
+[2025-06-09 10:32:52] Batch 31/56 of Epoch 66/200 - loss: 0.0073 - mae: 0.0073 - lr: 0.000100
+[2025-06-09 10:32:54] Batch 41/56 of Epoch 66/200 - loss: 0.0071 - mae: 0.0071 - lr: 0.000100
+[2025-06-09 10:32:56] Batch 51/56 of Epoch 66/200 - loss: 0.0070 - mae: 0.0070 - lr: 0.000100
+[2025-06-09 10:32:57] Batch 56/56 of Epoch 66/200 - loss: 0.0069 - mae: 0.0069 - lr: 0.000100
+[2025-06-09 10:32:58] Epoch 66/200 - 12.63s - loss: 0.0069 - mae: 0.0069 - val_loss: 0.0119 - val_mae: 0.0119 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:32:58] Epoch 66: val_loss improved from 0.01191 to 0.01189, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:33:00] Epoch None: Validation loss improved from 0.01191 to 0.01189, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:33:03] Batch 1/56 of Epoch 67/200 - loss: 0.0061 - mae: 0.0061 - lr: 0.000100
+[2025-06-09 10:33:05] Batch 11/56 of Epoch 67/200 - loss: 0.0063 - mae: 0.0063 - lr: 0.000100
+[2025-06-09 10:33:07] Batch 21/56 of Epoch 67/200 - loss: 0.0062 - mae: 0.0062 - lr: 0.000100
+[2025-06-09 10:33:09] Batch 31/56 of Epoch 67/200 - loss: 0.0063 - mae: 0.0063 - lr: 0.000100
+[2025-06-09 10:33:11] Batch 41/56 of Epoch 67/200 - loss: 0.0062 - mae: 0.0062 - lr: 0.000100
+[2025-06-09 10:33:13] Batch 51/56 of Epoch 67/200 - loss: 0.0063 - mae: 0.0063 - lr: 0.000100
+[2025-06-09 10:33:14] Batch 56/56 of Epoch 67/200 - loss: 0.0063 - mae: 0.0063 - lr: 0.000100
+[2025-06-09 10:33:15] Epoch 67/200 - 12.69s - loss: 0.0063 - mae: 0.0063 - val_loss: 0.0121 - val_mae: 0.0121 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:33:15] EarlyStopping counter: 1 out of 20
+[2025-06-09 10:33:16] Batch 1/56 of Epoch 68/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000100
+[2025-06-09 10:33:18] Batch 11/56 of Epoch 68/200 - loss: 0.0065 - mae: 0.0065 - lr: 0.000100
+[2025-06-09 10:33:20] Batch 21/56 of Epoch 68/200 - loss: 0.0063 - mae: 0.0063 - lr: 0.000100
+[2025-06-09 10:33:22] Batch 31/56 of Epoch 68/200 - loss: 0.0062 - mae: 0.0062 - lr: 0.000100
+[2025-06-09 10:33:24] Batch 41/56 of Epoch 68/200 - loss: 0.0061 - mae: 0.0061 - lr: 0.000100
+[2025-06-09 10:33:26] Batch 51/56 of Epoch 68/200 - loss: 0.0061 - mae: 0.0061 - lr: 0.000100
+[2025-06-09 10:33:27] Batch 56/56 of Epoch 68/200 - loss: 0.0062 - mae: 0.0062 - lr: 0.000100
+[2025-06-09 10:33:28] Epoch 68/200 - 12.64s - loss: 0.0062 - mae: 0.0062 - val_loss: 0.0125 - val_mae: 0.0125 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:33:28] EarlyStopping counter: 2 out of 20
+[2025-06-09 10:33:28] Batch 1/56 of Epoch 69/200 - loss: 0.0069 - mae: 0.0069 - lr: 0.000100
+[2025-06-09 10:33:30] Batch 11/56 of Epoch 69/200 - loss: 0.0067 - mae: 0.0067 - lr: 0.000100
+[2025-06-09 10:33:33] Batch 21/56 of Epoch 69/200 - loss: 0.0062 - mae: 0.0062 - lr: 0.000100
+[2025-06-09 10:33:35] Batch 31/56 of Epoch 69/200 - loss: 0.0066 - mae: 0.0066 - lr: 0.000100
+[2025-06-09 10:33:37] Batch 41/56 of Epoch 69/200 - loss: 0.0066 - mae: 0.0066 - lr: 0.000100
+[2025-06-09 10:33:39] Batch 51/56 of Epoch 69/200 - loss: 0.0065 - mae: 0.0065 - lr: 0.000100
+[2025-06-09 10:33:40] Batch 56/56 of Epoch 69/200 - loss: 0.0065 - mae: 0.0065 - lr: 0.000100
+[2025-06-09 10:33:41] Epoch 69/200 - 12.64s - loss: 0.0065 - mae: 0.0065 - val_loss: 0.0117 - val_mae: 0.0117 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:33:41] Epoch 69: val_loss improved from 0.01189 to 0.01171, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:33:43] Epoch None: Validation loss improved from 0.01189 to 0.01171, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:33:45] Batch 1/56 of Epoch 70/200 - loss: 0.0079 - mae: 0.0079 - lr: 0.000100
+[2025-06-09 10:33:47] Batch 11/56 of Epoch 70/200 - loss: 0.0076 - mae: 0.0076 - lr: 0.000100
+[2025-06-09 10:33:49] Batch 21/56 of Epoch 70/200 - loss: 0.0068 - mae: 0.0068 - lr: 0.000100
+[2025-06-09 10:33:51] Batch 31/56 of Epoch 70/200 - loss: 0.0065 - mae: 0.0065 - lr: 0.000100
+[2025-06-09 10:33:54] Batch 41/56 of Epoch 70/200 - loss: 0.0064 - mae: 0.0064 - lr: 0.000100
+[2025-06-09 10:33:56] Batch 51/56 of Epoch 70/200 - loss: 0.0064 - mae: 0.0064 - lr: 0.000100
+[2025-06-09 10:33:57] Batch 56/56 of Epoch 70/200 - loss: 0.0064 - mae: 0.0064 - lr: 0.000100
+[2025-06-09 10:33:57] Epoch 70/200 - 12.68s - loss: 0.0064 - mae: 0.0064 - val_loss: 0.0123 - val_mae: 0.0123 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:33:57] EarlyStopping counter: 1 out of 20
+[2025-06-09 10:33:58] Batch 1/56 of Epoch 71/200 - loss: 0.0064 - mae: 0.0064 - lr: 0.000100
+[2025-06-09 10:34:00] Batch 11/56 of Epoch 71/200 - loss: 0.0065 - mae: 0.0065 - lr: 0.000100
+[2025-06-09 10:34:02] Batch 21/56 of Epoch 71/200 - loss: 0.0063 - mae: 0.0063 - lr: 0.000100
+[2025-06-09 10:34:04] Batch 31/56 of Epoch 71/200 - loss: 0.0061 - mae: 0.0061 - lr: 0.000100
+[2025-06-09 10:34:06] Batch 41/56 of Epoch 71/200 - loss: 0.0059 - mae: 0.0059 - lr: 0.000100
+[2025-06-09 10:34:08] Batch 51/56 of Epoch 71/200 - loss: 0.0059 - mae: 0.0059 - lr: 0.000100
+[2025-06-09 10:34:09] Batch 56/56 of Epoch 71/200 - loss: 0.0059 - mae: 0.0059 - lr: 0.000100
+[2025-06-09 10:34:10] Epoch 71/200 - 12.64s - loss: 0.0059 - mae: 0.0059 - val_loss: 0.0116 - val_mae: 0.0116 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:34:10] Epoch 71: val_loss improved from 0.01171 to 0.01159, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:34:12] Epoch None: Validation loss improved from 0.01171 to 0.01159, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:34:15] Batch 1/56 of Epoch 72/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000100
+[2025-06-09 10:34:17] Batch 11/56 of Epoch 72/200 - loss: 0.0054 - mae: 0.0054 - lr: 0.000100
+[2025-06-09 10:34:19] Batch 21/56 of Epoch 72/200 - loss: 0.0056 - mae: 0.0056 - lr: 0.000100
+[2025-06-09 10:34:21] Batch 31/56 of Epoch 72/200 - loss: 0.0060 - mae: 0.0060 - lr: 0.000100
+[2025-06-09 10:34:23] Batch 41/56 of Epoch 72/200 - loss: 0.0064 - mae: 0.0064 - lr: 0.000100
+[2025-06-09 10:34:25] Batch 51/56 of Epoch 72/200 - loss: 0.0063 - mae: 0.0063 - lr: 0.000100
+[2025-06-09 10:34:26] Batch 56/56 of Epoch 72/200 - loss: 0.0062 - mae: 0.0062 - lr: 0.000100
+[2025-06-09 10:34:27] Epoch 72/200 - 12.67s - loss: 0.0062 - mae: 0.0062 - val_loss: 0.0122 - val_mae: 0.0122 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:34:27] EarlyStopping counter: 1 out of 20
+[2025-06-09 10:34:28] Batch 1/56 of Epoch 73/200 - loss: 0.0058 - mae: 0.0058 - lr: 0.000100
+[2025-06-09 10:34:30] Batch 11/56 of Epoch 73/200 - loss: 0.0060 - mae: 0.0060 - lr: 0.000100
+[2025-06-09 10:34:32] Batch 21/56 of Epoch 73/200 - loss: 0.0059 - mae: 0.0059 - lr: 0.000100
+[2025-06-09 10:34:34] Batch 31/56 of Epoch 73/200 - loss: 0.0060 - mae: 0.0060 - lr: 0.000100
+[2025-06-09 10:34:36] Batch 41/56 of Epoch 73/200 - loss: 0.0063 - mae: 0.0063 - lr: 0.000100
+[2025-06-09 10:34:38] Batch 51/56 of Epoch 73/200 - loss: 0.0064 - mae: 0.0064 - lr: 0.000100
+[2025-06-09 10:34:39] Batch 56/56 of Epoch 73/200 - loss: 0.0064 - mae: 0.0064 - lr: 0.000100
+[2025-06-09 10:34:40] Epoch 73/200 - 12.68s - loss: 0.0064 - mae: 0.0064 - val_loss: 0.0117 - val_mae: 0.0117 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:34:40] EarlyStopping counter: 2 out of 20
+[2025-06-09 10:34:41] Batch 1/56 of Epoch 74/200 - loss: 0.0054 - mae: 0.0054 - lr: 0.000100
+[2025-06-09 10:34:43] Batch 11/56 of Epoch 74/200 - loss: 0.0057 - mae: 0.0057 - lr: 0.000100
+[2025-06-09 10:34:45] Batch 21/56 of Epoch 74/200 - loss: 0.0058 - mae: 0.0058 - lr: 0.000100
+[2025-06-09 10:34:47] Batch 31/56 of Epoch 74/200 - loss: 0.0057 - mae: 0.0057 - lr: 0.000100
+[2025-06-09 10:34:49] Batch 41/56 of Epoch 74/200 - loss: 0.0057 - mae: 0.0057 - lr: 0.000100
+[2025-06-09 10:34:51] Batch 51/56 of Epoch 74/200 - loss: 0.0056 - mae: 0.0056 - lr: 0.000100
+[2025-06-09 10:34:52] Batch 56/56 of Epoch 74/200 - loss: 0.0057 - mae: 0.0057 - lr: 0.000100
+[2025-06-09 10:34:53] Epoch 74/200 - 12.62s - loss: 0.0057 - mae: 0.0057 - val_loss: 0.0110 - val_mae: 0.0110 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:34:53] Epoch 74: val_loss improved from 0.01159 to 0.01103, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:34:55] Epoch None: Validation loss improved from 0.01159 to 0.01103, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:34:58] Batch 1/56 of Epoch 75/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000100
+[2025-06-09 10:35:00] Batch 11/56 of Epoch 75/200 - loss: 0.0059 - mae: 0.0059 - lr: 0.000100
+[2025-06-09 10:35:02] Batch 21/56 of Epoch 75/200 - loss: 0.0059 - mae: 0.0059 - lr: 0.000100
+[2025-06-09 10:35:04] Batch 31/56 of Epoch 75/200 - loss: 0.0060 - mae: 0.0060 - lr: 0.000100
+[2025-06-09 10:35:06] Batch 41/56 of Epoch 75/200 - loss: 0.0061 - mae: 0.0061 - lr: 0.000100
+[2025-06-09 10:35:08] Batch 51/56 of Epoch 75/200 - loss: 0.0060 - mae: 0.0060 - lr: 0.000100
+[2025-06-09 10:35:09] Batch 56/56 of Epoch 75/200 - loss: 0.0060 - mae: 0.0060 - lr: 0.000100
+[2025-06-09 10:35:10] Epoch 75/200 - 12.68s - loss: 0.0060 - mae: 0.0060 - val_loss: 0.0113 - val_mae: 0.0113 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:35:10] EarlyStopping counter: 1 out of 20
+[2025-06-09 10:35:10] Batch 1/56 of Epoch 76/200 - loss: 0.0054 - mae: 0.0054 - lr: 0.000100
+[2025-06-09 10:35:12] Batch 11/56 of Epoch 76/200 - loss: 0.0059 - mae: 0.0059 - lr: 0.000100
+[2025-06-09 10:35:14] Batch 21/56 of Epoch 76/200 - loss: 0.0058 - mae: 0.0058 - lr: 0.000100
+[2025-06-09 10:35:16] Batch 31/56 of Epoch 76/200 - loss: 0.0058 - mae: 0.0058 - lr: 0.000100
+[2025-06-09 10:35:18] Batch 41/56 of Epoch 76/200 - loss: 0.0058 - mae: 0.0058 - lr: 0.000100
+[2025-06-09 10:35:21] Batch 51/56 of Epoch 76/200 - loss: 0.0057 - mae: 0.0057 - lr: 0.000100
+[2025-06-09 10:35:22] Batch 56/56 of Epoch 76/200 - loss: 0.0056 - mae: 0.0056 - lr: 0.000100
+[2025-06-09 10:35:22] Epoch 76/200 - 12.63s - loss: 0.0056 - mae: 0.0056 - val_loss: 0.0119 - val_mae: 0.0119 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:35:22] EarlyStopping counter: 2 out of 20
+[2025-06-09 10:35:23] Batch 1/56 of Epoch 77/200 - loss: 0.0057 - mae: 0.0057 - lr: 0.000100
+[2025-06-09 10:35:25] Batch 11/56 of Epoch 77/200 - loss: 0.0055 - mae: 0.0055 - lr: 0.000100
+[2025-06-09 10:35:27] Batch 21/56 of Epoch 77/200 - loss: 0.0055 - mae: 0.0055 - lr: 0.000100
+[2025-06-09 10:35:29] Batch 31/56 of Epoch 77/200 - loss: 0.0056 - mae: 0.0056 - lr: 0.000100
+[2025-06-09 10:35:31] Batch 41/56 of Epoch 77/200 - loss: 0.0057 - mae: 0.0057 - lr: 0.000100
+[2025-06-09 10:35:33] Batch 51/56 of Epoch 77/200 - loss: 0.0056 - mae: 0.0056 - lr: 0.000100
+[2025-06-09 10:35:34] Batch 56/56 of Epoch 77/200 - loss: 0.0057 - mae: 0.0057 - lr: 0.000100
+[2025-06-09 10:35:35] Epoch 77/200 - 12.65s - loss: 0.0057 - mae: 0.0057 - val_loss: 0.0119 - val_mae: 0.0119 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:35:35] EarlyStopping counter: 3 out of 20
+[2025-06-09 10:35:36] Batch 1/56 of Epoch 78/200 - loss: 0.0045 - mae: 0.0045 - lr: 0.000100
+[2025-06-09 10:35:38] Batch 11/56 of Epoch 78/200 - loss: 0.0068 - mae: 0.0068 - lr: 0.000100
+[2025-06-09 10:35:40] Batch 21/56 of Epoch 78/200 - loss: 0.0066 - mae: 0.0066 - lr: 0.000100
+[2025-06-09 10:35:42] Batch 31/56 of Epoch 78/200 - loss: 0.0064 - mae: 0.0064 - lr: 0.000100
+[2025-06-09 10:35:44] Batch 41/56 of Epoch 78/200 - loss: 0.0061 - mae: 0.0061 - lr: 0.000100
+[2025-06-09 10:35:46] Batch 51/56 of Epoch 78/200 - loss: 0.0060 - mae: 0.0060 - lr: 0.000100
+[2025-06-09 10:35:47] Batch 56/56 of Epoch 78/200 - loss: 0.0061 - mae: 0.0061 - lr: 0.000100
+[2025-06-09 10:35:48] Epoch 78/200 - 12.65s - loss: 0.0061 - mae: 0.0061 - val_loss: 0.0121 - val_mae: 0.0121 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:35:48] EarlyStopping counter: 4 out of 20
+[2025-06-09 10:35:48] Batch 1/56 of Epoch 79/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000100
+[2025-06-09 10:35:50] Batch 11/56 of Epoch 79/200 - loss: 0.0057 - mae: 0.0057 - lr: 0.000100
+[2025-06-09 10:35:52] Batch 21/56 of Epoch 79/200 - loss: 0.0062 - mae: 0.0062 - lr: 0.000100
+[2025-06-09 10:35:54] Batch 31/56 of Epoch 79/200 - loss: 0.0062 - mae: 0.0062 - lr: 0.000100
+[2025-06-09 10:35:56] Batch 41/56 of Epoch 79/200 - loss: 0.0060 - mae: 0.0060 - lr: 0.000100
+[2025-06-09 10:35:58] Batch 51/56 of Epoch 79/200 - loss: 0.0059 - mae: 0.0059 - lr: 0.000100
+[2025-06-09 10:36:00] Batch 56/56 of Epoch 79/200 - loss: 0.0059 - mae: 0.0059 - lr: 0.000100
+[2025-06-09 10:36:00] Epoch 79/200 - 12.66s - loss: 0.0059 - mae: 0.0059 - val_loss: 0.0114 - val_mae: 0.0114 - lr: 0.000100
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:36:00] Reducing learning rate from 0.000100 to 0.000010
+[2025-06-09 10:36:00] EarlyStopping counter: 5 out of 20
+[2025-06-09 10:36:01] Batch 1/56 of Epoch 80/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000010
+[2025-06-09 10:36:03] Batch 11/56 of Epoch 80/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000010
+[2025-06-09 10:36:05] Batch 21/56 of Epoch 80/200 - loss: 0.0054 - mae: 0.0054 - lr: 0.000010
+[2025-06-09 10:36:07] Batch 31/56 of Epoch 80/200 - loss: 0.0053 - mae: 0.0053 - lr: 0.000010
+[2025-06-09 10:36:09] Batch 41/56 of Epoch 80/200 - loss: 0.0053 - mae: 0.0053 - lr: 0.000010
+[2025-06-09 10:36:11] Batch 51/56 of Epoch 80/200 - loss: 0.0053 - mae: 0.0053 - lr: 0.000010
+[2025-06-09 10:36:12] Batch 56/56 of Epoch 80/200 - loss: 0.0052 - mae: 0.0052 - lr: 0.000010
+[2025-06-09 10:36:13] Epoch 80/200 - 12.65s - loss: 0.0052 - mae: 0.0052 - val_loss: 0.0113 - val_mae: 0.0113 - lr: 0.000010
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:36:13] EarlyStopping counter: 6 out of 20
+[2025-06-09 10:36:14] Batch 1/56 of Epoch 81/200 - loss: 0.0041 - mae: 0.0041 - lr: 0.000010
+[2025-06-09 10:36:16] Batch 11/56 of Epoch 81/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000010
+[2025-06-09 10:36:18] Batch 21/56 of Epoch 81/200 - loss: 0.0053 - mae: 0.0053 - lr: 0.000010
+[2025-06-09 10:36:20] Batch 31/56 of Epoch 81/200 - loss: 0.0052 - mae: 0.0052 - lr: 0.000010
+[2025-06-09 10:36:22] Batch 41/56 of Epoch 81/200 - loss: 0.0052 - mae: 0.0052 - lr: 0.000010
+[2025-06-09 10:36:24] Batch 51/56 of Epoch 81/200 - loss: 0.0051 - mae: 0.0051 - lr: 0.000010
+[2025-06-09 10:36:25] Batch 56/56 of Epoch 81/200 - loss: 0.0053 - mae: 0.0053 - lr: 0.000010
+[2025-06-09 10:36:26] Epoch 81/200 - 12.64s - loss: 0.0053 - mae: 0.0053 - val_loss: 0.0118 - val_mae: 0.0118 - lr: 0.000010
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:36:26] EarlyStopping counter: 7 out of 20
+[2025-06-09 10:36:26] Batch 1/56 of Epoch 82/200 - loss: 0.0043 - mae: 0.0043 - lr: 0.000010
+[2025-06-09 10:36:28] Batch 11/56 of Epoch 82/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000010
+[2025-06-09 10:36:30] Batch 21/56 of Epoch 82/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000010
+[2025-06-09 10:36:32] Batch 31/56 of Epoch 82/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000010
+[2025-06-09 10:36:34] Batch 41/56 of Epoch 82/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000010
+[2025-06-09 10:36:36] Batch 51/56 of Epoch 82/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000010
+[2025-06-09 10:36:37] Batch 56/56 of Epoch 82/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000010
+[2025-06-09 10:36:38] Epoch 82/200 - 12.70s - loss: 0.0048 - mae: 0.0048 - val_loss: 0.0112 - val_mae: 0.0112 - lr: 0.000010
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:36:38] EarlyStopping counter: 8 out of 20
+[2025-06-09 10:36:39] Batch 1/56 of Epoch 83/200 - loss: 0.0041 - mae: 0.0041 - lr: 0.000010
+[2025-06-09 10:36:41] Batch 11/56 of Epoch 83/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000010
+[2025-06-09 10:36:43] Batch 21/56 of Epoch 83/200 - loss: 0.0054 - mae: 0.0054 - lr: 0.000010
+[2025-06-09 10:36:45] Batch 31/56 of Epoch 83/200 - loss: 0.0053 - mae: 0.0053 - lr: 0.000010
+[2025-06-09 10:36:47] Batch 41/56 of Epoch 83/200 - loss: 0.0051 - mae: 0.0051 - lr: 0.000010
+[2025-06-09 10:36:49] Batch 51/56 of Epoch 83/200 - loss: 0.0051 - mae: 0.0051 - lr: 0.000010
+[2025-06-09 10:36:50] Batch 56/56 of Epoch 83/200 - loss: 0.0051 - mae: 0.0051 - lr: 0.000010
+[2025-06-09 10:36:51] Epoch 83/200 - 12.64s - loss: 0.0051 - mae: 0.0051 - val_loss: 0.0112 - val_mae: 0.0112 - lr: 0.000010
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:36:51] EarlyStopping counter: 9 out of 20
+[2025-06-09 10:36:52] Batch 1/56 of Epoch 84/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000010
+[2025-06-09 10:36:54] Batch 11/56 of Epoch 84/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000010
+[2025-06-09 10:36:56] Batch 21/56 of Epoch 84/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000010
+[2025-06-09 10:36:58] Batch 31/56 of Epoch 84/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000010
+[2025-06-09 10:37:00] Batch 41/56 of Epoch 84/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000010
+[2025-06-09 10:37:02] Batch 51/56 of Epoch 84/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000010
+[2025-06-09 10:37:03] Batch 56/56 of Epoch 84/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000010
+[2025-06-09 10:37:04] Epoch 84/200 - 12.66s - loss: 0.0050 - mae: 0.0050 - val_loss: 0.0110 - val_mae: 0.0110 - lr: 0.000010
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:37:04] Epoch 84: val_loss improved from 0.01103 to 0.01096, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:37:06] Epoch None: Validation loss improved from 0.01103 to 0.01096, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:37:09] Batch 1/56 of Epoch 85/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000010
+[2025-06-09 10:37:11] Batch 11/56 of Epoch 85/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000010
+[2025-06-09 10:37:13] Batch 21/56 of Epoch 85/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000010
+[2025-06-09 10:37:15] Batch 31/56 of Epoch 85/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000010
+[2025-06-09 10:37:17] Batch 41/56 of Epoch 85/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000010
+[2025-06-09 10:37:19] Batch 51/56 of Epoch 85/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000010
+[2025-06-09 10:37:20] Batch 56/56 of Epoch 85/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000010
+[2025-06-09 10:37:21] Epoch 85/200 - 12.72s - loss: 0.0049 - mae: 0.0049 - val_loss: 0.0111 - val_mae: 0.0111 - lr: 0.000010
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:37:21] EarlyStopping counter: 1 out of 20
+[2025-06-09 10:37:22] Batch 1/56 of Epoch 86/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000010
+[2025-06-09 10:37:24] Batch 11/56 of Epoch 86/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000010
+[2025-06-09 10:37:26] Batch 21/56 of Epoch 86/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000010
+[2025-06-09 10:37:28] Batch 31/56 of Epoch 86/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000010
+[2025-06-09 10:37:30] Batch 41/56 of Epoch 86/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000010
+[2025-06-09 10:37:32] Batch 51/56 of Epoch 86/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000010
+[2025-06-09 10:37:33] Batch 56/56 of Epoch 86/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000010
+[2025-06-09 10:37:34] Epoch 86/200 - 12.67s - loss: 0.0048 - mae: 0.0048 - val_loss: 0.0109 - val_mae: 0.0109 - lr: 0.000010
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:37:34] Epoch 86: val_loss improved from 0.01096 to 0.01093, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:37:36] Epoch None: Validation loss improved from 0.01096 to 0.01093, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:37:39] Batch 1/56 of Epoch 87/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000010
+[2025-06-09 10:37:41] Batch 11/56 of Epoch 87/200 - loss: 0.0053 - mae: 0.0053 - lr: 0.000010
+[2025-06-09 10:37:43] Batch 21/56 of Epoch 87/200 - loss: 0.0053 - mae: 0.0053 - lr: 0.000010
+[2025-06-09 10:37:45] Batch 31/56 of Epoch 87/200 - loss: 0.0051 - mae: 0.0051 - lr: 0.000010
+[2025-06-09 10:37:47] Batch 41/56 of Epoch 87/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000010
+[2025-06-09 10:37:49] Batch 51/56 of Epoch 87/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000010
+[2025-06-09 10:37:50] Batch 56/56 of Epoch 87/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000010
+[2025-06-09 10:37:51] Epoch 87/200 - 12.73s - loss: 0.0050 - mae: 0.0050 - val_loss: 0.0109 - val_mae: 0.0109 - lr: 0.000010
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:37:51] Epoch 87: val_loss improved from 0.01093 to 0.01092, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:37:54] Epoch None: Validation loss improved from 0.01093 to 0.01092, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:37:56] Batch 1/56 of Epoch 88/200 - loss: 0.0060 - mae: 0.0060 - lr: 0.000010
+[2025-06-09 10:37:59] Batch 11/56 of Epoch 88/200 - loss: 0.0053 - mae: 0.0053 - lr: 0.000010
+[2025-06-09 10:38:01] Batch 21/56 of Epoch 88/200 - loss: 0.0053 - mae: 0.0053 - lr: 0.000010
+[2025-06-09 10:38:03] Batch 31/56 of Epoch 88/200 - loss: 0.0051 - mae: 0.0051 - lr: 0.000010
+[2025-06-09 10:38:05] Batch 41/56 of Epoch 88/200 - loss: 0.0051 - mae: 0.0051 - lr: 0.000010
+[2025-06-09 10:38:07] Batch 51/56 of Epoch 88/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000010
+[2025-06-09 10:38:08] Batch 56/56 of Epoch 88/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000010
+[2025-06-09 10:38:09] Epoch 88/200 - 12.70s - loss: 0.0049 - mae: 0.0049 - val_loss: 0.0113 - val_mae: 0.0113 - lr: 0.000010
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:38:09] EarlyStopping counter: 1 out of 20
+[2025-06-09 10:38:09] Batch 1/56 of Epoch 89/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000010
+[2025-06-09 10:38:11] Batch 11/56 of Epoch 89/200 - loss: 0.0051 - mae: 0.0051 - lr: 0.000010
+[2025-06-09 10:38:13] Batch 21/56 of Epoch 89/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000010
+[2025-06-09 10:38:15] Batch 31/56 of Epoch 89/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000010
+[2025-06-09 10:38:17] Batch 41/56 of Epoch 89/200 - loss: 0.0052 - mae: 0.0052 - lr: 0.000010
+[2025-06-09 10:38:19] Batch 51/56 of Epoch 89/200 - loss: 0.0051 - mae: 0.0051 - lr: 0.000010
+[2025-06-09 10:38:20] Batch 56/56 of Epoch 89/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000010
+[2025-06-09 10:38:21] Epoch 89/200 - 12.66s - loss: 0.0050 - mae: 0.0050 - val_loss: 0.0112 - val_mae: 0.0112 - lr: 0.000010
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:38:21] EarlyStopping counter: 2 out of 20
+[2025-06-09 10:38:22] Batch 1/56 of Epoch 90/200 - loss: 0.0064 - mae: 0.0064 - lr: 0.000010
+[2025-06-09 10:38:24] Batch 11/56 of Epoch 90/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000010
+[2025-06-09 10:38:26] Batch 21/56 of Epoch 90/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000010
+[2025-06-09 10:38:28] Batch 31/56 of Epoch 90/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000010
+[2025-06-09 10:38:30] Batch 41/56 of Epoch 90/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000010
+[2025-06-09 10:38:32] Batch 51/56 of Epoch 90/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000010
+[2025-06-09 10:38:33] Batch 56/56 of Epoch 90/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000010
+[2025-06-09 10:38:34] Epoch 90/200 - 12.66s - loss: 0.0048 - mae: 0.0048 - val_loss: 0.0111 - val_mae: 0.0111 - lr: 0.000010
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:38:34] EarlyStopping counter: 3 out of 20
+[2025-06-09 10:38:34] Batch 1/56 of Epoch 91/200 - loss: 0.0044 - mae: 0.0044 - lr: 0.000010
+[2025-06-09 10:38:37] Batch 11/56 of Epoch 91/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000010
+[2025-06-09 10:38:39] Batch 21/56 of Epoch 91/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000010
+[2025-06-09 10:38:41] Batch 31/56 of Epoch 91/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000010
+[2025-06-09 10:38:43] Batch 41/56 of Epoch 91/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000010
+[2025-06-09 10:38:45] Batch 51/56 of Epoch 91/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000010
+[2025-06-09 10:38:46] Batch 56/56 of Epoch 91/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000010
+[2025-06-09 10:38:47] Epoch 91/200 - 12.67s - loss: 0.0048 - mae: 0.0048 - val_loss: 0.0120 - val_mae: 0.0120 - lr: 0.000010
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:38:47] EarlyStopping counter: 4 out of 20
+[2025-06-09 10:38:47] Batch 1/56 of Epoch 92/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000010
+[2025-06-09 10:38:49] Batch 11/56 of Epoch 92/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000010
+[2025-06-09 10:38:51] Batch 21/56 of Epoch 92/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000010
+[2025-06-09 10:38:53] Batch 31/56 of Epoch 92/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000010
+[2025-06-09 10:38:55] Batch 41/56 of Epoch 92/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000010
+[2025-06-09 10:38:57] Batch 51/56 of Epoch 92/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000010
+[2025-06-09 10:38:58] Batch 56/56 of Epoch 92/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000010
+[2025-06-09 10:38:59] Epoch 92/200 - 12.69s - loss: 0.0047 - mae: 0.0047 - val_loss: 0.0111 - val_mae: 0.0111 - lr: 0.000010
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:38:59] Reducing learning rate from 0.000010 to 0.000001
+[2025-06-09 10:38:59] EarlyStopping counter: 5 out of 20
+[2025-06-09 10:39:00] Batch 1/56 of Epoch 93/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000001
+[2025-06-09 10:39:02] Batch 11/56 of Epoch 93/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000001
+[2025-06-09 10:39:04] Batch 21/56 of Epoch 93/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000001
+[2025-06-09 10:39:06] Batch 31/56 of Epoch 93/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000001
+[2025-06-09 10:39:08] Batch 41/56 of Epoch 93/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000001
+[2025-06-09 10:39:10] Batch 51/56 of Epoch 93/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000001
+[2025-06-09 10:39:11] Batch 56/56 of Epoch 93/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000001
+[2025-06-09 10:39:12] Epoch 93/200 - 12.68s - loss: 0.0047 - mae: 0.0047 - val_loss: 0.0114 - val_mae: 0.0114 - lr: 0.000001
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:39:12] EarlyStopping counter: 6 out of 20
+[2025-06-09 10:39:13] Batch 1/56 of Epoch 94/200 - loss: 0.0035 - mae: 0.0035 - lr: 0.000001
+[2025-06-09 10:39:15] Batch 11/56 of Epoch 94/200 - loss: 0.0043 - mae: 0.0043 - lr: 0.000001
+[2025-06-09 10:39:17] Batch 21/56 of Epoch 94/200 - loss: 0.0045 - mae: 0.0045 - lr: 0.000001
+[2025-06-09 10:39:19] Batch 31/56 of Epoch 94/200 - loss: 0.0045 - mae: 0.0045 - lr: 0.000001
+[2025-06-09 10:39:21] Batch 41/56 of Epoch 94/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000001
+[2025-06-09 10:39:23] Batch 51/56 of Epoch 94/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000001
+[2025-06-09 10:39:24] Batch 56/56 of Epoch 94/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000001
+[2025-06-09 10:39:25] Epoch 94/200 - 12.68s - loss: 0.0048 - mae: 0.0048 - val_loss: 0.0112 - val_mae: 0.0112 - lr: 0.000001
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:39:25] EarlyStopping counter: 7 out of 20
+[2025-06-09 10:39:25] Batch 1/56 of Epoch 95/200 - loss: 0.0052 - mae: 0.0052 - lr: 0.000001
+[2025-06-09 10:39:27] Batch 11/56 of Epoch 95/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000001
+[2025-06-09 10:39:29] Batch 21/56 of Epoch 95/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000001
+[2025-06-09 10:39:31] Batch 31/56 of Epoch 95/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000001
+[2025-06-09 10:39:33] Batch 41/56 of Epoch 95/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000001
+[2025-06-09 10:39:35] Batch 51/56 of Epoch 95/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000001
+[2025-06-09 10:39:37] Batch 56/56 of Epoch 95/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000001
+[2025-06-09 10:39:37] Epoch 95/200 - 12.71s - loss: 0.0047 - mae: 0.0047 - val_loss: 0.0111 - val_mae: 0.0111 - lr: 0.000001
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:39:37] EarlyStopping counter: 8 out of 20
+[2025-06-09 10:39:38] Batch 1/56 of Epoch 96/200 - loss: 0.0044 - mae: 0.0044 - lr: 0.000001
+[2025-06-09 10:39:40] Batch 11/56 of Epoch 96/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000001
+[2025-06-09 10:39:42] Batch 21/56 of Epoch 96/200 - loss: 0.0045 - mae: 0.0045 - lr: 0.000001
+[2025-06-09 10:39:44] Batch 31/56 of Epoch 96/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000001
+[2025-06-09 10:39:46] Batch 41/56 of Epoch 96/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000001
+[2025-06-09 10:39:48] Batch 51/56 of Epoch 96/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000001
+[2025-06-09 10:39:49] Batch 56/56 of Epoch 96/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000001
+[2025-06-09 10:39:50] Epoch 96/200 - 12.66s - loss: 0.0046 - mae: 0.0046 - val_loss: 0.0109 - val_mae: 0.0109 - lr: 0.000001
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:39:50] Epoch 96: val_loss improved from 0.01092 to 0.01086, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:39:52] Epoch None: Validation loss improved from 0.01092 to 0.01086, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:39:55] Batch 1/56 of Epoch 97/200 - loss: 0.0074 - mae: 0.0074 - lr: 0.000001
+[2025-06-09 10:39:57] Batch 11/56 of Epoch 97/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000001
+[2025-06-09 10:39:59] Batch 21/56 of Epoch 97/200 - loss: 0.0054 - mae: 0.0054 - lr: 0.000001
+[2025-06-09 10:40:01] Batch 31/56 of Epoch 97/200 - loss: 0.0054 - mae: 0.0054 - lr: 0.000001
+[2025-06-09 10:40:03] Batch 41/56 of Epoch 97/200 - loss: 0.0054 - mae: 0.0054 - lr: 0.000001
+[2025-06-09 10:40:05] Batch 51/56 of Epoch 97/200 - loss: 0.0053 - mae: 0.0053 - lr: 0.000001
+[2025-06-09 10:40:06] Batch 56/56 of Epoch 97/200 - loss: 0.0053 - mae: 0.0053 - lr: 0.000001
+[2025-06-09 10:40:07] Epoch 97/200 - 12.70s - loss: 0.0053 - mae: 0.0053 - val_loss: 0.0110 - val_mae: 0.0110 - lr: 0.000001
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:40:07] EarlyStopping counter: 1 out of 20
+[2025-06-09 10:40:08] Batch 1/56 of Epoch 98/200 - loss: 0.0054 - mae: 0.0054 - lr: 0.000001
+[2025-06-09 10:40:10] Batch 11/56 of Epoch 98/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000001
+[2025-06-09 10:40:12] Batch 21/56 of Epoch 98/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000001
+[2025-06-09 10:40:14] Batch 31/56 of Epoch 98/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000001
+[2025-06-09 10:40:16] Batch 41/56 of Epoch 98/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000001
+[2025-06-09 10:40:18] Batch 51/56 of Epoch 98/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000001
+[2025-06-09 10:40:19] Batch 56/56 of Epoch 98/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000001
+[2025-06-09 10:40:20] Epoch 98/200 - 12.65s - loss: 0.0047 - mae: 0.0047 - val_loss: 0.0110 - val_mae: 0.0110 - lr: 0.000001
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:40:20] EarlyStopping counter: 2 out of 20
+[2025-06-09 10:40:20] Batch 1/56 of Epoch 99/200 - loss: 0.0063 - mae: 0.0063 - lr: 0.000001
+[2025-06-09 10:40:23] Batch 11/56 of Epoch 99/200 - loss: 0.0052 - mae: 0.0052 - lr: 0.000001
+[2025-06-09 10:40:25] Batch 21/56 of Epoch 99/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000001
+[2025-06-09 10:40:27] Batch 31/56 of Epoch 99/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000001
+[2025-06-09 10:40:29] Batch 41/56 of Epoch 99/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000001
+[2025-06-09 10:40:31] Batch 51/56 of Epoch 99/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000001
+[2025-06-09 10:40:32] Batch 56/56 of Epoch 99/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000001
+[2025-06-09 10:40:33] Epoch 99/200 - 12.65s - loss: 0.0049 - mae: 0.0049 - val_loss: 0.0115 - val_mae: 0.0115 - lr: 0.000001
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:40:33] EarlyStopping counter: 3 out of 20
+[2025-06-09 10:40:33] Batch 1/56 of Epoch 100/200 - loss: 0.0036 - mae: 0.0036 - lr: 0.000001
+[2025-06-09 10:40:35] Batch 11/56 of Epoch 100/200 - loss: 0.0054 - mae: 0.0054 - lr: 0.000001
+[2025-06-09 10:40:37] Batch 21/56 of Epoch 100/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000001
+[2025-06-09 10:40:39] Batch 31/56 of Epoch 100/200 - loss: 0.0051 - mae: 0.0051 - lr: 0.000001
+[2025-06-09 10:40:41] Batch 41/56 of Epoch 100/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000001
+[2025-06-09 10:40:43] Batch 51/56 of Epoch 100/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000001
+[2025-06-09 10:40:44] Batch 56/56 of Epoch 100/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000001
+[2025-06-09 10:40:45] Epoch 100/200 - 12.65s - loss: 0.0049 - mae: 0.0049 - val_loss: 0.0114 - val_mae: 0.0114 - lr: 0.000001
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:40:45] EarlyStopping counter: 4 out of 20
+[2025-06-09 10:40:46] Batch 1/56 of Epoch 101/200 - loss: 0.0045 - mae: 0.0045 - lr: 0.000001
+[2025-06-09 10:40:48] Batch 11/56 of Epoch 101/200 - loss: 0.0044 - mae: 0.0044 - lr: 0.000001
+[2025-06-09 10:40:50] Batch 21/56 of Epoch 101/200 - loss: 0.0044 - mae: 0.0044 - lr: 0.000001
+[2025-06-09 10:40:52] Batch 31/56 of Epoch 101/200 - loss: 0.0045 - mae: 0.0045 - lr: 0.000001
+[2025-06-09 10:40:54] Batch 41/56 of Epoch 101/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000001
+[2025-06-09 10:40:56] Batch 51/56 of Epoch 101/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000001
+[2025-06-09 10:40:57] Batch 56/56 of Epoch 101/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000001
+[2025-06-09 10:40:58] Epoch 101/200 - 12.65s - loss: 0.0046 - mae: 0.0046 - val_loss: 0.0113 - val_mae: 0.0113 - lr: 0.000001
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:40:58] Reducing learning rate from 0.000001 to 0.000000
+[2025-06-09 10:40:58] EarlyStopping counter: 5 out of 20
+[2025-06-09 10:40:58] Batch 1/56 of Epoch 102/200 - loss: 0.0037 - mae: 0.0037 - lr: 0.000000
+[2025-06-09 10:41:01] Batch 11/56 of Epoch 102/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:41:03] Batch 21/56 of Epoch 102/200 - loss: 0.0052 - mae: 0.0052 - lr: 0.000000
+[2025-06-09 10:41:05] Batch 31/56 of Epoch 102/200 - loss: 0.0054 - mae: 0.0054 - lr: 0.000000
+[2025-06-09 10:41:07] Batch 41/56 of Epoch 102/200 - loss: 0.0052 - mae: 0.0052 - lr: 0.000000
+[2025-06-09 10:41:09] Batch 51/56 of Epoch 102/200 - loss: 0.0051 - mae: 0.0051 - lr: 0.000000
+[2025-06-09 10:41:10] Batch 56/56 of Epoch 102/200 - loss: 0.0051 - mae: 0.0051 - lr: 0.000000
+[2025-06-09 10:41:11] Epoch 102/200 - 12.68s - loss: 0.0051 - mae: 0.0051 - val_loss: 0.0114 - val_mae: 0.0114 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:41:11] EarlyStopping counter: 6 out of 20
+[2025-06-09 10:41:11] Batch 1/56 of Epoch 103/200 - loss: 0.0036 - mae: 0.0036 - lr: 0.000000
+[2025-06-09 10:41:13] Batch 11/56 of Epoch 103/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:41:15] Batch 21/56 of Epoch 103/200 - loss: 0.0045 - mae: 0.0045 - lr: 0.000000
+[2025-06-09 10:41:17] Batch 31/56 of Epoch 103/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:41:19] Batch 41/56 of Epoch 103/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:41:21] Batch 51/56 of Epoch 103/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:41:22] Batch 56/56 of Epoch 103/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:41:23] Epoch 103/200 - 12.68s - loss: 0.0046 - mae: 0.0046 - val_loss: 0.0109 - val_mae: 0.0109 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:41:23] Epoch 103: val_loss improved from 0.01086 to 0.01086, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:41:25] Epoch None: Validation loss improved from 0.01086 to 0.01086, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:41:28] Batch 1/56 of Epoch 104/200 - loss: 0.0042 - mae: 0.0042 - lr: 0.000000
+[2025-06-09 10:41:30] Batch 11/56 of Epoch 104/200 - loss: 0.0044 - mae: 0.0044 - lr: 0.000000
+[2025-06-09 10:41:32] Batch 21/56 of Epoch 104/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:41:34] Batch 31/56 of Epoch 104/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:41:36] Batch 41/56 of Epoch 104/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:41:38] Batch 51/56 of Epoch 104/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:41:39] Batch 56/56 of Epoch 104/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:41:40] Epoch 104/200 - 12.66s - loss: 0.0047 - mae: 0.0047 - val_loss: 0.0112 - val_mae: 0.0112 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:41:40] EarlyStopping counter: 1 out of 20
+[2025-06-09 10:41:41] Batch 1/56 of Epoch 105/200 - loss: 0.0042 - mae: 0.0042 - lr: 0.000000
+[2025-06-09 10:41:43] Batch 11/56 of Epoch 105/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000000
+[2025-06-09 10:41:45] Batch 21/56 of Epoch 105/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000000
+[2025-06-09 10:41:47] Batch 31/56 of Epoch 105/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:41:49] Batch 41/56 of Epoch 105/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000000
+[2025-06-09 10:41:51] Batch 51/56 of Epoch 105/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:41:52] Batch 56/56 of Epoch 105/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:41:53] Epoch 105/200 - 12.67s - loss: 0.0048 - mae: 0.0048 - val_loss: 0.0110 - val_mae: 0.0110 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:41:53] EarlyStopping counter: 2 out of 20
+[2025-06-09 10:41:54] Batch 1/56 of Epoch 106/200 - loss: 0.0044 - mae: 0.0044 - lr: 0.000000
+[2025-06-09 10:41:56] Batch 11/56 of Epoch 106/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:41:58] Batch 21/56 of Epoch 106/200 - loss: 0.0045 - mae: 0.0045 - lr: 0.000000
+[2025-06-09 10:42:00] Batch 31/56 of Epoch 106/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:42:02] Batch 41/56 of Epoch 106/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:42:04] Batch 51/56 of Epoch 106/200 - loss: 0.0045 - mae: 0.0045 - lr: 0.000000
+[2025-06-09 10:42:05] Batch 56/56 of Epoch 106/200 - loss: 0.0045 - mae: 0.0045 - lr: 0.000000
+[2025-06-09 10:42:06] Epoch 106/200 - 12.64s - loss: 0.0045 - mae: 0.0045 - val_loss: 0.0111 - val_mae: 0.0111 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:42:06] EarlyStopping counter: 3 out of 20
+[2025-06-09 10:42:06] Batch 1/56 of Epoch 107/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:42:08] Batch 11/56 of Epoch 107/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:42:10] Batch 21/56 of Epoch 107/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:42:12] Batch 31/56 of Epoch 107/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:42:14] Batch 41/56 of Epoch 107/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:42:16] Batch 51/56 of Epoch 107/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:42:17] Batch 56/56 of Epoch 107/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:42:18] Epoch 107/200 - 12.65s - loss: 0.0048 - mae: 0.0048 - val_loss: 0.0117 - val_mae: 0.0117 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:42:18] EarlyStopping counter: 4 out of 20
+[2025-06-09 10:42:19] Batch 1/56 of Epoch 108/200 - loss: 0.0058 - mae: 0.0058 - lr: 0.000000
+[2025-06-09 10:42:21] Batch 11/56 of Epoch 108/200 - loss: 0.0054 - mae: 0.0054 - lr: 0.000000
+[2025-06-09 10:42:23] Batch 21/56 of Epoch 108/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:42:25] Batch 31/56 of Epoch 108/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000000
+[2025-06-09 10:42:27] Batch 41/56 of Epoch 108/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:42:29] Batch 51/56 of Epoch 108/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:42:30] Batch 56/56 of Epoch 108/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:42:31] Epoch 108/200 - 12.67s - loss: 0.0048 - mae: 0.0048 - val_loss: 0.0111 - val_mae: 0.0111 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:42:31] Reducing learning rate from 0.000000 to 0.000000
+[2025-06-09 10:42:31] EarlyStopping counter: 5 out of 20
+[2025-06-09 10:42:32] Batch 1/56 of Epoch 109/200 - loss: 0.0054 - mae: 0.0054 - lr: 0.000000
+[2025-06-09 10:42:34] Batch 11/56 of Epoch 109/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:42:36] Batch 21/56 of Epoch 109/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:42:38] Batch 31/56 of Epoch 109/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:42:40] Batch 41/56 of Epoch 109/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000000
+[2025-06-09 10:42:42] Batch 51/56 of Epoch 109/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:42:43] Batch 56/56 of Epoch 109/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:42:44] Epoch 109/200 - 12.67s - loss: 0.0048 - mae: 0.0048 - val_loss: 0.0112 - val_mae: 0.0112 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:42:44] EarlyStopping counter: 6 out of 20
+[2025-06-09 10:42:44] Batch 1/56 of Epoch 110/200 - loss: 0.0057 - mae: 0.0057 - lr: 0.000000
+[2025-06-09 10:42:46] Batch 11/56 of Epoch 110/200 - loss: 0.0052 - mae: 0.0052 - lr: 0.000000
+[2025-06-09 10:42:48] Batch 21/56 of Epoch 110/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:42:50] Batch 31/56 of Epoch 110/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000000
+[2025-06-09 10:42:52] Batch 41/56 of Epoch 110/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000000
+[2025-06-09 10:42:54] Batch 51/56 of Epoch 110/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000000
+[2025-06-09 10:42:55] Batch 56/56 of Epoch 110/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:42:56] Epoch 110/200 - 12.66s - loss: 0.0048 - mae: 0.0048 - val_loss: 0.0109 - val_mae: 0.0109 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:42:56] EarlyStopping counter: 7 out of 20
+[2025-06-09 10:42:57] Batch 1/56 of Epoch 111/200 - loss: 0.0063 - mae: 0.0063 - lr: 0.000000
+[2025-06-09 10:42:59] Batch 11/56 of Epoch 111/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000000
+[2025-06-09 10:43:01] Batch 21/56 of Epoch 111/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000000
+[2025-06-09 10:43:03] Batch 31/56 of Epoch 111/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:43:05] Batch 41/56 of Epoch 111/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:43:07] Batch 51/56 of Epoch 111/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:43:08] Batch 56/56 of Epoch 111/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:43:09] Epoch 111/200 - 12.77s - loss: 0.0048 - mae: 0.0048 - val_loss: 0.0111 - val_mae: 0.0111 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:43:09] EarlyStopping counter: 8 out of 20
+[2025-06-09 10:43:10] Batch 1/56 of Epoch 112/200 - loss: 0.0052 - mae: 0.0052 - lr: 0.000000
+[2025-06-09 10:43:12] Batch 11/56 of Epoch 112/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:43:14] Batch 21/56 of Epoch 112/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000000
+[2025-06-09 10:43:16] Batch 31/56 of Epoch 112/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:43:18] Batch 41/56 of Epoch 112/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:43:20] Batch 51/56 of Epoch 112/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:43:21] Batch 56/56 of Epoch 112/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:43:22] Epoch 112/200 - 12.67s - loss: 0.0047 - mae: 0.0047 - val_loss: 0.0108 - val_mae: 0.0108 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:43:22] Epoch 112: val_loss improved from 0.01086 to 0.01083, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/models/attention1.pth
+[2025-06-09 10:43:24] Epoch None: Validation loss improved from 0.01086 to 0.01083, saving model to /home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/checkpoints/attention1.pt
+[2025-06-09 10:43:27] Batch 1/56 of Epoch 113/200 - loss: 0.0042 - mae: 0.0042 - lr: 0.000000
+[2025-06-09 10:43:29] Batch 11/56 of Epoch 113/200 - loss: 0.0042 - mae: 0.0042 - lr: 0.000000
+[2025-06-09 10:43:31] Batch 21/56 of Epoch 113/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:43:33] Batch 31/56 of Epoch 113/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:43:35] Batch 41/56 of Epoch 113/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:43:37] Batch 51/56 of Epoch 113/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:43:38] Batch 56/56 of Epoch 113/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:43:39] Epoch 113/200 - 12.78s - loss: 0.0048 - mae: 0.0048 - val_loss: 0.0109 - val_mae: 0.0109 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:43:39] EarlyStopping counter: 1 out of 20
+[2025-06-09 10:43:39] Batch 1/56 of Epoch 114/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:43:41] Batch 11/56 of Epoch 114/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:43:43] Batch 21/56 of Epoch 114/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:43:45] Batch 31/56 of Epoch 114/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:43:48] Batch 41/56 of Epoch 114/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:43:50] Batch 51/56 of Epoch 114/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000000
+[2025-06-09 10:43:51] Batch 56/56 of Epoch 114/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000000
+[2025-06-09 10:43:51] Epoch 114/200 - 12.69s - loss: 0.0049 - mae: 0.0049 - val_loss: 0.0112 - val_mae: 0.0112 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:43:51] EarlyStopping counter: 2 out of 20
+[2025-06-09 10:43:52] Batch 1/56 of Epoch 115/200 - loss: 0.0039 - mae: 0.0039 - lr: 0.000000
+[2025-06-09 10:43:54] Batch 11/56 of Epoch 115/200 - loss: 0.0044 - mae: 0.0044 - lr: 0.000000
+[2025-06-09 10:43:56] Batch 21/56 of Epoch 115/200 - loss: 0.0045 - mae: 0.0045 - lr: 0.000000
+[2025-06-09 10:43:58] Batch 31/56 of Epoch 115/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:44:00] Batch 41/56 of Epoch 115/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:44:02] Batch 51/56 of Epoch 115/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:44:03] Batch 56/56 of Epoch 115/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:44:04] Epoch 115/200 - 12.64s - loss: 0.0047 - mae: 0.0047 - val_loss: 0.0109 - val_mae: 0.0109 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:44:04] EarlyStopping counter: 3 out of 20
+[2025-06-09 10:44:05] Batch 1/56 of Epoch 116/200 - loss: 0.0039 - mae: 0.0039 - lr: 0.000000
+[2025-06-09 10:44:07] Batch 11/56 of Epoch 116/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:44:09] Batch 21/56 of Epoch 116/200 - loss: 0.0044 - mae: 0.0044 - lr: 0.000000
+[2025-06-09 10:44:11] Batch 31/56 of Epoch 116/200 - loss: 0.0044 - mae: 0.0044 - lr: 0.000000
+[2025-06-09 10:44:13] Batch 41/56 of Epoch 116/200 - loss: 0.0044 - mae: 0.0044 - lr: 0.000000
+[2025-06-09 10:44:15] Batch 51/56 of Epoch 116/200 - loss: 0.0045 - mae: 0.0045 - lr: 0.000000
+[2025-06-09 10:44:16] Batch 56/56 of Epoch 116/200 - loss: 0.0045 - mae: 0.0045 - lr: 0.000000
+[2025-06-09 10:44:17] Epoch 116/200 - 12.64s - loss: 0.0045 - mae: 0.0045 - val_loss: 0.0114 - val_mae: 0.0114 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:44:17] EarlyStopping counter: 4 out of 20
+[2025-06-09 10:44:17] Batch 1/56 of Epoch 117/200 - loss: 0.0043 - mae: 0.0043 - lr: 0.000000
+[2025-06-09 10:44:19] Batch 11/56 of Epoch 117/200 - loss: 0.0045 - mae: 0.0045 - lr: 0.000000
+[2025-06-09 10:44:21] Batch 21/56 of Epoch 117/200 - loss: 0.0044 - mae: 0.0044 - lr: 0.000000
+[2025-06-09 10:44:23] Batch 31/56 of Epoch 117/200 - loss: 0.0045 - mae: 0.0045 - lr: 0.000000
+[2025-06-09 10:44:25] Batch 41/56 of Epoch 117/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:44:28] Batch 51/56 of Epoch 117/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:44:29] Batch 56/56 of Epoch 117/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:44:29] Epoch 117/200 - 12.66s - loss: 0.0047 - mae: 0.0047 - val_loss: 0.0109 - val_mae: 0.0109 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:44:29] Reducing learning rate from 0.000000 to 0.000000
+[2025-06-09 10:44:29] EarlyStopping counter: 5 out of 20
+[2025-06-09 10:44:30] Batch 1/56 of Epoch 118/200 - loss: 0.0042 - mae: 0.0042 - lr: 0.000000
+[2025-06-09 10:44:32] Batch 11/56 of Epoch 118/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:44:34] Batch 21/56 of Epoch 118/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:44:36] Batch 31/56 of Epoch 118/200 - loss: 0.0045 - mae: 0.0045 - lr: 0.000000
+[2025-06-09 10:44:38] Batch 41/56 of Epoch 118/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:44:40] Batch 51/56 of Epoch 118/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:44:41] Batch 56/56 of Epoch 118/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:44:42] Epoch 118/200 - 12.64s - loss: 0.0048 - mae: 0.0048 - val_loss: 0.0111 - val_mae: 0.0111 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:44:42] EarlyStopping counter: 6 out of 20
+[2025-06-09 10:44:43] Batch 1/56 of Epoch 119/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:44:45] Batch 11/56 of Epoch 119/200 - loss: 0.0045 - mae: 0.0045 - lr: 0.000000
+[2025-06-09 10:44:47] Batch 21/56 of Epoch 119/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:44:49] Batch 31/56 of Epoch 119/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:44:51] Batch 41/56 of Epoch 119/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:44:53] Batch 51/56 of Epoch 119/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:44:54] Batch 56/56 of Epoch 119/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:44:55] Epoch 119/200 - 12.66s - loss: 0.0047 - mae: 0.0047 - val_loss: 0.0111 - val_mae: 0.0111 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:44:55] EarlyStopping counter: 7 out of 20
+[2025-06-09 10:44:55] Batch 1/56 of Epoch 120/200 - loss: 0.0043 - mae: 0.0043 - lr: 0.000000
+[2025-06-09 10:44:57] Batch 11/56 of Epoch 120/200 - loss: 0.0044 - mae: 0.0044 - lr: 0.000000
+[2025-06-09 10:44:59] Batch 21/56 of Epoch 120/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:45:01] Batch 31/56 of Epoch 120/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:45:03] Batch 41/56 of Epoch 120/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:45:06] Batch 51/56 of Epoch 120/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:45:07] Batch 56/56 of Epoch 120/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:45:07] Epoch 120/200 - 12.71s - loss: 0.0047 - mae: 0.0047 - val_loss: 0.0111 - val_mae: 0.0111 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:45:07] EarlyStopping counter: 8 out of 20
+[2025-06-09 10:45:08] Batch 1/56 of Epoch 121/200 - loss: 0.0041 - mae: 0.0041 - lr: 0.000000
+[2025-06-09 10:45:10] Batch 11/56 of Epoch 121/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000000
+[2025-06-09 10:45:12] Batch 21/56 of Epoch 121/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:45:14] Batch 31/56 of Epoch 121/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:45:16] Batch 41/56 of Epoch 121/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:45:18] Batch 51/56 of Epoch 121/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:45:19] Batch 56/56 of Epoch 121/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:45:20] Epoch 121/200 - 12.66s - loss: 0.0046 - mae: 0.0046 - val_loss: 0.0110 - val_mae: 0.0110 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:45:20] EarlyStopping counter: 9 out of 20
+[2025-06-09 10:45:21] Batch 1/56 of Epoch 122/200 - loss: 0.0039 - mae: 0.0039 - lr: 0.000000
+[2025-06-09 10:45:23] Batch 11/56 of Epoch 122/200 - loss: 0.0053 - mae: 0.0053 - lr: 0.000000
+[2025-06-09 10:45:25] Batch 21/56 of Epoch 122/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000000
+[2025-06-09 10:45:27] Batch 31/56 of Epoch 122/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000000
+[2025-06-09 10:45:29] Batch 41/56 of Epoch 122/200 - loss: 0.0051 - mae: 0.0051 - lr: 0.000000
+[2025-06-09 10:45:31] Batch 51/56 of Epoch 122/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000000
+[2025-06-09 10:45:32] Batch 56/56 of Epoch 122/200 - loss: 0.0051 - mae: 0.0051 - lr: 0.000000
+[2025-06-09 10:45:33] Epoch 122/200 - 12.68s - loss: 0.0051 - mae: 0.0051 - val_loss: 0.0110 - val_mae: 0.0110 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:45:33] Reducing learning rate from 0.000000 to 0.000000
+[2025-06-09 10:45:33] EarlyStopping counter: 10 out of 20
+[2025-06-09 10:45:33] Batch 1/56 of Epoch 123/200 - loss: 0.0037 - mae: 0.0037 - lr: 0.000000
+[2025-06-09 10:45:35] Batch 11/56 of Epoch 123/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:45:37] Batch 21/56 of Epoch 123/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:45:39] Batch 31/56 of Epoch 123/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:45:42] Batch 41/56 of Epoch 123/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:45:44] Batch 51/56 of Epoch 123/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:45:45] Batch 56/56 of Epoch 123/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:45:45] Epoch 123/200 - 12.65s - loss: 0.0046 - mae: 0.0046 - val_loss: 0.0113 - val_mae: 0.0113 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:45:45] EarlyStopping counter: 11 out of 20
+[2025-06-09 10:45:46] Batch 1/56 of Epoch 124/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000000
+[2025-06-09 10:45:48] Batch 11/56 of Epoch 124/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:45:50] Batch 21/56 of Epoch 124/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:45:52] Batch 31/56 of Epoch 124/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:45:54] Batch 41/56 of Epoch 124/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:45:56] Batch 51/56 of Epoch 124/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:45:57] Batch 56/56 of Epoch 124/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:45:58] Epoch 124/200 - 12.65s - loss: 0.0047 - mae: 0.0047 - val_loss: 0.0113 - val_mae: 0.0113 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:45:58] EarlyStopping counter: 12 out of 20
+[2025-06-09 10:45:59] Batch 1/56 of Epoch 125/200 - loss: 0.0051 - mae: 0.0051 - lr: 0.000000
+[2025-06-09 10:46:01] Batch 11/56 of Epoch 125/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:46:03] Batch 21/56 of Epoch 125/200 - loss: 0.0045 - mae: 0.0045 - lr: 0.000000
+[2025-06-09 10:46:05] Batch 31/56 of Epoch 125/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:46:07] Batch 41/56 of Epoch 125/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:46:09] Batch 51/56 of Epoch 125/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:46:10] Batch 56/56 of Epoch 125/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:46:11] Epoch 125/200 - 12.66s - loss: 0.0048 - mae: 0.0048 - val_loss: 0.0111 - val_mae: 0.0111 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:46:11] EarlyStopping counter: 13 out of 20
+[2025-06-09 10:46:11] Batch 1/56 of Epoch 126/200 - loss: 0.0037 - mae: 0.0037 - lr: 0.000000
+[2025-06-09 10:46:13] Batch 11/56 of Epoch 126/200 - loss: 0.0044 - mae: 0.0044 - lr: 0.000000
+[2025-06-09 10:46:15] Batch 21/56 of Epoch 126/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:46:17] Batch 31/56 of Epoch 126/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:46:20] Batch 41/56 of Epoch 126/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:46:22] Batch 51/56 of Epoch 126/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:46:23] Batch 56/56 of Epoch 126/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:46:23] Epoch 126/200 - 12.66s - loss: 0.0047 - mae: 0.0047 - val_loss: 0.0112 - val_mae: 0.0112 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:46:23] EarlyStopping counter: 14 out of 20
+[2025-06-09 10:46:24] Batch 1/56 of Epoch 127/200 - loss: 0.0051 - mae: 0.0051 - lr: 0.000000
+[2025-06-09 10:46:26] Batch 11/56 of Epoch 127/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:46:28] Batch 21/56 of Epoch 127/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000000
+[2025-06-09 10:46:30] Batch 31/56 of Epoch 127/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:46:32] Batch 41/56 of Epoch 127/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:46:34] Batch 51/56 of Epoch 127/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000000
+[2025-06-09 10:46:35] Batch 56/56 of Epoch 127/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000000
+[2025-06-09 10:46:36] Epoch 127/200 - 12.67s - loss: 0.0049 - mae: 0.0049 - val_loss: 0.0109 - val_mae: 0.0109 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:46:36] Reducing learning rate from 0.000000 to 0.000000
+[2025-06-09 10:46:36] EarlyStopping counter: 15 out of 20
+[2025-06-09 10:46:37] Batch 1/56 of Epoch 128/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:46:39] Batch 11/56 of Epoch 128/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000000
+[2025-06-09 10:46:41] Batch 21/56 of Epoch 128/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:46:43] Batch 31/56 of Epoch 128/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:46:45] Batch 41/56 of Epoch 128/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:46:47] Batch 51/56 of Epoch 128/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:46:48] Batch 56/56 of Epoch 128/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:46:49] Epoch 128/200 - 12.66s - loss: 0.0047 - mae: 0.0047 - val_loss: 0.0115 - val_mae: 0.0115 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:46:49] EarlyStopping counter: 16 out of 20
+[2025-06-09 10:46:49] Batch 1/56 of Epoch 129/200 - loss: 0.0040 - mae: 0.0040 - lr: 0.000000
+[2025-06-09 10:46:51] Batch 11/56 of Epoch 129/200 - loss: 0.0051 - mae: 0.0051 - lr: 0.000000
+[2025-06-09 10:46:53] Batch 21/56 of Epoch 129/200 - loss: 0.0051 - mae: 0.0051 - lr: 0.000000
+[2025-06-09 10:46:55] Batch 31/56 of Epoch 129/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000000
+[2025-06-09 10:46:58] Batch 41/56 of Epoch 129/200 - loss: 0.0051 - mae: 0.0051 - lr: 0.000000
+[2025-06-09 10:47:00] Batch 51/56 of Epoch 129/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000000
+[2025-06-09 10:47:01] Batch 56/56 of Epoch 129/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000000
+[2025-06-09 10:47:02] Epoch 129/200 - 12.68s - loss: 0.0050 - mae: 0.0050 - val_loss: 0.0113 - val_mae: 0.0113 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:47:02] EarlyStopping counter: 17 out of 20
+[2025-06-09 10:47:02] Batch 1/56 of Epoch 130/200 - loss: 0.0040 - mae: 0.0040 - lr: 0.000000
+[2025-06-09 10:47:04] Batch 11/56 of Epoch 130/200 - loss: 0.0045 - mae: 0.0045 - lr: 0.000000
+[2025-06-09 10:47:06] Batch 21/56 of Epoch 130/200 - loss: 0.0045 - mae: 0.0045 - lr: 0.000000
+[2025-06-09 10:47:08] Batch 31/56 of Epoch 130/200 - loss: 0.0046 - mae: 0.0046 - lr: 0.000000
+[2025-06-09 10:47:10] Batch 41/56 of Epoch 130/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:47:12] Batch 51/56 of Epoch 130/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:47:13] Batch 56/56 of Epoch 130/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:47:14] Epoch 130/200 - 12.65s - loss: 0.0048 - mae: 0.0048 - val_loss: 0.0113 - val_mae: 0.0113 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:47:14] EarlyStopping counter: 18 out of 20
+[2025-06-09 10:47:15] Batch 1/56 of Epoch 131/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000000
+[2025-06-09 10:47:17] Batch 11/56 of Epoch 131/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000000
+[2025-06-09 10:47:19] Batch 21/56 of Epoch 131/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000000
+[2025-06-09 10:47:21] Batch 31/56 of Epoch 131/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000000
+[2025-06-09 10:47:23] Batch 41/56 of Epoch 131/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000000
+[2025-06-09 10:47:25] Batch 51/56 of Epoch 131/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000000
+[2025-06-09 10:47:26] Batch 56/56 of Epoch 131/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000000
+[2025-06-09 10:47:27] Epoch 131/200 - 12.63s - loss: 0.0049 - mae: 0.0049 - val_loss: 0.0109 - val_mae: 0.0109 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:47:27] EarlyStopping counter: 19 out of 20
+[2025-06-09 10:47:27] Batch 1/56 of Epoch 132/200 - loss: 0.0052 - mae: 0.0052 - lr: 0.000000
+[2025-06-09 10:47:29] Batch 11/56 of Epoch 132/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000000
+[2025-06-09 10:47:31] Batch 21/56 of Epoch 132/200 - loss: 0.0050 - mae: 0.0050 - lr: 0.000000
+[2025-06-09 10:47:33] Batch 31/56 of Epoch 132/200 - loss: 0.0049 - mae: 0.0049 - lr: 0.000000
+[2025-06-09 10:47:36] Batch 41/56 of Epoch 132/200 - loss: 0.0047 - mae: 0.0047 - lr: 0.000000
+[2025-06-09 10:47:38] Batch 51/56 of Epoch 132/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:47:39] Batch 56/56 of Epoch 132/200 - loss: 0.0048 - mae: 0.0048 - lr: 0.000000
+[2025-06-09 10:47:39] Epoch 132/200 - 12.66s - loss: 0.0048 - mae: 0.0048 - val_loss: 0.0112 - val_mae: 0.0112 - lr: 0.000000
+----------------------------------------------------------------------------------------------------
+[2025-06-09 10:47:39] Reducing learning rate from 0.000000 to 0.000000
+[2025-06-09 10:47:39] EarlyStopping counter: 20 out of 20
+[2025-06-09 10:47:39] Early stopping triggered
+[2025-06-09 10:47:39] Training completed after 132 epochs
+
+Training completed at 2025-06-09 10:47:39

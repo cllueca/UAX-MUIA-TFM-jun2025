@@ -1,0 +1,182 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --input-bg: #f3f3f3;
+  --button-bg: #222222;
+  --button-text: #ffffff;
+  --link-color: #4444cc;
+  --border-color: #cccccc;
+}
+
+.dark-theme {
+  --bg-color: #121212;
+  --text-color: #f0f0f0;
+  --input-bg: #2c2c2c;
+  --button-bg: #ffffff;
+  --button-text: #000000;
+  --link-color: #66aaff;
+  --border-color: #444444;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('../images/doctor.jpg');
+  background-size: cover;
+  background-position: center;
+  color: var(--text-color);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-section {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dark-theme .login-section {
+  background-color: #000000;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background-color: var(--input-bg);
+  color: var(--text-color);
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+button[type=submit] {
+  padding: 12px;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  flex: 1; /* Allow buttons to grow equally */
+  margin: 0 5px; /* Space between buttons */
+}
+
+.login_button:hover {
+  opacity: 0.9;
+}
+
+.theme-toggle .forgot-password {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+/* Add margin top to separate from the "forgot-password" */
+.theme-toggle {
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-section {
+    width: 90%; /* Make it responsive */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.password-wrapper {
+  position: relative;
+  max-width: 320px;
+  width: 100%;
+}
+
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 12px 48px 12px 16px; /* space for icon on right */
+  font-size: clamp(14px, 1vw + 0.5rem, 18px);
+  border-radius: 12px;
+  border: 1.5px solid #444;
+  background: rgba(255 255 255 / 0.05);
+  color: #000000;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline-offset: 2px;
+}
+
+input[type="password"]:focus,
+input[type="text"]:focus {
+  border-color: #6366f1; /* Indigo-500 */
+  box-shadow: 0 0 8px rgba(99, 102, 241, 0.6);
+}
+
+.toggle-visibility {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  user-select: none;
+  color: #999;
+  transition: color 0.3s ease;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.toggle-visibility:hover,
+.toggle-visibility:focus {
+  color: #6366f1;
+  outline: none;
+}
+
+.toggle-visibility:focus-visible {
+  outline: 2px solid #6366f1;
+  border-radius: 50%;
+}

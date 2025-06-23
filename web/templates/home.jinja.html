@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Fake Hospital</title>
+    <!-- Material Icons CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="{{ url_for('static', path='css/login.css') }}" />
+  </head>
+  <body class="light-theme">
+    <div class="container">
+      <div class="login-section">
+        <img class="logo" src="{{ url_for('static', path='images/logo_fake_h.png') }}" />
+        <form id="loginForm">
+          <input type="text" name="email" value="atorrado@fakehospital.com" placeholder="user@fakehospital.com" required />
+          <div class="password-wrapper">
+            <input 
+              type="password" 
+              id="password" 
+              name="password" 
+              placeholder="Contraseña" 
+              required 
+              aria-describedby="togglePasswordHelp"
+              autocomplete="current-password"
+              autocorrect="off"
+              autocapitalize="none"
+              spellcheck="false"
+            />
+            <span 
+              id="togglePassword" 
+              class="material-icons toggle-visibility" 
+              role="button" 
+              tabindex="0" 
+              aria-label="Mostrar contraseña"
+              aria-pressed="false"
+              title="Mostrar contraseña"
+            >visibility</span>
+          </div>
+          
+          <div class="button-group">
+            <button class="login_button" type="submit">Iniciar Sesión</button>
+          </div>
+        </form>
+        <button id="forgotPasswordLink" class="forgot-password">¿Olvidaste tu contraseña?</button>
+
+        <button id="themeToggle" class="theme-toggle">Cambiar Tema</button>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', path='js/home.js') }}"></script>
+  </body>
+</html>
+

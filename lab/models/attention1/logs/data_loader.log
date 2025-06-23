@@ -1,0 +1,29 @@
+[2025-06-09 10:16:03] Configuration saved to: '/home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/config/data_config.json'...
+[2025-06-09 10:16:03] Configuration saved to: '/home/promise/jhernandez/3d-notebooks/3d/9jun25/9jun25/models/attention1/config/model_config.json'...
+[2025-06-09 10:16:03] Loading training data...
+[2025-06-09 10:16:03]  ==  Loading train images set  ==
+[2025-06-09 10:16:04] 	- Loading 28 images from '/home/promise/NAS/MATERIA_OSCURA/PROYECTOS_INVESTIGACION/2025-Direct_AC/001-Dataset/002-PET_NAC_AC/fold1' ...
+[2025-06-09 10:16:07] 	- Could only load 28 images. Detected 0 outlier(s)
+[2025-06-09 10:16:07] 	- Pixels value range: [0.0, 0.22]
+[2025-06-09 10:16:07] Train inputs shape: (448, 1, 8, 128, 128)
+[2025-06-09 10:16:07] Train targets shape: (448, 1, 8, 128, 128)
+[2025-06-09 10:16:07] Training loader generated. Batch size: 8
+[2025-06-09 10:16:07] == Train set loader ==
+[2025-06-09 10:16:08] Common batch shape (num_batches / batch_size, channels, depth / num_layers, height, width):
+[2025-06-09 10:16:08]  - Inputs: torch.Size([8, 1, 8, 128, 128])
+[2025-06-09 10:16:08]  - Targets: torch.Size([8, 1, 8, 128, 128])
+[2025-06-09 10:16:08] All batches have the same size
+[2025-06-09 10:16:08] Loading test data for validation...
+[2025-06-09 10:16:08]  ==  Loading test images set  ==
+[2025-06-09 10:16:08] 	- Loading 8 images from '/home/promise/NAS/MATERIA_OSCURA/PROYECTOS_INVESTIGACION/2025-Direct_AC/001-Dataset/002-PET_NAC_AC/fold1' ...
+[2025-06-09 10:16:08] 	- Could only load 6 images. Detected 2 outlier(s)
+[2025-06-09 10:16:08] 	- Pixels value range: [0.0, 0.23]
+[2025-06-09 10:16:08] Splitting test set in half, the second half will be used for validation...
+[2025-06-09 10:16:08] Validation inputs shape: (48, 1, 8, 128, 128)
+[2025-06-09 10:16:08] Validation targets shape: (48, 1, 8, 128, 128)
+[2025-06-09 10:16:08] Validation loader generated. Batch size: 8
+[2025-06-09 10:16:08] == Validation set loader ==
+[2025-06-09 10:16:09] Common batch shape (num_batches / batch_size, channels, depth / num_layers, height, width):
+[2025-06-09 10:16:09]  - Inputs: torch.Size([8, 1, 8, 128, 128])
+[2025-06-09 10:16:09]  - Targets: torch.Size([8, 1, 8, 128, 128])
+[2025-06-09 10:16:09] All batches have the same size
