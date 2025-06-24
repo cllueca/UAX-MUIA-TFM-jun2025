@@ -2,6 +2,9 @@
 __pycache__/
 
 
+### Ignore al pdf ###
+documento/
+
 ### Ignores de la parte del laboratorio ###
 
 # Checkpoints de jupyter

@@ -12,7 +12,6 @@ import uvicorn
 # Local
 from src.config import CONFIG
 from src.core.logger import CORE_LOGGER
-from src.database_info.router import database_info_bp
 from src.doctors.router import doctors_bp
 from src.patients.router import patients_bp
 from src.utils.auth import get_csession_token_from_cookie
@@ -45,7 +44,6 @@ async def home(
 
 
 if __name__ == '__main__':
-    app.include_router(database_info_bp, prefix="/database")
     app.include_router(doctors_bp, prefix="/doctor")
     app.include_router(patients_bp, prefix="/patient")
     CORE_LOGGER.info("Running app...")

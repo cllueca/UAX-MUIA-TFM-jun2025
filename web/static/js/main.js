@@ -42,6 +42,8 @@ async function loadPatients() {
 
                 li.addEventListener('click', async () => {
                     await showPatientLayout(patient.id, null);
+                    const sidebarToggle = document.getElementById('sidebarToggle');
+                    sidebarToggle.click();
                 });
 
                 pacientesList.appendChild(li);

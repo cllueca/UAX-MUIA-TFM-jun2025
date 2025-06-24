@@ -368,8 +368,8 @@ class DatabaseManager:
                 doctor_count = self.execute_query("SELECT COUNT(*) as count FROM doctors", fetch="one")
                 if doctor_count['count'] == 0:
                     sample_doctors = [
-                        ("Angel", "Torrado", "atorrado@fakehospital.com", "1234asdf"),
-                        ("Javier", "Hernandez", "jhernandez@fakehospital.com", "asdf1234"),
+                        ("Carlos", "Llueca", "cllueca@fakehospital.com", "1234$$aSdF"),
+                        ("Another", "Doctor", "adoctor@fakehospital.com", "1234$$aSdF"),
                     ]
                     doctor_ids = []
                     for name, last_name, email, password in sample_doctors:
@@ -385,7 +385,7 @@ class DatabaseManager:
                 patient_count = self.execute_query("SELECT COUNT(*) as count FROM patients", fetch="one")
                 if patient_count['count'] == 0:
                     sample_patients = [
-                        ("Carlos", "Llueca", 25, "51502310C", doctor_ids[1]),
+                        ("Lucia", "Meneses", 77, "51502310C", doctor_ids[1]),
                         ("Carlos", "Martínez", 30, "12345678A", doctor_ids[1]),
                         ("Laura", "Gómez", 28, "23456789B", doctor_ids[1]),
                         ("Javier", "Pérez", 35, "34567890C", doctor_ids[1]),
@@ -394,7 +394,7 @@ class DatabaseManager:
                         ("David", "Fernández", 40, "67890123F", doctor_ids[0]),
                         ("Ana", "Ramírez", 31, "78901234G", doctor_ids[0]),
                         ("Luis", "Torres", 29, "89012345H", doctor_ids[0]),
-                        ("Elena", "Hernández", 24, "90123456I", doctor_ids[0]),
+                        ("Elena", "Hernández", 55, "90123456I", doctor_ids[0]),
                         ("Pedro", "Torres", 33, "01234567J", doctor_ids[0])
                     ]
                     
