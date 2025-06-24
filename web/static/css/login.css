@@ -93,19 +93,49 @@ button[type=submit] {
   opacity: 0.9;
 }
 
-.theme-toggle .forgot-password {
-  background: transparent;
-  border: 1px solid var(--border-color);
-  padding: 8px 14px;
+.forgot-password,
+.theme-toggle {
+  padding: 12px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 1.5px solid var(--border-color);
   border-radius: 6px;
   cursor: pointer;
-  font-size: 0.9rem;
-  color: var(--text-color);
+  font-weight: bold;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.theme-toggle img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+  transition: transform 0.3s ease;
+}
+
+.forgot-password:hover,
+.theme-toggle:hover {
+  background-color: var(--input-bg);
+  border-color: var(--text-color);
 }
 
 /* Add margin top to separate from the "forgot-password" */
 .theme-toggle {
   margin-top: 10px;
+   background-color: var(--bg-color);
+  border: none;
+  padding: 4px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  transition: background-color 0.3s ease;
 }
 
 /* Responsive */
@@ -144,9 +174,9 @@ input[type="text"] {
   padding: 12px 48px 12px 16px; /* space for icon on right */
   font-size: clamp(14px, 1vw + 0.5rem, 18px);
   border-radius: 12px;
-  border: 1.5px solid #444;
-  background: rgba(255 255 255 / 0.05);
-  color: #000000;
+  border: 1.5px solid var(--border-color);
+  background: var(--input-bg);
+  color: var((var(--text-color)));
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
   outline-offset: 2px;
 }
@@ -164,7 +194,7 @@ input[type="text"]:focus {
   transform: translateY(-50%);
   cursor: pointer;
   user-select: none;
-  color: #999;
+  color: var(--text-color);
   transition: color 0.3s ease;
   font-size: 24px;
   line-height: 1;
@@ -180,3 +210,32 @@ input[type="text"]:focus {
   outline: 2px solid #6366f1;
   border-radius: 50%;
 }
+
+.extra-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.extra-btn {
+  padding: 10px 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.extra-btn:hover {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border-color: var(--button-bg);
+}
+

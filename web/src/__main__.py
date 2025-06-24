@@ -41,7 +41,7 @@ async def home(
     request: Request,
     session = Depends(get_csession_token_from_cookie)
 ):
-    return templates.TemplateResponse("main.jinja.html", {"request": request})
+    return templates.TemplateResponse("main.jinja.html", {"request": request, "session": session})
 
 
 if __name__ == '__main__':

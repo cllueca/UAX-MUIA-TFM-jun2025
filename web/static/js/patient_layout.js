@@ -1,6 +1,5 @@
 // Populate patient layout
-async function showPatientLayout(patientId) {
-
+async function showPatientLayout(patientId, pathologyId) {
     const patientLayout = document.getElementById('patientInfoLayout');
     patientLayout.style.display = 'block';
 
@@ -25,6 +24,8 @@ async function showPatientLayout(patientId) {
         await emptyImageDisplay();
         await populatePatientInfo(data);
         await populatePatientPathologies(data);
+        if(pathologyId != null)
+          selectPathology(pathologyId);
       }
       else{
         alert(data.message);
@@ -73,43 +74,42 @@ async function populatePatientPathologies(data) {
 }
 
 async function emptyImageDisplay() {
-    // Create the contents variable from scratch
     const contents = `
-      <h3 id="pathologyTitle">Seleccione una patología</h3>
-      <div class="pathology-description" id="pathologyDescription">
-          Aquí se mostrará la descripción de la patología seleccionada.
-      </div>
-
-      <!-- Upload picture input -->
-      <div id="uploadPictureSection" class="upload-section" style="display: none;">
-          <label for="uploadPicture" class="upload-label" tabindex="0">Subir imagen</label>
-          <input type="file" id="uploadPicture" class="upload-input" accept="image/*" />
-      </div>
-
-      <!-- Picture frames with images -->
-      <div id="showPictureSection" class="picture-frames-container" style="display: none; justify-content: space-between; margin-top: 24px;">
-    
+      <div class="column" aria-label="First column">
         <div class="picture-frame-wrapper">
-            <h4 class="picture-frame-title">PET sin corregir</h4>
-            <div class="picture-frame" aria-label="Imagen PET sin corregir">
-                <img id="nonCorrectedPet" alt="Imagen PET sin corregir" src="" style="display:none">
-                <button class="download-button" id="downloadNonCorrectedPet" style="display:none" aria-label="Descargar imagen PET sin corregir">
-                    Descargar
-                </button>
-            </div>
-        </div>
+          <h4 class="picture-frame-title">Información</h4>
+        
+          <h3 id="pathologyTitle">Seleccione una patología</h3>
+            <div class="pathology-description" id="pathologyDescription">
+          </div>
 
-        <div class="picture-frame-wrapper">
-            <h4 class="picture-frame-title">PET corregido</h4>
-            <div class="picture-frame" aria-label="Imagen PET corregido">
-                <img id="correctedPet" alt="Imagen PET corregido" src="" style="display:none">
-                <button class="download-button" id="downloadCorrectedPet" style="display:none" aria-label="Descargar imagen PET corregido">
-                    Descargar
-                </button>
-            </div>
+          <div id="uploadPictureSection" class="upload-section" style="display: none;">
+            <label for="uploadPicture" class="upload-label" tabindex="0">Subir imagen</label>
+            <input type="file" id="uploadPicture" class="upload-input" accept="image/*" />
+          </div>
         </div>
       </div>
-    `;
+      
+
+        <div class="column" aria-label="Second column">
+          <div class="picture-frame-wrapper">
+                <h4 class="picture-frame-title">PET sin corregir</h4>
+                <div class="picture-frame" aria-label="Imagen PET sin corregir">
+                    <img id="nonCorrectedPet" alt="Imagen PET sin corregir" src="" style="display:none">
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="column" aria-label="Third column">
+          <div class="picture-frame-wrapper">
+                <h4 class="picture-frame-title">PET corregido</h4>
+                <div class="picture-frame" aria-label="Imagen PET corregido">
+                    <img id="correctedPet" alt="Imagen PET corregido" src="" style="display:none">
+                </div>
+            </div>
+        </div>
+      `;
 
     // Select the section using its ID
     const section = document.getElementById('pathologyDetailSection');
@@ -158,8 +158,7 @@ async function newPathology() {
         if (data) {
           hideModal();
           // Automatically select the new pathology
-          showPatientLayout(patientId);
-          selectPathology(data.pathology_id);
+          showPatientLayout(patientId, data.pathology_id);
         }
         else {
           alert(data.message)
@@ -221,11 +220,8 @@ async function selectPathology(id) {
     const pathologyDescription = document.getElementById('pathologyDescription');
     const nonCorrectedPet = document.getElementById('nonCorrectedPet');
     const correctedPet = document.getElementById('correctedPet');
-    const downloadNonCorrectedPetBtn = document.getElementById('downloadNonCorrectedPet');
-    const downloadCorrectedPetBtn = document.getElementById('downloadCorrectedPet');
     const uploadPictureInput = document.getElementById('uploadPicture');
     const uploadPetSection = document.getElementById('uploadPictureSection');
-    const showPictureSection = document.getElementById('showPictureSection');
 
     const pathology = await getPathology(id);
 
@@ -238,7 +234,6 @@ async function selectPathology(id) {
     });
 
     uploadPetSection.style.display = 'block';
-    showPictureSection.style.display = 'flex';
 
     pathologyTitle.textContent = pathology.description;
     pathologyDescription.textContent = pathology.doctor_notes;
@@ -246,21 +241,17 @@ async function selectPathology(id) {
     if (pathology.pet_img) {
         nonCorrectedPet.src = pathology.pet_img;
         nonCorrectedPet.style.display = "block";
-        downloadNonCorrectedPetBtn.style.display = "inline-block";
     } else {
         nonCorrectedPet.src = "";
         nonCorrectedPet.style.display = "none";
-        downloadNonCorrectedPetBtn.style.display = "none";
     }
 
     if (pathology.corrected_img) {
         correctedPet.src = pathology.corrected_img;
         correctedPet.style.display = "block";
-        downloadCorrectedPetBtn.style.display = "inline-block";
     } else {
         correctedPet.src = "";
         correctedPet.style.display = "none";
-        downloadCorrectedPetBtn.style.display = "none";
     }
     // uploadPictureInput.value = ""; // reset file input
 }
@@ -328,8 +319,6 @@ async function uploadImage(uploadPictureInput) {
         
         if (response.ok) {
             const data = await response.json();
-            
-            // Show success message
             selectPathology(pathologyId);    
         } else {
             const error = await response.json();
@@ -342,13 +331,13 @@ async function uploadImage(uploadPictureInput) {
     }
 }
 
-// Handle image download button
-downloadImageBtn.addEventListener('click', () => {
-    if (!pathologyImage.src) return;
-    const a = document.createElement('a');
-    a.href = pathologyImage.src;
-    a.download = currentPathology ? `${currentPathology.name}.png` : 'image.png';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-});
+// // Handle image download button
+// downloadImageBtn.addEventListener('click', () => {
+//     if (!pathologyImage.src) return;
+//     const a = document.createElement('a');
+//     a.href = pathologyImage.src;
+//     a.download = currentPathology ? `${currentPathology.name}.png` : 'image.png';
+//     document.body.appendChild(a);
+//     a.click();
+//     document.body.removeChild(a);
+// });

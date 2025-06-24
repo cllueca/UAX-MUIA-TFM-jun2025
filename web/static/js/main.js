@@ -41,7 +41,7 @@ async function loadPatients() {
                 li.textContent = `${patient.name} ${patient.last_name}`; // Adjust this if the property name is different
 
                 li.addEventListener('click', async () => {
-                    await showPatientLayout(patient.id);
+                    await showPatientLayout(patient.id, null);
                 });
 
                 pacientesList.appendChild(li);
@@ -62,6 +62,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const patientSearch = document.getElementById('patientSearchInput');
     const addPathologyButton = document.getElementById('addPathologyBtn');
     const uploadPictureInput = document.getElementById('uploadPicture');
+    const sidebarToggle = document.getElementById('sidebarToggle');
+    const sidebar = document.getElementById('sidebar');
+    const mainContent = document.getElementById('patientInfoLayout');
 
     // Modal elements
     const modalBackdrop = document.getElementById('modalBackdrop');
@@ -71,6 +74,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     togglePatients(patientMenuOption);
     loadPatients();
+
+    // Toggle sidebar visibility
+    sidebarToggle.addEventListener('click', function() {
+        const isHidden = sidebar.classList.contains('hidden');
+        if (isHidden) {
+            // Show sidebar
+            sidebar.classList.remove('hidden');
+            mainContent.classList.remove('patient-details-container-full');
+            sidebarToggle.classList.add('sidebar-visible');
+            sidebarToggle.classList.remove('sidebar-hidden');
+            sidebarToggle.setAttribute('aria-label', 'Ocultar menú lateral');
+        } else {
+            // Hide sidebar
+            sidebar.classList.add('hidden');
+            mainContent.classList.add('patient-details-container-full');
+            sidebarToggle.classList.remove('sidebar-visible');
+            sidebarToggle.classList.add('sidebar-hidden');
+            sidebarToggle.setAttribute('aria-label', 'Mostrar menú lateral');
+        }
+    });
 
     patientMenuOption.addEventListener('click', () => {
         togglePatients(patientMenuOption)

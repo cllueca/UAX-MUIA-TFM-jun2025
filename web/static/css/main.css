@@ -29,7 +29,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   height: 100vh;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .dashboard {
@@ -48,19 +48,87 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1000;
+}
+.sidebar.hidden {
+  transform: translateX(-100%);
+  /* margin-left: 0 !important; */
+  /* width: 100% !important; */
 }
 
-.theme-toggle {
-  margin-top: 30px;
-  margin-left: 30px;
-  background: transparent;
-  border: 1px solid var(--border-color);
-  padding: 8px 14px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 0.9rem;
+/* Sidebar Toggle Button - matches your design system */
+.sidebar-toggle {
+  position: fixed;
+  top: 90%;
+  left: 20px;
+  z-index: 1001;
+  background-color: var(--bg-color);
   color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  user-select: none;
 }
+
+.sidebar-toggle:hover {
+  background-color: var(--input-bg);
+  transform: scale(1.05);
+}
+
+.sidebar-toggle.sidebar-visible {
+  left: 260px; /* 240px sidebar width + 20px margin */
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  
+  .sidebar-toggle.sidebar-visible {
+    left: 20px;
+  }
+}
+
+
+
+.theme-toggle {
+  margin-top: 10px;
+   background-color: var(--bg-color);
+  border: none;
+  padding: 4px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: var(--input-bg);
+}
+
+.theme-toggle img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
 
 .menu {
   list-style: none;
@@ -94,22 +162,6 @@ body {
   padding: 20px;
 }
 
-/* Lista pacientes */
-/* .pacientes-lista {
-  flex: 1;
-} */
-
-/* .search-bar {
- display: flex;
-  align-items: center;
-  background-color: var(--input-bg);
-  padding: 10px 15px;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  border: 1px solid var(--border-color);
-  color: var(--text-color);
-} */
-
 .search-bar input {
   border: none;
   background: transparent;
@@ -140,17 +192,6 @@ body {
   list-style: none;
   color: var(--text-color);
 }
-
-/* .pacientes li {
-  display: flex;
-  align-items: center;
-  padding: 12px 15px;
-  border-radius: 20px;
-  margin-bottom: 10px;
-  cursor: pointer;
-  transition: background 0.3s;
-  color: var(--text-color);
-} */
 
 .pacientes li:hover {
   background-color: var(--input-bg);
@@ -195,16 +236,6 @@ body {
 .ver-mas:hover {
   background-color: #555;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 

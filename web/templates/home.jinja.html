@@ -44,9 +44,13 @@
             <button class="login_button" type="submit">Iniciar Sesión</button>
           </div>
         </form>
+        <div class="extra-buttons">
         <button id="forgotPasswordLink" class="forgot-password">¿Olvidaste tu contraseña?</button>
 
-        <button id="themeToggle" class="theme-toggle">Cambiar Tema</button>
+         <button id="themeToggle" class="theme-toggle">
+          <img id="themeIcon" src="{{ url_for('static', path='images/dark_light-removebg-preview.png') }}" />
+         </button>
+        </div>
       </div>
     </div>
 
